@@ -216,3 +216,46 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# --- Project-specific ---
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Raw and processed datasets (keep directory placeholders)
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# Model checkpoints and run outputs
+outputs/checkpoints/*
+!outputs/checkpoints/.gitkeep
+outputs/figures/*
+!outputs/figures/.gitkeep
+outputs/metrics/*
+!outputs/metrics/.gitkeep
+*.pt
+*.pth
+*.ckpt
+*.onnx
+
+# Caches
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+*.egg-info/
+.cache/
+torch_cache/
+.torch/
+
+# Virtual environments (extra patterns)
+.venv/
+venv/
+ENV/
+env/

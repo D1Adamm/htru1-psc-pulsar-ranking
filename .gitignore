@@ -264,3 +264,8 @@ outputs/models/
 outputs/predictions/
 __pycache__/
 *.py[cod]
+
+# Local Claude context files
+CLAUDE.md
+PULSAR_499_CLAUDE_HANDOFF.md
+CLAUDE_CODE_START_PROMPT.txt

@@ -259,3 +259,8 @@ torch_cache/
 venv/
 ENV/
 env/
+
+outputs/models/
+outputs/predictions/
+__pycache__/
+*.py[cod]

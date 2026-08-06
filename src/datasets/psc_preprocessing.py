@@ -76,6 +76,27 @@ def _resize_to_32x32(array: np.ndarray) -> torch.Tensor:
     return resized.squeeze(0).squeeze(0)
 
 
+def arrays_to_tensor(fvp: np.ndarray, tvp: np.ndarray) -> torch.Tensor:
+    """Resize and normalize validated FvP/TvP arrays into a ``(2, 32, 32)`` tensor.
+
+    Shared core used by ``psc_json_to_tensor`` and by the domain-shift
+    diagnostics, so both go through exactly one resize/normalize path.
+
+    Channel order matches ``BaselineCNN`` / HTRU1 preprocessing:
+      - channel 0 = Frequency–Phase (``FvP``)
+      - channel 1 = Time–Phase (``TvP``)
+    """
+    fvp_resized = _minmax_normalize(_resize_to_32x32(fvp))
+    tvp_resized = _minmax_normalize(_resize_to_32x32(tvp))
+    image = torch.stack([fvp_resized, tvp_resized], dim=0).to(dtype=torch.float32)
+
+    if image.shape != (2, 32, 32):
+        raise RuntimeError(f"internal error: expected (2, 32, 32), got {tuple(image.shape)}")
+    if not torch.isfinite(image).all():
+        raise RuntimeError("normalized image contains NaN or infinite values")
+    return image
+
+
 def psc_json_to_tensor(
     payload: dict[str, Any],
     plot_id: int | str | None = None,
@@ -99,14 +120,7 @@ def psc_json_to_tensor(
     fvp = _to_float32_2d(payload["FvP"], name="FvP")
     tvp = _to_float32_2d(payload["TvP"], name="TvP")
 
-    fvp_resized = _minmax_normalize(_resize_to_32x32(fvp))
-    tvp_resized = _minmax_normalize(_resize_to_32x32(tvp))
-    image = torch.stack([fvp_resized, tvp_resized], dim=0).to(dtype=torch.float32)
-
-    if image.shape != (2, 32, 32):
-        raise RuntimeError(f"internal error: expected (2, 32, 32), got {tuple(image.shape)}")
-    if not torch.isfinite(image).all():
-        raise RuntimeError("normalized image contains NaN or infinite values")
+    image = arrays_to_tensor(fvp, tvp)
 
     metadata = {
         "plot_id": plot_id,

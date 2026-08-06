@@ -269,3 +269,9 @@ __pycache__/
 CLAUDE.md
 PULSAR_499_CLAUDE_HANDOFF.md
 CLAUDE_CODE_START_PROMPT.txt
+
+# Cached PSC candidate JSON (~59 MB, regenerable from the manifest by
+# rerunning scripts/rank_psc_candidates.py). The manifest and the raw tab
+# exports under data/psc/source/ ARE tracked -- they are what make the
+# experiments reproducible.
+data/psc/raw/

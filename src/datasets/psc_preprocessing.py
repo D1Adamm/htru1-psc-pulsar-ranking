@@ -76,6 +76,73 @@ def _resize_to_32x32(array: np.ndarray) -> torch.Tensor:
     return resized.squeeze(0).squeeze(0)
 
 
+DM_VECTOR_LENGTH = 64
+
+
+def dmc_to_vector(
+    payload: dict[str, Any], length: int = DM_VECTOR_LENGTH
+) -> tuple[torch.Tensor, dict[str, float]]:
+    """Resample a candidate's dispersion-measure curve to a fixed-length vector.
+
+    ``DMc`` records reduced chi-squared against trial dispersion measure. A real
+    pulsar peaks at its own DM; terrestrial interference peaks at DM = 0, since
+    it never traversed the interstellar medium.
+
+    Observed ``DMc`` lengths vary (401 / 201 / 101 / 129 / 97) and every candidate
+    is searched over its own DM range, so the raw curve is not comparable across
+    candidates. This returns the min-max normalised *shape* resampled to a common
+    length, plus scalar features that carry the physical scale.
+
+    Returns ``(vector, features)``. ``features`` holds ``peak_fraction`` (where
+    along the searched range the curve peaks, 0 = DM 0), ``peak_dm`` in physical
+    units when the axis metadata is present, and ``dm_range``.
+    """
+    raw = payload.get("DMc")
+    if raw is None or len(raw) == 0:
+        raise ValueError("payload has no usable DMc curve")
+
+    curve = np.asarray(raw, dtype=np.float64).reshape(-1)
+    if not np.isfinite(curve).all():
+        raise ValueError("DMc contains NaN or infinite values")
+    if curve.size < 2:
+        raise ValueError(f"DMc needs at least 2 points, got {curve.size}")
+
+    # Resample the shape onto a common grid. Downsampling uses per-bin maxima
+    # rather than point sampling: np.interp can step straight over a narrow
+    # peak, and for a DM curve the peak location is the entire signal.
+    if curve.size > length:
+        edges = np.linspace(0, curve.size, length + 1).astype(int)
+        edges[-1] = curve.size
+        resampled = np.array(
+            [curve[edges[i] : max(edges[i + 1], edges[i] + 1)].max() for i in range(length)]
+        )
+    else:
+        src = np.linspace(0.0, 1.0, curve.size)
+        dst = np.linspace(0.0, 1.0, length)
+        resampled = np.interp(dst, src, curve)
+
+    lo, hi = float(resampled.min()), float(resampled.max())
+    normalized = (
+        np.zeros_like(resampled) if hi - lo < EPS else (resampled - lo) / (hi - lo)
+    )
+
+    peak_index = int(curve.argmax())
+    peak_fraction = peak_index / (curve.size - 1)
+
+    meta = payload.get("meta") if isinstance(payload.get("meta"), dict) else {}
+    lowdm = meta.get("lowdm")
+    highdm = meta.get("highdm")
+    features: dict[str, float] = {"peak_fraction": float(peak_fraction)}
+    if isinstance(lowdm, (int, float)) and isinstance(highdm, (int, float)):
+        features["dm_range"] = float(highdm) - float(lowdm)
+        features["peak_dm"] = float(lowdm) + peak_fraction * features["dm_range"]
+    else:
+        features["dm_range"] = float("nan")
+        features["peak_dm"] = float("nan")
+
+    return torch.from_numpy(normalized).to(dtype=torch.float32), features
+
+
 def arrays_to_tensor(fvp: np.ndarray, tvp: np.ndarray) -> torch.Tensor:
     """Resize and normalize validated FvP/TvP arrays into a ``(2, 32, 32)`` tensor.
 

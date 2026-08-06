@@ -179,7 +179,21 @@ def assign_source_groups(rows: list[dict[str, str]], category: str) -> None:
             row["source_group"] = f"{category}_g{i:04d}"
 
 
-def build_rows(source_dir: Path) -> list[dict[str, str]]:
+def build_rows(
+    source_dir: Path,
+    survey: str = "AO327",
+    max_dm: float | None = None,
+) -> list[dict[str, str]]:
+    """Build manifest rows from the tab exports in ``source_dir``.
+
+    ``survey`` is recorded per row so candidates from different telescopes can
+    live in one manifest. The per-candidate JSON endpoint is survey-agnostic —
+    plot IDs are globally unique — so only the label provenance changes.
+
+    ``max_dm`` optionally drops rows above a dispersion-measure cut. Terrestrial
+    interference has DM ~ 0 by definition, so a low cut selects physically
+    unambiguous RFI and discards crowd-sourced RFI labels that are likely wrong.
+    """
     out: list[dict[str, str]] = []
     found_any = False
 
@@ -201,12 +215,25 @@ def build_rows(source_dir: Path) -> list[dict[str, str]]:
                 f"{observed}. Refusing to mislabel."
             )
 
+        if max_dm is not None:
+            kept = []
+            for r in rows:
+                try:
+                    if float(r["dm"]) < max_dm:
+                        kept.append(r)
+                except ValueError:
+                    pass  # unparseable DM cannot satisfy the cut
+            print(f"  {tab}.tsv: DM < {max_dm} cut kept {len(kept)}/{len(rows)}")
+            rows = kept
+            if not rows:
+                continue
+
         assign_source_groups(rows, category)
         for row in rows:
             out.append(
                 {
                     "plot_id": row["plot_id"],
-                    "survey": "AO327",
+                    "survey": survey,
                     "source_category": category,
                     "label": label,
                     "label_confidence": "psc_consensus_grade",
@@ -264,14 +291,26 @@ def main(argv: list[str] | None = None) -> None:
     parser.add_argument("--source-dir", type=Path, default=DEFAULT_SOURCE_DIR)
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
     parser.add_argument(
+        "--survey",
+        default="AO327",
+        help="Survey these exports came from, e.g. AO327 (Arecibo) or gbncc (GBT)",
+    )
+    parser.add_argument(
+        "--max-dm",
+        type=float,
+        default=None,
+        help="Drop rows with DM at or above this. Terrestrial RFI has DM ~ 0, "
+        "so a low cut keeps physically unambiguous interference.",
+    )
+    parser.add_argument(
         "--dry-run",
         action="store_true",
         help="Parse and report diversity without writing the manifest",
     )
     args = parser.parse_args(argv)
 
-    print(f"Source: {args.source_dir}")
-    rows = build_rows(args.source_dir)
+    print(f"Source: {args.source_dir}  survey={args.survey}")
+    rows = build_rows(args.source_dir, survey=args.survey, max_dm=args.max_dm)
     summarize(rows)
 
     n_pos = sum(1 for r in rows if r["label"] == "1")

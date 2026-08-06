@@ -25,7 +25,15 @@ place HTRU1 convolutional features. See the scope-change section of `CLAUDE.md`.
 
 ## Headline result
 
-Fine-tuning fixes the RFI failure.
+Fine-tuning fixes the RFI failure **on Arecibo**.
+
+> **Scope measured by [EXP-006](exp006_gbncc_generalization.md), 2026-08-06.**
+> Every number below is an AO327 number. Tested on GBNCC (Green Bank, ~350 MHz),
+> this model's RFI recall falls from **0.982 to 0.105** — it classifies 17 of 19
+> zero-DM mains-harmonic signals as pulsars. Fine-tuning bought nothing there:
+> the un-fine-tuned HTRU1 model scores identically (2/19). A duty-cycle threshold
+> chosen on Arecibo and applied blind to Green Bank gets **19/19**.
+> The measurements below stand; read them as survey-specific, not general.
 
 | pulsar vs RFI | before (EXP-002/003 model) | after fine-tuning |
 |---|---|---|

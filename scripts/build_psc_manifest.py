@@ -190,9 +190,12 @@ def build_rows(
     live in one manifest. The per-candidate JSON endpoint is survey-agnostic —
     plot IDs are globally unique — so only the label provenance changes.
 
-    ``max_dm`` optionally drops rows above a dispersion-measure cut. Terrestrial
-    interference has DM ~ 0 by definition, so a low cut selects physically
-    unambiguous RFI and discards crowd-sourced RFI labels that are likely wrong.
+    ``max_dm`` optionally drops rows above a dispersion-measure cut. It applies
+    **only to the RFI class**: terrestrial interference has DM ~ 0 by definition,
+    so a low cut discards crowd-sourced RFI labels that are physically impossible.
+    Pulsars are dispersed by the interstellar medium and legitimately carry high
+    DM, and noise carries whatever the search happened to trial, so applying the
+    cut to those classes would delete the very rows the model needs.
     """
     out: list[dict[str, str]] = []
     found_any = False
@@ -215,7 +218,9 @@ def build_rows(
                 f"{observed}. Refusing to mislabel."
             )
 
-        if max_dm is not None:
+        # The DM cut is a physical validity check on RFI only. Pulsars are
+        # dispersed and noise is arbitrary, so cutting them here would be wrong.
+        if max_dm is not None and category == "rfi":
             kept = []
             for r in rows:
                 try:
@@ -223,7 +228,7 @@ def build_rows(
                         kept.append(r)
                 except ValueError:
                     pass  # unparseable DM cannot satisfy the cut
-            print(f"  {tab}.tsv: DM < {max_dm} cut kept {len(kept)}/{len(rows)}")
+            print(f"  {tab}.tsv: DM < {max_dm} cut kept {len(kept)}/{len(rows)} (rfi only)")
             rows = kept
             if not rows:
                 continue

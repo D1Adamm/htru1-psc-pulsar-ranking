@@ -62,9 +62,35 @@ once, at its best rank:
 
 Median rank of a distinct pulsar source: **41 of 150**.
 
-The per-detection ROC-AUC of 0.78 is largely an artifact of one bright 1.387 s
-pulsar contributing 17 detections that all rank highly. Report the per-source
-number as the honest one.
+> **CORRECTION (2026-08-05, later same day).** The per-source ROC-AUC of 0.5773
+> above is **distorted and should not be quoted**, and the instruction to "report
+> the per-source number as the honest one" was wrong.
+>
+> The v1 manifest assigned **all 50 noise candidates to a single source group**
+> (a hardcoded special case, since they shared one MJD and pointing). The
+> collapse rule then took the best-ranked member per group — which for a
+> *negative* class means representing all 50 noise candidates by their single
+> **highest-scoring** member, 0.7223, against a class median of 0.0642.
+>
+> Best-rank-per-group is right for positives (was the source recovered at all?)
+> and maximally pessimistic for negatives. Recomputed:
+>
+> | collapse rule | overall ROC-AUC |
+> |---|---|
+> | best-rank per group, all classes (as published) | 0.5773 ← distorted |
+> | collapse positives only, keep all negatives | **0.7611** |
+> | median per group, all classes | 0.5959 |
+> | no collapsing (per-detection) | 0.7846 |
+>
+> **The headline pulsar-vs-RFI finding is unaffected**: 0.5735 per-source versus
+> 0.6168 per-detection. Both are poor under every rule, so EXP-003's conclusion
+> stands. What was distorted is the *overall* figure that mixes noise and RFI.
+>
+> Note also that `scripts/build_psc_manifest.py` has since been generalized and
+> no longer reproduces this manifest byte-for-byte: source-group IDs are now
+> zero-padded to four digits, and noise is grouped positionally like every other
+> class rather than by special case. The v1 manifest is kept frozen so this
+> record stays consistent with `psc_ranked_candidates.csv`.
 
 ## Hypothesis that was tested
 

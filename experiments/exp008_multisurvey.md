@@ -10,7 +10,8 @@ training on both telescopes at once does.
 | `date` | 2026-08-06 |
 | `manifest` | `data/psc/psc_eval_multisurvey.csv` — 2,746 candidates |
 | `checkpoint` | `outputs/models/psc_multisurvey_best.pt` |
-| `metrics` | `outputs/metrics/psc_multisurvey_metrics.json` |
+| `metrics` | `outputs/metrics/psc_multisurvey_metrics.json` (combined) |
+| `metrics, per survey` | `outputs/metrics/psc_multisurvey_eval_by_survey.json` |
 | `split` | 60/20/20 by `source_group`, 2,308 groups |
 | `best epoch` | 25 of 40 (val accuracy 0.9194) |
 
@@ -77,6 +78,62 @@ data entered training) gives the cleanest statement of the original failure —
 | duty cycle, same set | 0.8113 (rfi) / 0.8811 (noise) |
 
 It classified almost everything as a pulsar.
+
+## Reproducing these numbers
+
+The per-survey figures above were originally computed by hand, and only the
+combined metrics were written to `psc_multisurvey_metrics.json` — so nothing in
+the repository regenerated the 0.9684 / 0.8458 breakdown. It does now:
+
+```bash
+python scripts/evaluate_psc_multisurvey.py
+```
+
+No training, no checkpoint is written, and the HTRU1 baseline is refused
+outright as a `--checkpoint` argument. It rebuilds the split with
+`split_indices_by_source_group(seed=42)`, scores
+`outputs/models/psc_multisurvey_best.pt`, and writes combined and per-survey
+metrics to `outputs/metrics/psc_multisurvey_eval_by_survey.json`. (Like every
+other file under `outputs/metrics/`, that JSON is gitignored — it is a
+regenerable artifact of the command above, not a tracked record.)
+
+The rebuilt split is **not** read from the checkpoint; it is reconstructed and
+then compared against the `test_indices` the training run stored, and a mismatch
+aborts the evaluation rather than reporting numbers from a split that is no
+longer held out. On the committed manifest and cache it matches: all 2,746 rows
+load, the split is 1,645 / 558 / 543, and all 543 test indices are identical to
+the checkpoint's.
+
+### Recorded vs. reproduced
+
+Every recorded figure reproduces exactly — there is no discrepancy to explain.
+
+| | recorded | reproduced |
+|---|---|---|
+| AO327 three-class accuracy | 0.9684 | 0.9684 (306/316) |
+| GBNCC three-class accuracy | 0.8458 | 0.8458 (192/227) |
+| AO327 pulsar / rfi / noise recall | 0.9130 / 0.9904 / 0.9917 | identical |
+| GBNCC pulsar / rfi / noise recall | 0.6458 / 0.8571 / 0.9266 | identical |
+| AO327 binary, model vs duty cycle | 0.9961 / 0.9726 | identical |
+| GBNCC binary, model vs duty cycle | 0.9155 / 0.8535 | identical |
+
+They also close arithmetically against the combined metrics that *were*
+committed, which is the check that the breakdown describes the same evaluation:
+`0.9684 × 316 + 0.8458 × 227 = 498`, and `498 / 543 = 0.9171`, the combined
+accuracy in `psc_multisurvey_metrics.json`. Likewise the per-survey pulsar
+recalls give `(84 + 31) / 140 = 0.8214`, its combined `recall_known_pulsar`.
+
+Beyond what was recorded, the run adds per-class **F1 and support**, per-survey
+**confusion matrices**, and per-survey **PR-AUC** — the last of which is the more
+honest number on GBNCC, where pulsars are 48 of 227:
+
+| | AO327 | GBNCC |
+|---|---|---|
+| binary ROC-AUC | 0.9961 | 0.9155 |
+| binary PR-AUC | 0.9915 | **0.7969** |
+| pulsar F1 | 0.9438 | **0.7045** |
+
+The GBNCC pulsar column is the weak result in caveat 2, stated two more ways.
 
 ## Caveats — read before quoting the 0.8458
 

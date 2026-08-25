@@ -37,6 +37,7 @@ class PSCCachedDataset(Dataset):
         self.labels: list[int] = []
         self.plot_ids: list[str] = []
         self.source_groups: list[str] = []
+        self.surveys: list[str] = []
         self.skipped: list[tuple[str, str]] = []
 
         for row in rows:
@@ -66,6 +67,10 @@ class PSCCachedDataset(Dataset):
             self.labels.append(CLASS_TO_INDEX[category])
             self.plot_ids.append(plot_id)
             self.source_groups.append(row.get("source_group", plot_id))
+            # Kept per item, not per manifest row: skipped rows shift the
+            # indices, so a survey breakdown read off the manifest would be
+            # misaligned the moment one candidate fails to load.
+            self.surveys.append(row.get("survey", "unknown"))
 
     def __len__(self) -> int:
         return len(self.labels)

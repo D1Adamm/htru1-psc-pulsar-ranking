@@ -44,6 +44,7 @@ from src.models.three_class_head import (
     ThreeClassCNN,
     collapse_to_pulsar_score,
 )
+from src.psc_metrics import duty_cycle
 
 DEFAULT_MANIFEST = REPO_ROOT / "data" / "psc" / "psc_eval_candidates_v3.csv"
 DEFAULT_CACHE = REPO_ROOT / "data" / "psc" / "raw"
@@ -58,20 +59,6 @@ def select_device() -> torch.device:
     if hasattr(torch.backends, "mps") and torch.backends.mps.is_available():
         return torch.device("mps")
     return torch.device("cpu")
-
-
-def duty_cycle(image: torch.Tensor) -> float:
-    """Fraction of phase bins above half maximum in the FvP phase profile.
-
-    The EXP-003 baseline: pulsars are compact in phase, this RFI is broad.
-    Lower means narrower means more pulsar-like.
-    """
-    profile = image[0].mean(dim=0)
-    lo, hi = float(profile.min()), float(profile.max())
-    if hi - lo < 1e-9:
-        return 1.0
-    normalized = (profile - lo) / (hi - lo)
-    return float((normalized > 0.5).float().mean())
 
 
 @torch.no_grad()

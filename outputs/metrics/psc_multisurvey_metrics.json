@@ -1,0 +1,55 @@
+{
+  "best_epoch": 25,
+  "binary_collapsed": {
+    "n": 543,
+    "n_pulsar": 140,
+    "pr_auc": 0.9485265368663331,
+    "roc_auc": 0.9765508684863524
+  },
+  "class_counts": {
+    "known_pulsar": 800,
+    "noise": 1000,
+    "rfi": 946
+  },
+  "duty_cycle_baseline_roc_auc": 0.9330467919177596,
+  "frozen_backbone": false,
+  "seed": 42,
+  "split_sizes": {
+    "test": 543,
+    "train": 1645,
+    "val": 558
+  },
+  "three_class": {
+    "accuracy": 0.9171270728111267,
+    "class_order": [
+      "known_pulsar",
+      "rfi",
+      "noise"
+    ],
+    "confusion_matrix": [
+      [
+        115,
+        12,
+        13
+      ],
+      [
+        5,
+        163,
+        6
+      ],
+      [
+        6,
+        3,
+        220
+      ]
+    ],
+    "n": 543,
+    "precision_known_pulsar": 0.9126984126984127,
+    "precision_noise": 0.9205020920502092,
+    "precision_rfi": 0.9157303370786517,
+    "recall_known_pulsar": 0.8214285714285714,
+    "recall_noise": 0.9606986899563319,
+    "recall_rfi": 0.9367816091954023
+  },
+  "val_accuracy": 0.9193548560142517
+}

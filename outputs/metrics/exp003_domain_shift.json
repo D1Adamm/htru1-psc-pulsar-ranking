@@ -1,0 +1,25 @@
+{
+  "d1_orientation": {
+    "axes_match": true,
+    "htru1_col_peakiness": 4.610268887998385,
+    "htru1_phase_axis": 1,
+    "htru1_row_peakiness": 0.9851727793511151,
+    "psc_col_peakiness": 7.109225945217362,
+    "psc_phase_axis": 1,
+    "psc_row_peakiness": 3.0828206858467064
+  },
+  "d3_normalization": {
+    "global_minmax": {
+      "pulsar_vs_noise_auc": 0.8796,
+      "pulsar_vs_rfi_auc": 0.6556
+    },
+    "per_channel_minmax_current": {
+      "pulsar_vs_noise_auc": 0.9524,
+      "pulsar_vs_rfi_auc": 0.6168
+    },
+    "per_row_baseline": {
+      "pulsar_vs_noise_auc": 0.9712000000000001,
+      "pulsar_vs_rfi_auc": 0.6104
+    }
+  }
+}

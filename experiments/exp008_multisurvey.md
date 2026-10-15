@@ -93,9 +93,9 @@ No training, no checkpoint is written, and the HTRU1 baseline is refused
 outright as a `--checkpoint` argument. It rebuilds the split with
 `split_indices_by_source_group(seed=42)`, scores
 `outputs/models/psc_multisurvey_best.pt`, and writes combined and per-survey
-metrics to `outputs/metrics/psc_multisurvey_eval_by_survey.json`. (Like every
-other file under `outputs/metrics/`, that JSON is gitignored — it is a
-regenerable artifact of the command above, not a tracked record.)
+metrics to `outputs/metrics/psc_multisurvey_eval_by_survey.json`. (That JSON
+is a regenerable artifact of the command above. It was gitignored when this
+record was written and has been tracked since 2026-10-14.)
 
 The rebuilt split is **not** read from the checkpoint; it is reconstructed and
 then compared against the `test_indices` the training run stored, and a mismatch

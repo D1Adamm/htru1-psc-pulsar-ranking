@@ -231,17 +231,17 @@ data/raw/*
 data/processed/*
 !data/processed/.gitkeep
 
-# Model checkpoints and run outputs
+# Model checkpoints and run outputs.
+# The experiment artifacts under outputs/models, outputs/metrics,
+# outputs/predictions, and outputs/figures ARE tracked: they are small (~9 MB)
+# and the experiment records cite them by path and hash.
 outputs/checkpoints/*
 !outputs/checkpoints/.gitkeep
-outputs/figures/*
-!outputs/figures/.gitkeep
-outputs/metrics/*
-!outputs/metrics/.gitkeep
 *.pt
 *.pth
 *.ckpt
 *.onnx
+!outputs/models/*.pt
 
 # Caches
 __pycache__/
@@ -260,8 +260,6 @@ venv/
 ENV/
 env/
 
-outputs/models/
-outputs/predictions/
 __pycache__/
 *.py[cod]
 

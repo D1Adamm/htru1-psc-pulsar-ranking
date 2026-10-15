@@ -98,19 +98,18 @@ informative and must not be quoted as the headline result.
 
 | Path | SHA-256 | Tracked? |
 |---|---|---|
-| `outputs/models/baseline_cnn_best.pt` | `7f852a3e7fc46ade884c32a4a5599cc4c2734d0fd262a2c17620a4f6e4695d5c` | no (gitignored) |
-| `outputs/models/exp001_baseline_cnn_best.pt` | same as above — preservation copy | no (gitignored) |
-| `outputs/metrics/htru1_test_metrics.json` | `9830360575d0cab8fb73cd922d0452dbf46f37701c8f378df0850cf0f9c1d4b2` | no (gitignored) |
-| `outputs/predictions/htru1_test_predictions.csv` | `67e207c19e691c4ecef2d17890a868fd77ea95d4efe78fae1dabcd2033b78963` | no (gitignored) |
+| `outputs/models/baseline_cnn_best.pt` | `7f852a3e7fc46ade884c32a4a5599cc4c2734d0fd262a2c17620a4f6e4695d5c` | yes (since 2026-10-14) |
+| `outputs/models/exp001_baseline_cnn_best.pt` | same as above — preservation copy | yes (since 2026-10-14) |
+| `outputs/metrics/htru1_test_metrics.json` | `9830360575d0cab8fb73cd922d0452dbf46f37701c8f378df0850cf0f9c1d4b2` | yes (since 2026-10-14) |
+| `outputs/predictions/htru1_test_predictions.csv` | `67e207c19e691c4ecef2d17890a868fd77ea95d4efe78fae1dabcd2033b78963` | yes (since 2026-10-14) |
 
 Checkpoint state dict keys: `features.0.{weight,bias}`, `features.3.{weight,bias}`,
 `classifier.1.{weight,bias}`, `classifier.4.{weight,bias}`.
 Checkpoint metadata keys: `epoch`, `val_f1`, `pos_weight`, `random_seed`.
 
-`.gitignore` excludes `outputs/models/`, `outputs/predictions/`, `outputs/metrics/*`,
-and `*.pt`, so none of these binaries live in git. The metrics above are
-reproduced in full in this tracked file precisely so the numbers survive
-independently of the local `outputs/` directory.
+These artifacts were gitignored when this record was written, so the metrics
+above are reproduced in full in this file. Since 2026-10-14 the artifacts are
+tracked as well, unchanged; the hashes above still match them.
 
 ## Reproducibility check (2026-08-05)
 

@@ -1,0 +1,186 @@
+{
+  "by_survey": {
+    "ao327": {
+      "binary_collapsed": {
+        "n": 316,
+        "n_pulsar": 92,
+        "pr_auc": 0.991450795208442,
+        "roc_auc": 0.9960694875776398
+      },
+      "duty_cycle_baseline_roc_auc": 0.9726319875776397,
+      "three_class": {
+        "accuracy": 0.9683544303797469,
+        "class_order": [
+          "known_pulsar",
+          "rfi",
+          "noise"
+        ],
+        "confusion_matrix": [
+          [
+            84,
+            3,
+            5
+          ],
+          [
+            1,
+            103,
+            0
+          ],
+          [
+            1,
+            0,
+            119
+          ]
+        ],
+        "n": 316,
+        "per_class": {
+          "known_pulsar": {
+            "f1": 0.9438202247191011,
+            "precision": 0.9767441860465116,
+            "recall": 0.9130434782608695,
+            "support": 92
+          },
+          "noise": {
+            "f1": 0.9754098360655739,
+            "precision": 0.9596774193548387,
+            "recall": 0.9916666666666667,
+            "support": 120
+          },
+          "rfi": {
+            "f1": 0.9809523809523809,
+            "precision": 0.9716981132075472,
+            "recall": 0.9903846153846154,
+            "support": 104
+          }
+        }
+      }
+    },
+    "gbncc": {
+      "binary_collapsed": {
+        "n": 227,
+        "n_pulsar": 48,
+        "pr_auc": 0.7968845080584869,
+        "roc_auc": 0.9155027932960893
+      },
+      "duty_cycle_baseline_roc_auc": 0.8535265363128491,
+      "three_class": {
+        "accuracy": 0.8458149779735683,
+        "class_order": [
+          "known_pulsar",
+          "rfi",
+          "noise"
+        ],
+        "confusion_matrix": [
+          [
+            31,
+            9,
+            8
+          ],
+          [
+            4,
+            60,
+            6
+          ],
+          [
+            5,
+            3,
+            101
+          ]
+        ],
+        "n": 227,
+        "per_class": {
+          "known_pulsar": {
+            "f1": 0.7045454545454546,
+            "precision": 0.775,
+            "recall": 0.6458333333333334,
+            "support": 48
+          },
+          "noise": {
+            "f1": 0.9017857142857143,
+            "precision": 0.8782608695652174,
+            "recall": 0.926605504587156,
+            "support": 109
+          },
+          "rfi": {
+            "f1": 0.8450704225352113,
+            "precision": 0.8333333333333334,
+            "recall": 0.8571428571428571,
+            "support": 70
+          }
+        }
+      }
+    }
+  },
+  "combined": {
+    "binary_collapsed": {
+      "n": 543,
+      "n_pulsar": 140,
+      "pr_auc": 0.9485265368663331,
+      "roc_auc": 0.9765508684863524
+    },
+    "duty_cycle_baseline_roc_auc": 0.9330467919177596,
+    "three_class": {
+      "accuracy": 0.9171270718232044,
+      "class_order": [
+        "known_pulsar",
+        "rfi",
+        "noise"
+      ],
+      "confusion_matrix": [
+        [
+          115,
+          12,
+          13
+        ],
+        [
+          5,
+          163,
+          6
+        ],
+        [
+          6,
+          3,
+          220
+        ]
+      ],
+      "n": 543,
+      "per_class": {
+        "known_pulsar": {
+          "f1": 0.8646616541353382,
+          "precision": 0.9126984126984127,
+          "recall": 0.8214285714285714,
+          "support": 140
+        },
+        "noise": {
+          "f1": 0.9401709401709402,
+          "precision": 0.9205020920502092,
+          "recall": 0.9606986899563319,
+          "support": 229
+        },
+        "rfi": {
+          "f1": 0.9261363636363636,
+          "precision": 0.9157303370786517,
+          "recall": 0.9367816091954023,
+          "support": 174
+        }
+      }
+    }
+  },
+  "provenance": {
+    "checkpoint": "outputs/models/psc_multisurvey_best.pt",
+    "checkpoint_best_epoch": 25,
+    "checkpoint_val_accuracy": 0.9193548560142517,
+    "manifest": "data/psc/psc_eval_multisurvey.csv",
+    "n_manifest_rows": 2746,
+    "n_skipped": 0,
+    "split": "test",
+    "split_matches_checkpoint_test_indices": true,
+    "split_seed": 42,
+    "split_sizes": {
+      "test": 543,
+      "train": 1645,
+      "val": 558
+    },
+    "trained_no_model_modified": true
+  }
+}

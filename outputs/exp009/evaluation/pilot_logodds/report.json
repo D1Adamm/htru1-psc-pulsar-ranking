@@ -1,0 +1,6173 @@
+{
+  "assignments": [
+    0
+  ],
+  "claim_c": {
+    "E1 + duty_cnn_input, AO327 RFI": {
+      "auc_difference": {
+        "difference": 0.013338547097671238,
+        "high": 0.058807243103268715,
+        "level": 0.95,
+        "low": -0.025296054204569207
+      },
+      "baseline_auc": 0.9685870698644421,
+      "combined_auc": 0.9819256169621133,
+      "fpr_difference": {
+        "difference": 0.005474452554744527,
+        "high": 0.015017581924285456,
+        "level": 0.95,
+        "low": -0.20492219871286257
+      },
+      "verdict": "inconclusive"
+    },
+    "E1 + duty_cnn_input, GBNCC RFI": {
+      "auc_difference": {
+        "difference": 0.09014832225644343,
+        "high": 0.16569028985672685,
+        "level": 0.95,
+        "low": 0.01748167885327806
+      },
+      "baseline_auc": 0.793301183336035,
+      "combined_auc": 0.8834495055924785,
+      "fpr_difference": {
+        "difference": -0.18798994974874378,
+        "high": 0.06010850301551082,
+        "level": 0.95,
+        "low": -0.4957974714980867
+      },
+      "verdict": "success"
+    },
+    "E1 + duty_dmc, AO327 RFI": {
+      "auc_difference": {
+        "difference": 0.011969933958985046,
+        "high": 0.05085341126717676,
+        "level": 0.95,
+        "low": -0.017683412273621933
+      },
+      "baseline_auc": 0.9686522419186653,
+      "combined_auc": 0.9806221758776503,
+      "fpr_difference": {
+        "difference": 0.005474452554744527,
+        "high": 0.01543239668239668,
+        "level": 0.95,
+        "low": -0.48005684567005297
+      },
+      "verdict": "inconclusive"
+    },
+    "E1 + duty_dmc, GBNCC RFI": {
+      "auc_difference": {
+        "difference": 0.00901685848597833,
+        "high": 0.06395919640265325,
+        "level": 0.95,
+        "low": -0.04619724634082926
+      },
+      "baseline_auc": 0.9195777273464094,
+      "combined_auc": 0.9285945858323877,
+      "fpr_difference": {
+        "difference": 0.05527638190954774,
+        "high": 0.26067693059628505,
+        "level": 0.95,
+        "low": -0.4232212066871059
+      },
+      "verdict": "inconclusive"
+    },
+    "E2 + duty_cnn_input, AO327 RFI": {
+      "auc_difference": {
+        "difference": 0.00821167883211682,
+        "high": 0.054419055766428914,
+        "level": 0.95,
+        "low": -0.03313524736241802
+      },
+      "baseline_auc": 0.9685870698644421,
+      "combined_auc": 0.9767987486965589,
+      "fpr_difference": {
+        "difference": 0.005474452554744527,
+        "high": 0.0516683004469177,
+        "level": 0.95,
+        "low": -0.18920505632834395
+      },
+      "verdict": "inconclusive"
+    },
+    "E2 + duty_cnn_input, GBNCC RFI": {
+      "auc_difference": {
+        "difference": 0.09865861565893985,
+        "high": 0.17393903911373737,
+        "level": 0.95,
+        "low": 0.025224069468058507
+      },
+      "baseline_auc": 0.793301183336035,
+      "combined_auc": 0.8919597989949749,
+      "fpr_difference": {
+        "difference": -0.19804020100502512,
+        "high": 0.07126145364400391,
+        "level": 0.95,
+        "low": -0.498466307277628
+      },
+      "verdict": "success"
+    },
+    "E2 + duty_dmc, AO327 RFI": {
+      "auc_difference": {
+        "difference": 0.008580987139381269,
+        "high": 0.0486281880946514,
+        "level": 0.95,
+        "low": -0.024467706622878994
+      },
+      "baseline_auc": 0.9686522419186653,
+      "combined_auc": 0.9772332290580465,
+      "fpr_difference": {
+        "difference": 0.00364963503649635,
+        "high": 0.09950142870637112,
+        "level": 0.95,
+        "low": -0.47751358707009084
+      },
+      "verdict": "inconclusive"
+    },
+    "E2 + duty_dmc, GBNCC RFI": {
+      "auc_difference": {
+        "difference": 0.008408980385800069,
+        "high": 0.06600323422652607,
+        "level": 0.95,
+        "low": -0.04433482948041892
+      },
+      "baseline_auc": 0.9195777273464094,
+      "combined_auc": 0.9279867077322095,
+      "fpr_difference": {
+        "difference": 0.027638190954773864,
+        "high": 0.33798055555555545,
+        "level": 0.95,
+        "low": -0.4439769585253456
+      },
+      "verdict": "inconclusive"
+    },
+    "E3 + duty_cnn_input, AO327 RFI": {
+      "auc_difference": {
+        "difference": -0.0027372262773722733,
+        "high": 0.028213792338393277,
+        "level": 0.95,
+        "low": -0.03322878399879582
+      },
+      "baseline_auc": 0.9685870698644421,
+      "combined_auc": 0.9658498435870698,
+      "fpr_difference": {
+        "difference": 0.04379562043795621,
+        "high": 0.1620049639128949,
+        "level": 0.95,
+        "low": -0.1678278793340059
+      },
+      "verdict": "inconclusive"
+    },
+    "E3 + duty_cnn_input, GBNCC RFI": {
+      "auc_difference": {
+        "difference": 0.04228805316907114,
+        "high": 0.10900996903216041,
+        "level": 0.95,
+        "low": -0.02726527586937534
+      },
+      "baseline_auc": 0.793301183336035,
+      "combined_auc": 0.8355892365051062,
+      "fpr_difference": {
+        "difference": -0.10758793969849245,
+        "high": 0.0756678716606417,
+        "level": 0.95,
+        "low": -0.38610469229229755
+      },
+      "verdict": "inconclusive"
+    },
+    "E3 + duty_dmc, AO327 RFI": {
+      "auc_difference": {
+        "difference": 0.0047141119221411065,
+        "high": 0.025970383608539645,
+        "level": 0.95,
+        "low": -0.009274786523045857
+      },
+      "baseline_auc": 0.9686522419186653,
+      "combined_auc": 0.9733663538408064,
+      "fpr_difference": {
+        "difference": 0.009124087591240877,
+        "high": 0.033097111905851025,
+        "level": 0.95,
+        "low": -0.11541585874610702
+      },
+      "verdict": "inconclusive"
+    },
+    "E3 + duty_dmc, GBNCC RFI": {
+      "auc_difference": {
+        "difference": 0.009908413032906571,
+        "high": 0.060531687326446156,
+        "level": 0.95,
+        "low": -0.04196527769099683
+      },
+      "baseline_auc": 0.9195777273464094,
+      "combined_auc": 0.929486140379316,
+      "fpr_difference": {
+        "difference": 0.06532663316582919,
+        "high": 0.18281441404654952,
+        "level": 0.95,
+        "low": -0.3926294418179043
+      },
+      "verdict": "inconclusive"
+    }
+  },
+  "claim_d": "Not assessable with current data.",
+  "coherence_drop_gbncc": {
+    "E1": 0.07070485179052458,
+    "E2": 0.03645911199194647,
+    "E3": -0.013612095767572562
+  },
+  "cross_survey": {
+    "ao327": {
+      "contrasts": {
+        "L1 - duty_cnn_input, typical AUC": {
+          "difference": -0.08264142335766422,
+          "high": -0.025005845349483934,
+          "level": 0.95,
+          "low": -0.1465063641715427
+        },
+        "L1 - duty_native, typical AUC": {
+          "difference": -0.08102189781021896,
+          "high": -0.028104511069864353,
+          "level": 0.95,
+          "low": -0.14006533638267776
+        },
+        "L2 - duty_cnn_input, typical AUC": {
+          "difference": -0.12452098540145984,
+          "high": -0.04535661610053636,
+          "level": 0.95,
+          "low": -0.23005543497034328
+        },
+        "L2 - duty_native, typical AUC": {
+          "difference": -0.12290145985401457,
+          "high": -0.04625213354212313,
+          "level": 0.95,
+          "low": -0.22680942052270783
+        }
+      },
+      "models": {
+        "L1": {
+          "fpr_at_90": 0.18065693430656932,
+          "fpr_at_90_by_assignment": [
+            0.18065693430656932
+          ],
+          "typical_auc": 0.8846259124087591,
+          "typical_auc_by_assignment": [
+            0.8846259124087591
+          ]
+        },
+        "L2": {
+          "fpr_at_90": 0.3594890510948905,
+          "fpr_at_90_by_assignment": [
+            0.3594890510948905
+          ],
+          "typical_auc": 0.8427463503649635,
+          "typical_auc_by_assignment": [
+            0.8427463503649635
+          ]
+        },
+        "all_metadata": {
+          "fpr_at_90": 0.5255474452554745,
+          "fpr_at_90_by_assignment": [
+            0.5255474452554745
+          ],
+          "typical_auc": 0.8655793795620438,
+          "typical_auc_by_assignment": [
+            0.8655793795620438
+          ]
+        },
+        "duty_cnn_input": {
+          "fpr_at_90": 0.000875912408759124,
+          "fpr_at_90_by_assignment": [
+            0.000875912408759124
+          ],
+          "typical_auc": 0.9672673357664233,
+          "typical_auc_by_assignment": [
+            0.9672673357664233
+          ]
+        },
+        "duty_dmc": {
+          "fpr_at_90": 0.0,
+          "fpr_at_90_by_assignment": [
+            0.0
+          ],
+          "typical_auc": 0.965625,
+          "typical_auc_by_assignment": [
+            0.965625
+          ]
+        },
+        "duty_forest": {
+          "fpr_at_90": 0.0009854014598540146,
+          "fpr_at_90_by_assignment": [
+            0.0009854014598540146
+          ],
+          "typical_auc": 0.9727189781021898,
+          "typical_auc_by_assignment": [
+            0.9727189781021898
+          ]
+        },
+        "duty_native": {
+          "fpr_at_90": 0.0,
+          "fpr_at_90_by_assignment": [
+            0.0
+          ],
+          "typical_auc": 0.965647810218978,
+          "typical_auc_by_assignment": [
+            0.965647810218978
+          ]
+        },
+        "geometry_acquisition": {
+          "fpr_at_90": 0.16536496350364963,
+          "fpr_at_90_by_assignment": [
+            0.16536496350364963
+          ],
+          "typical_auc": 0.8730611313868614,
+          "typical_auc_by_assignment": [
+            0.8730611313868614
+          ]
+        },
+        "htru1": {
+          "fpr_at_90": 0.9653284671532846,
+          "fpr_at_90_by_assignment": [
+            0.9653284671532846
+          ],
+          "typical_auc": 0.5201186131386861,
+          "typical_auc_by_assignment": [
+            0.5201186131386861
+          ]
+        },
+        "period_dm": {
+          "fpr_at_90": 0.312043795620438,
+          "fpr_at_90_by_assignment": [
+            0.312043795620438
+          ],
+          "typical_auc": 0.7990191605839416,
+          "typical_auc_by_assignment": [
+            0.7990191605839416
+          ]
+        },
+        "sigma": {
+          "fpr_at_90": 0.9854014598540148,
+          "fpr_at_90_by_assignment": [
+            0.9854014598540148
+          ],
+          "typical_auc": 0.16380018248175182,
+          "typical_auc_by_assignment": [
+            0.16380018248175182
+          ]
+        },
+        "sigma_chi2": {
+          "fpr_at_90": 0.7536496350364963,
+          "fpr_at_90_by_assignment": [
+            0.7536496350364963
+          ],
+          "typical_auc": 0.5156934306569343,
+          "typical_auc_by_assignment": [
+            0.5156934306569343
+          ]
+        }
+      },
+      "sources": 40
+    },
+    "gbncc": {
+      "contrasts": {
+        "L1 - duty_cnn_input, typical AUC": {
+          "difference": -0.04208542713567842,
+          "high": 0.04759521847690386,
+          "level": 0.95,
+          "low": -0.1316853764921947
+        },
+        "L1 - duty_native, typical AUC": {
+          "difference": -0.1108040201005025,
+          "high": -0.028297822940464384,
+          "level": 0.95,
+          "low": -0.19161208885755476
+        },
+        "L2 - duty_cnn_input, typical AUC": {
+          "difference": -0.10644891122278066,
+          "high": -0.028850721360895802,
+          "level": 0.95,
+          "low": -0.1852013888888888
+        },
+        "L2 - duty_native, typical AUC": {
+          "difference": -0.17516750418760474,
+          "high": -0.10095042127766608,
+          "level": 0.95,
+          "low": -0.25030805326135624
+        }
+      },
+      "models": {
+        "L1": {
+          "fpr_at_90": 0.4924623115577889,
+          "fpr_at_90_by_assignment": [
+            0.4924623115577889
+          ],
+          "typical_auc": 0.7445561139028476,
+          "typical_auc_by_assignment": [
+            0.7445561139028476
+          ]
+        },
+        "L2": {
+          "fpr_at_90": 0.5804020100502512,
+          "fpr_at_90_by_assignment": [
+            0.5804020100502512
+          ],
+          "typical_auc": 0.6801926298157454,
+          "typical_auc_by_assignment": [
+            0.6801926298157454
+          ]
+        },
+        "all_metadata": {
+          "fpr_at_90": 0.0,
+          "fpr_at_90_by_assignment": [
+            0.0
+          ],
+          "typical_auc": 0.9416876046901173,
+          "typical_auc_by_assignment": [
+            0.9416876046901173
+          ]
+        },
+        "duty_cnn_input": {
+          "fpr_at_90": 0.4639698492462312,
+          "fpr_at_90_by_assignment": [
+            0.4639698492462312
+          ],
+          "typical_auc": 0.786641541038526,
+          "typical_auc_by_assignment": [
+            0.786641541038526
+          ]
+        },
+        "duty_dmc": {
+          "fpr_at_90": 0.35040201005025134,
+          "fpr_at_90_by_assignment": [
+            0.35040201005025134
+          ],
+          "typical_auc": 0.8680485762144053,
+          "typical_auc_by_assignment": [
+            0.8680485762144053
+          ]
+        },
+        "duty_forest": {
+          "fpr_at_90": 0.5122110552763819,
+          "fpr_at_90_by_assignment": [
+            0.5122110552763819
+          ],
+          "typical_auc": 0.7863484087102177,
+          "typical_auc_by_assignment": [
+            0.7863484087102177
+          ]
+        },
+        "duty_native": {
+          "fpr_at_90": 0.32618090452261306,
+          "fpr_at_90_by_assignment": [
+            0.32618090452261306
+          ],
+          "typical_auc": 0.8553601340033501,
+          "typical_auc_by_assignment": [
+            0.8553601340033501
+          ]
+        },
+        "geometry_acquisition": {
+          "fpr_at_90": 0.0,
+          "fpr_at_90_by_assignment": [
+            0.0
+          ],
+          "typical_auc": 1.0,
+          "typical_auc_by_assignment": [
+            1.0
+          ]
+        },
+        "htru1": {
+          "fpr_at_90": 0.949748743718593,
+          "fpr_at_90_by_assignment": [
+            0.949748743718593
+          ],
+          "typical_auc": 0.363107202680067,
+          "typical_auc_by_assignment": [
+            0.363107202680067
+          ]
+        },
+        "period_dm": {
+          "fpr_at_90": 0.0,
+          "fpr_at_90_by_assignment": [
+            0.0
+          ],
+          "typical_auc": 0.9916666666666667,
+          "typical_auc_by_assignment": [
+            0.9916666666666667
+          ]
+        },
+        "sigma": {
+          "fpr_at_90": 0.994974874371859,
+          "fpr_at_90_by_assignment": [
+            0.994974874371859
+          ],
+          "typical_auc": 0.2704983249581239,
+          "typical_auc_by_assignment": [
+            0.2704983249581239
+          ]
+        },
+        "sigma_chi2": {
+          "fpr_at_90": 0.9020100502512562,
+          "fpr_at_90_by_assignment": [
+            0.9020100502512562
+          ],
+          "typical_auc": 0.4950167504187605,
+          "typical_auc_by_assignment": [
+            0.4950167504187605
+          ]
+        }
+      },
+      "sources": 60
+    }
+  },
+  "interval_level": 0.95,
+  "interventions": {
+    "E1_a0_f0_s42": {
+      "blank_filled": {
+        "auc_drop_ao327": 0.009573195053849237,
+        "auc_drop_gbncc": 0.1936708860759494,
+        "class_changed": 0.10919540229885058
+      },
+      "fvp_removed": {
+        "auc_drop_ao327": 0.0581372157957718,
+        "auc_drop_gbncc": 0.31139240506329113,
+        "class_changed": 0.5
+      },
+      "phase_rolled": {
+        "auc_drop_ao327": 0.0028919026725169328,
+        "auc_drop_gbncc": 0.004430379746835467,
+        "class_changed": 0.04980842911877394
+      },
+      "rebinned": {
+        "auc_drop_ao327": -0.0007977662544874642,
+        "auc_drop_gbncc": 0.0018987341772152,
+        "class_changed": 0.03639846743295019
+      },
+      "row_shuffled": {
+        "auc_drop_ao327": 0.024331870761866714,
+        "auc_drop_gbncc": 0.016244725738396637,
+        "class_changed": 0.10344827586206896
+      },
+      "tvp_removed": {
+        "auc_drop_ao327": 0.01226565616274422,
+        "auc_drop_gbncc": 0.1784810126582279,
+        "class_changed": 0.47126436781609193
+      },
+      "whole_shuffled": {
+        "auc_drop_ao327": 0.19704826485839644,
+        "auc_drop_gbncc": 0.3255274261603376,
+        "class_changed": 0.4425287356321839
+      }
+    },
+    "E1_a0_f1_s43": {
+      "blank_filled": {
+        "auc_drop_ao327": 0.022290209790209792,
+        "auc_drop_gbncc": 0.07019230769230766,
+        "class_changed": 0.12617702448210924
+      },
+      "fvp_removed": {
+        "auc_drop_ao327": 0.08767482517482517,
+        "auc_drop_gbncc": 0.14923076923076917,
+        "class_changed": 0.4444444444444444
+      },
+      "phase_rolled": {
+        "auc_drop_ao327": 0.00996503496503498,
+        "auc_drop_gbncc": -0.029230769230769282,
+        "class_changed": 0.07156308851224105
+      },
+      "rebinned": {
+        "auc_drop_ao327": -0.0021853146853146876,
+        "auc_drop_gbncc": 0.0005769230769230305,
+        "class_changed": 0.02448210922787194
+      },
+      "row_shuffled": {
+        "auc_drop_ao327": 0.0021853146853146876,
+        "auc_drop_gbncc": 0.10807692307692307,
+        "class_changed": 0.2033898305084746
+      },
+      "tvp_removed": {
+        "auc_drop_ao327": 0.014860139860139787,
+        "auc_drop_gbncc": 0.20480769230769225,
+        "class_changed": 0.4726930320150659
+      },
+      "whole_shuffled": {
+        "auc_drop_ao327": 0.10708041958041958,
+        "auc_drop_gbncc": 0.15749999999999997,
+        "class_changed": 0.4218455743879473
+      }
+    },
+    "E1_a0_f2_s44": {
+      "blank_filled": {
+        "auc_drop_ao327": 0.02452364149611852,
+        "auc_drop_gbncc": 0.2276371308016878,
+        "class_changed": 0.15245009074410162
+      },
+      "fvp_removed": {
+        "auc_drop_ao327": 0.13188073394495414,
+        "auc_drop_gbncc": 0.3006329113924051,
+        "class_changed": 0.6116152450090744
+      },
+      "phase_rolled": {
+        "auc_drop_ao327": -8.821453775587074e-05,
+        "auc_drop_gbncc": 0.015400843881856585,
+        "class_changed": 0.029038112522686024
+      },
+      "rebinned": {
+        "auc_drop_ao327": 0.001587861679604785,
+        "auc_drop_gbncc": -0.011603375527426185,
+        "class_changed": 0.036297640653357534
+      },
+      "row_shuffled": {
+        "auc_drop_ao327": 0.0006175017642907621,
+        "auc_drop_gbncc": 0.20780590717299574,
+        "class_changed": 0.13430127041742287
+      },
+      "tvp_removed": {
+        "auc_drop_ao327": 0.09915314043754409,
+        "auc_drop_gbncc": 0.3080168776371308,
+        "class_changed": 0.6352087114337568
+      },
+      "whole_shuffled": {
+        "auc_drop_ao327": 0.2109209597741708,
+        "auc_drop_gbncc": 0.20928270042194097,
+        "class_changed": 0.39201451905626133
+      }
+    },
+    "E1_a0_f3_s45": {
+      "blank_filled": {
+        "auc_drop_ao327": 0.021940559440559393,
+        "auc_drop_gbncc": 0.18836206896551733,
+        "class_changed": 0.10795454545454546
+      },
+      "fvp_removed": {
+        "auc_drop_ao327": 0.1647727272727273,
+        "auc_drop_gbncc": 0.2879310344827587,
+        "class_changed": 0.5113636363636364
+      },
+      "phase_rolled": {
+        "auc_drop_ao327": 0.002272727272727204,
+        "auc_drop_gbncc": -0.0023706896551723977,
+        "class_changed": 0.06439393939393939
+      },
+      "rebinned": {
+        "auc_drop_ao327": 0.002272727272727204,
+        "auc_drop_gbncc": -0.019827586206896508,
+        "class_changed": 0.043560606060606064
+      },
+      "row_shuffled": {
+        "auc_drop_ao327": 0.015472027972027957,
+        "auc_drop_gbncc": 0.04288793103448285,
+        "class_changed": 0.17045454545454544
+      },
+      "tvp_removed": {
+        "auc_drop_ao327": 0.0156468531468531,
+        "auc_drop_gbncc": 0.3782327586206897,
+        "class_changed": 0.5170454545454546
+      },
+      "whole_shuffled": {
+        "auc_drop_ao327": 0.25882867132867127,
+        "auc_drop_gbncc": 0.1202586206896552,
+        "class_changed": 0.49242424242424243
+      }
+    },
+    "E1_a0_f4_s46": {
+      "blank_filled": {
+        "auc_drop_ao327": 0.10312500000000002,
+        "auc_drop_gbncc": 0.20679824561403515,
+        "class_changed": 0.1449511400651466
+      },
+      "fvp_removed": {
+        "auc_drop_ao327": 0.16657196969696964,
+        "auc_drop_gbncc": 0.3907894736842106,
+        "class_changed": 0.4006514657980456
+      },
+      "phase_rolled": {
+        "auc_drop_ao327": 0.02149621212121211,
+        "auc_drop_gbncc": -0.010526315789473606,
+        "class_changed": 0.09120521172638436
+      },
+      "rebinned": {
+        "auc_drop_ao327": 0.004734848484848508,
+        "auc_drop_gbncc": -0.02149122807017545,
+        "class_changed": 0.07166123778501629
+      },
+      "row_shuffled": {
+        "auc_drop_ao327": 0.04441287878787881,
+        "auc_drop_gbncc": -0.02149122807017545,
+        "class_changed": 0.18241042345276873
+      },
+      "tvp_removed": {
+        "auc_drop_ao327": 0.00672348484848484,
+        "auc_drop_gbncc": 0.28991228070175445,
+        "class_changed": 0.5716612377850163
+      },
+      "whole_shuffled": {
+        "auc_drop_ao327": 0.15170454545454548,
+        "auc_drop_gbncc": 0.009210526315789558,
+        "class_changed": 0.3990228013029316
+      }
+    },
+    "E2_a0_f0_s42": {
+      "blank_filled": {
+        "auc_drop_ao327": 0.007080175508575981,
+        "auc_drop_gbncc": 0.15548523206751064,
+        "class_changed": 0.09961685823754789
+      },
+      "fvp_removed": {
+        "auc_drop_ao327": 0.06940566414040683,
+        "auc_drop_gbncc": 0.3417721518987342,
+        "class_changed": 0.4846743295019157
+      },
+      "phase_rolled": {
+        "auc_drop_ao327": 0.0015955325089748174,
+        "auc_drop_gbncc": -0.0023206751054851704,
+        "class_changed": 0.05555555555555555
+      },
+      "rebinned": {
+        "auc_drop_ao327": 0.0005983246908655149,
+        "auc_drop_gbncc": 0.0021097046413502962,
+        "class_changed": 0.032567049808429116
+      },
+      "row_shuffled": {
+        "auc_drop_ao327": 0.017949740725967334,
+        "auc_drop_gbncc": 0.009282700421941015,
+        "class_changed": 0.09386973180076628
+      },
+      "tvp_removed": {
+        "auc_drop_ao327": -0.0005983246908656259,
+        "auc_drop_gbncc": 0.13206751054852328,
+        "class_changed": 0.4444444444444444
+      },
+      "whole_shuffled": {
+        "auc_drop_ao327": 0.11348224970083765,
+        "auc_drop_gbncc": 0.28691983122362874,
+        "class_changed": 0.41762452107279696
+      }
+    },
+    "E2_a0_f1_s43": {
+      "blank_filled": {
+        "auc_drop_ao327": 0.012237762237762295,
+        "auc_drop_gbncc": 0.12096153846153845,
+        "class_changed": 0.12994350282485875
+      },
+      "fvp_removed": {
+        "auc_drop_ao327": 0.02963286713286717,
+        "auc_drop_gbncc": 0.12730769230769223,
+        "class_changed": 0.512241054613936
+      },
+      "phase_rolled": {
+        "auc_drop_ao327": 0.0007867132867133142,
+        "auc_drop_gbncc": -0.013076923076923097,
+        "class_changed": 0.07909604519774012
+      },
+      "rebinned": {
+        "auc_drop_ao327": -0.002972027972027891,
+        "auc_drop_gbncc": 0.015192307692307616,
+        "class_changed": 0.035781544256120526
+      },
+      "row_shuffled": {
+        "auc_drop_ao327": -0.0009615384615384581,
+        "auc_drop_gbncc": 0.09326923076923077,
+        "class_changed": 0.1337099811676083
+      },
+      "tvp_removed": {
+        "auc_drop_ao327": 0.01057692307692315,
+        "auc_drop_gbncc": 0.0444230769230769,
+        "class_changed": 0.6704331450094162
+      },
+      "whole_shuffled": {
+        "auc_drop_ao327": 0.03181818181818186,
+        "auc_drop_gbncc": 0.1648076923076922,
+        "class_changed": 0.423728813559322
+      }
+    },
+    "E2_a0_f2_s44": {
+      "blank_filled": {
+        "auc_drop_ao327": 0.007498235709244794,
+        "auc_drop_gbncc": 0.1430379746835444,
+        "class_changed": 0.12522686025408347
+      },
+      "fvp_removed": {
+        "auc_drop_ao327": 0.038637967537050066,
+        "auc_drop_gbncc": 0.10780590717299587,
+        "class_changed": 0.5843920145190563
+      },
+      "phase_rolled": {
+        "auc_drop_ao327": -0.001323218066337395,
+        "auc_drop_gbncc": -0.007594936708860689,
+        "class_changed": 0.034482758620689655
+      },
+      "rebinned": {
+        "auc_drop_ao327": 0.0005292872265348914,
+        "auc_drop_gbncc": 0.004852320675105548,
+        "class_changed": 0.030852994555353903
+      },
+      "row_shuffled": {
+        "auc_drop_ao327": 0.000970359915314023,
+        "auc_drop_gbncc": 0.050421940928270126,
+        "class_changed": 0.10344827586206896
+      },
+      "tvp_removed": {
+        "auc_drop_ao327": 0.000970359915314023,
+        "auc_drop_gbncc": 0.25464135021097056,
+        "class_changed": 0.5825771324863884
+      },
+      "whole_shuffled": {
+        "auc_drop_ao327": 0.3532110091743119,
+        "auc_drop_gbncc": 0.15168776371308024,
+        "class_changed": 0.6061705989110708
+      }
+    },
+    "E2_a0_f3_s45": {
+      "blank_filled": {
+        "auc_drop_ao327": 0.034877622377622375,
+        "auc_drop_gbncc": 0.15280172413793103,
+        "class_changed": 0.125
+      },
+      "fvp_removed": {
+        "auc_drop_ao327": 0.06215034965034971,
+        "auc_drop_gbncc": 0.153448275862069,
+        "class_changed": 0.634469696969697
+      },
+      "phase_rolled": {
+        "auc_drop_ao327": 0.00034965034965039887,
+        "auc_drop_gbncc": -0.02737068965517242,
+        "class_changed": 0.07196969696969698
+      },
+      "rebinned": {
+        "auc_drop_ao327": 0.00017482517482525495,
+        "auc_drop_gbncc": 0.005603448275862122,
+        "class_changed": 0.03977272727272727
+      },
+      "row_shuffled": {
+        "auc_drop_ao327": 0.0027097902097902304,
+        "auc_drop_gbncc": -0.02133620689655169,
+        "class_changed": 0.10984848484848485
+      },
+      "tvp_removed": {
+        "auc_drop_ao327": 0.016520979020979043,
+        "auc_drop_gbncc": 0.3868534482758621,
+        "class_changed": 0.5814393939393939
+      },
+      "whole_shuffled": {
+        "auc_drop_ao327": 0.2558566433566434,
+        "auc_drop_gbncc": -0.04331896551724135,
+        "class_changed": 0.5075757575757576
+      }
+    },
+    "E2_a0_f4_s46": {
+      "blank_filled": {
+        "auc_drop_ao327": 0.1166666666666667,
+        "auc_drop_gbncc": 0.09013157894736845,
+        "class_changed": 0.10586319218241043
+      },
+      "fvp_removed": {
+        "auc_drop_ao327": 0.011458333333333348,
+        "auc_drop_gbncc": 0.26315789473684215,
+        "class_changed": 0.39087947882736157
+      },
+      "phase_rolled": {
+        "auc_drop_ao327": 0.00823863636363642,
+        "auc_drop_gbncc": 0.0010964912280702066,
+        "class_changed": 0.08631921824104234
+      },
+      "rebinned": {
+        "auc_drop_ao327": 0.002083333333333326,
+        "auc_drop_gbncc": -0.003728070175438525,
+        "class_changed": 0.04723127035830619
+      },
+      "row_shuffled": {
+        "auc_drop_ao327": 0.03380681818181819,
+        "auc_drop_gbncc": 0.050657894736842124,
+        "class_changed": 0.21172638436482086
+      },
+      "tvp_removed": {
+        "auc_drop_ao327": 0.040056818181818166,
+        "auc_drop_gbncc": 0.09035087719298251,
+        "class_changed": 0.5179153094462541
+      },
+      "whole_shuffled": {
+        "auc_drop_ao327": 0.19990530303030307,
+        "auc_drop_gbncc": -0.005043859649122795,
+        "class_changed": 0.4739413680781759
+      }
+    },
+    "E3_a0_f0_s42": {
+      "blank_filled": {
+        "auc_drop_ao327": 0.0023932987634622815,
+        "auc_drop_gbncc": 0.1240506329113924,
+        "class_changed": 0.11494252873563218
+      },
+      "fvp_removed": {
+        "auc_drop_ao327": 0.09672915835660145,
+        "auc_drop_gbncc": 0.29198312236286916,
+        "class_changed": 0.5306513409961686
+      },
+      "phase_rolled": {
+        "auc_drop_ao327": 0.025927403270841642,
+        "auc_drop_gbncc": -0.013502109704641385,
+        "class_changed": 0.09386973180076628
+      },
+      "rebinned": {
+        "auc_drop_ao327": -0.0005983246908656259,
+        "auc_drop_gbncc": -0.010337552742616052,
+        "class_changed": 0.05555555555555555
+      },
+      "row_shuffled": {
+        "auc_drop_ao327": 0.06232548863183085,
+        "auc_drop_gbncc": -0.026793248945147674,
+        "class_changed": 0.13218390804597702
+      },
+      "tvp_removed": {
+        "auc_drop_ao327": 0.0063821300358994915,
+        "auc_drop_gbncc": 0.24113924050632907,
+        "class_changed": 0.4942528735632184
+      },
+      "whole_shuffled": {
+        "auc_drop_ao327": 0.08915037893897082,
+        "auc_drop_gbncc": 0.18628691983122359,
+        "class_changed": 0.6130268199233716
+      }
+    },
+    "E3_a0_f1_s43": {
+      "blank_filled": {
+        "auc_drop_ao327": 0.0028846153846153744,
+        "auc_drop_gbncc": 0.09634615384615386,
+        "class_changed": 0.10922787193973635
+      },
+      "fvp_removed": {
+        "auc_drop_ao327": 0.16984265734265735,
+        "auc_drop_gbncc": 0.06038461538461537,
+        "class_changed": 0.4331450094161959
+      },
+      "phase_rolled": {
+        "auc_drop_ao327": 0.02482517482517488,
+        "auc_drop_gbncc": -0.05653846153846154,
+        "class_changed": 0.12052730696798493
+      },
+      "rebinned": {
+        "auc_drop_ao327": -0.004895104895104918,
+        "auc_drop_gbncc": -0.015769230769230758,
+        "class_changed": 0.04519774011299435
+      },
+      "row_shuffled": {
+        "auc_drop_ao327": 0.052709790209790164,
+        "auc_drop_gbncc": -0.010000000000000009,
+        "class_changed": 0.21468926553672316
+      },
+      "tvp_removed": {
+        "auc_drop_ao327": -0.0017482517482517723,
+        "auc_drop_gbncc": 0.23788461538461536,
+        "class_changed": 0.4934086629001883
+      },
+      "whole_shuffled": {
+        "auc_drop_ao327": 0.059615384615384626,
+        "auc_drop_gbncc": 0.08000000000000007,
+        "class_changed": 0.5612052730696798
+      }
+    },
+    "E3_a0_f2_s44": {
+      "blank_filled": {
+        "auc_drop_ao327": 0.01217360621030339,
+        "auc_drop_gbncc": 0.18206751054852321,
+        "class_changed": 0.17967332123411978
+      },
+      "fvp_removed": {
+        "auc_drop_ao327": 0.1560515172900494,
+        "auc_drop_gbncc": 0.04303797468354431,
+        "class_changed": 0.5716878402903811
+      },
+      "phase_rolled": {
+        "auc_drop_ao327": -0.01852505292872264,
+        "auc_drop_gbncc": -0.015400843881856474,
+        "class_changed": 0.12159709618874773
+      },
+      "rebinned": {
+        "auc_drop_ao327": 0.03696189131968941,
+        "auc_drop_gbncc": -0.05548523206751055,
+        "class_changed": 0.07259528130671507
+      },
+      "row_shuffled": {
+        "auc_drop_ao327": -0.04825335215243476,
+        "auc_drop_gbncc": 0.07974683544303807,
+        "class_changed": 0.20689655172413793
+      },
+      "tvp_removed": {
+        "auc_drop_ao327": 0.029287226534932875,
+        "auc_drop_gbncc": 0.12637130801687768,
+        "class_changed": 0.6134301270417423
+      },
+      "whole_shuffled": {
+        "auc_drop_ao327": 0.09906492589978821,
+        "auc_drop_gbncc": 0.008860759493670933,
+        "class_changed": 0.5970961887477314
+      }
+    },
+    "E3_a0_f3_s45": {
+      "blank_filled": {
+        "auc_drop_ao327": 0.003409090909090917,
+        "auc_drop_gbncc": 0.18211206896551724,
+        "class_changed": 0.06628787878787878
+      },
+      "fvp_removed": {
+        "auc_drop_ao327": 0.20987762237762242,
+        "auc_drop_gbncc": 0.08362068965517233,
+        "class_changed": 0.6382575757575758
+      },
+      "phase_rolled": {
+        "auc_drop_ao327": 0.010402097902097895,
+        "auc_drop_gbncc": -0.04116379310344831,
+        "class_changed": 0.07196969696969698
+      },
+      "rebinned": {
+        "auc_drop_ao327": 0.005244755244755317,
+        "auc_drop_gbncc": -0.04375000000000007,
+        "class_changed": 0.04734848484848485
+      },
+      "row_shuffled": {
+        "auc_drop_ao327": 0.027972027972028024,
+        "auc_drop_gbncc": -0.022198275862069017,
+        "class_changed": 0.13257575757575757
+      },
+      "tvp_removed": {
+        "auc_drop_ao327": 0.0030594405594406293,
+        "auc_drop_gbncc": 0.4133620689655172,
+        "class_changed": 0.4962121212121212
+      },
+      "whole_shuffled": {
+        "auc_drop_ao327": 0.2708041958041958,
+        "auc_drop_gbncc": 0.04870689655172411,
+        "class_changed": 0.6534090909090909
+      }
+    },
+    "E3_a0_f4_s46": {
+      "blank_filled": {
+        "auc_drop_ao327": 0.015340909090909127,
+        "auc_drop_gbncc": 0.12521929824561406,
+        "class_changed": 0.10912052117263844
+      },
+      "fvp_removed": {
+        "auc_drop_ao327": 0.17840909090909096,
+        "auc_drop_gbncc": 0.14802631578947367,
+        "class_changed": 0.44625407166123776
+      },
+      "phase_rolled": {
+        "auc_drop_ao327": 0.038068181818181834,
+        "auc_drop_gbncc": -0.007456140350877161,
+        "class_changed": 0.10586319218241043
+      },
+      "rebinned": {
+        "auc_drop_ao327": -0.0070075757575757125,
+        "auc_drop_gbncc": -0.026096491228070118,
+        "class_changed": 0.08143322475570032
+      },
+      "row_shuffled": {
+        "auc_drop_ao327": 0.04488636363636367,
+        "auc_drop_gbncc": -0.08881578947368418,
+        "class_changed": 0.18566775244299674
+      },
+      "tvp_removed": {
+        "auc_drop_ao327": 0.0005681818181818565,
+        "auc_drop_gbncc": 0.35460526315789476,
+        "class_changed": 0.5944625407166124
+      },
+      "whole_shuffled": {
+        "auc_drop_ao327": 0.02821969696969695,
+        "auc_drop_gbncc": -0.08289473684210524,
+        "class_changed": 0.6123778501628665
+      }
+    }
+  },
+  "note": "Pilot evidence from one seed and one assignment. This is not a final verdict.",
+  "pilot_decision": {
+    "action": "Run the fixed extension; hold preprocessing.",
+    "allowance": 0.04,
+    "outcome": "provisional_negative",
+    "per_arm": {
+      "E1": "provisional_negative",
+      "E2": "provisional_negative"
+    }
+  },
+  "populations": {
+    "AO327 RFI": {
+      "component_resampling": {
+        "E1 - C1, typical AUC": {
+          "difference": 0.005257212374000675,
+          "high": 0.013857420098988188,
+          "level": 0.95,
+          "low": -0.0011317108516744135
+        },
+        "E2 - C1, typical AUC": {
+          "difference": -0.01012339242266258,
+          "high": 0.004846828535852961,
+          "level": 0.95,
+          "low": -0.032316541962019774
+        },
+        "E3 - C1, typical AUC": {
+          "difference": -0.038494960027806835,
+          "high": 0.0012524306378538762,
+          "level": 0.95,
+          "low": -0.09556557093221711
+        }
+      },
+      "contrasts": {
+        "E1 - C1, FPR at 90": {
+          "difference": -0.016423357664233574,
+          "high": 0.011023801652892538,
+          "level": 0.95,
+          "low": -0.04509747066958111
+        },
+        "E1 - C1, typical AUC": {
+          "difference": 0.005257212374000675,
+          "high": 0.014561699595466876,
+          "level": 0.95,
+          "low": -0.0012903076957318164
+        },
+        "E1 - all_metadata, FPR at 90": {
+          "difference": 0.0072992700729927,
+          "high": 0.06507639620653316,
+          "level": 0.95,
+          "low": -0.00207193844442384
+        },
+        "E1 - all_metadata, typical AUC": {
+          "difference": 0.006799617657281876,
+          "high": 0.03233791993160302,
+          "level": 0.95,
+          "low": -0.010409277548611134
+        },
+        "E1 - duty_cnn_input, FPR at 90": {
+          "difference": 0.006459854014598539,
+          "high": 0.02978227109395689,
+          "level": 0.95,
+          "low": -0.2645565533402709
+        },
+        "E1 - duty_cnn_input, typical AUC": {
+          "difference": 0.017227146332985832,
+          "high": 0.06157102016137807,
+          "level": 0.95,
+          "low": -0.015924088867661
+        },
+        "E1 - duty_dmc, FPR at 90": {
+          "difference": 0.0072992700729927,
+          "high": 0.03160629187717222,
+          "level": 0.95,
+          "low": -0.1992373776954498
+        },
+        "E1 - duty_dmc, typical AUC": {
+          "difference": 0.009232707681612773,
+          "high": 0.03856753900642573,
+          "level": 0.95,
+          "low": -0.012234578641356178
+        },
+        "E1 - duty_native, FPR at 90": {
+          "difference": 0.0072992700729927,
+          "high": 0.06515753284072236,
+          "level": 0.95,
+          "low": -0.49742983812181074
+        },
+        "E1 - duty_native, typical AUC": {
+          "difference": 0.018769551616266922,
+          "high": 0.05898743963922714,
+          "level": 0.95,
+          "low": -0.007232037775616951
+        },
+        "E1 - period_dm, FPR at 90": {
+          "difference": 0.0,
+          "high": 0.05747679045092834,
+          "level": 0.95,
+          "low": -0.08809679455848803
+        },
+        "E1 - period_dm, typical AUC": {
+          "difference": 0.0016510253736531366,
+          "high": 0.029404782567370325,
+          "level": 0.95,
+          "low": -0.021841035654749257
+        },
+        "E2 - C1, FPR at 90": {
+          "difference": -0.005474452554744519,
+          "high": 0.1036765550239234,
+          "level": 0.95,
+          "low": -0.028950428396572827
+        },
+        "E2 - C1, typical AUC": {
+          "difference": -0.01012339242266258,
+          "high": 0.005751385756924364,
+          "level": 0.95,
+          "low": -0.03151443302381783
+        },
+        "E2 - all_metadata, FPR at 90": {
+          "difference": 0.018248175182481754,
+          "high": 0.17830149501661127,
+          "level": 0.95,
+          "low": 0.0
+        },
+        "E2 - all_metadata, typical AUC": {
+          "difference": -0.00858098713938138,
+          "high": 0.0028218035036217015,
+          "level": 0.95,
+          "low": -0.02524327717610649
+        },
+        "E2 - duty_cnn_input, FPR at 90": {
+          "difference": 0.017408759124087594,
+          "high": 0.12117989056087543,
+          "level": 0.95,
+          "low": -0.2085536707718211
+        },
+        "E2 - duty_cnn_input, typical AUC": {
+          "difference": 0.0018465415363225768,
+          "high": 0.054035992360343024,
+          "level": 0.95,
+          "low": -0.05146411018764487
+        },
+        "E2 - duty_dmc, FPR at 90": {
+          "difference": 0.018248175182481754,
+          "high": 0.12185864896524777,
+          "level": 0.95,
+          "low": -0.19417582131260194
+        },
+        "E2 - duty_dmc, typical AUC": {
+          "difference": -0.006147897115050482,
+          "high": 0.030156144484317176,
+          "level": 0.95,
+          "low": -0.04660438502768236
+        },
+        "E2 - duty_native, FPR at 90": {
+          "difference": 0.018248175182481754,
+          "high": 0.1724994076765123,
+          "level": 0.95,
+          "low": -0.44133698296836965
+        },
+        "E2 - duty_native, typical AUC": {
+          "difference": 0.0033889468196036665,
+          "high": 0.04872253083743,
+          "level": 0.95,
+          "low": -0.0315875008916246
+        },
+        "E2 - period_dm, FPR at 90": {
+          "difference": 0.010948905109489055,
+          "high": 0.1623746809398557,
+          "level": 0.95,
+          "low": -0.057029350277823604
+        },
+        "E2 - period_dm, typical AUC": {
+          "difference": -0.013729579423010119,
+          "high": 0.02380952380952373,
+          "level": 0.95,
+          "low": -0.060659723291203074
+        },
+        "E3 - C1, FPR at 90": {
+          "difference": 0.1277372262773723,
+          "high": 0.3310350198350531,
+          "level": 0.95,
+          "low": -0.009811348781937002
+        },
+        "E3 - C1, typical AUC": {
+          "difference": -0.038494960027806835,
+          "high": 0.00183465959328026,
+          "level": 0.95,
+          "low": -0.09974950799014824
+        },
+        "E3 - all_metadata, FPR at 90": {
+          "difference": 0.15145985401459858,
+          "high": 0.36957966568862805,
+          "level": 0.95,
+          "low": 0.015663761825641723
+        },
+        "E3 - all_metadata, typical AUC": {
+          "difference": -0.036952554744525634,
+          "high": 0.01565563871069928,
+          "level": 0.95,
+          "low": -0.10432060472030681
+        },
+        "E3 - duty_cnn_input, FPR at 90": {
+          "difference": 0.15062043795620442,
+          "high": 0.31732134021893743,
+          "level": 0.95,
+          "low": -0.14372942297695362
+        },
+        "E3 - duty_cnn_input, typical AUC": {
+          "difference": -0.026525026068821678,
+          "high": 0.029631480790749662,
+          "level": 0.95,
+          "low": -0.08491699106076867
+        },
+        "E3 - duty_dmc, FPR at 90": {
+          "difference": 0.15145985401459858,
+          "high": 0.31442163793810685,
+          "level": 0.95,
+          "low": -0.07722582155959719
+        },
+        "E3 - duty_dmc, typical AUC": {
+          "difference": -0.03451946472019474,
+          "high": 0.006023635282400549,
+          "level": 0.95,
+          "low": -0.08811409483890094
+        },
+        "E3 - duty_native, FPR at 90": {
+          "difference": 0.15145985401459858,
+          "high": 0.3281289457070707,
+          "level": 0.95,
+          "low": -0.13715855806399913
+        },
+        "E3 - duty_native, typical AUC": {
+          "difference": -0.024982620785540588,
+          "high": 0.027011568416788947,
+          "level": 0.95,
+          "low": -0.08079284785662552
+        },
+        "E3 - period_dm, FPR at 90": {
+          "difference": 0.14416058394160589,
+          "high": 0.36043105733545405,
+          "level": 0.95,
+          "low": 0.0
+        },
+        "E3 - period_dm, typical AUC": {
+          "difference": -0.04210114702815437,
+          "high": 0.01519835189257477,
+          "level": 0.95,
+          "low": -0.11418115358271447
+        }
+      },
+      "models": {
+        "C1": {
+          "fpr_at_90": 0.023722627737226273,
+          "fpr_at_90_by_assignment": [
+            0.023722627737226273
+          ],
+          "fpr_at_90_ci": [
+            0.004649300196902776,
+            0.10164844078591577
+          ],
+          "one_detection_random_auc": 0.9773309871393812,
+          "one_detection_strongest_auc": 0.9799270072992701,
+          "typical_auc": 0.9807959680222454,
+          "typical_auc_by_assignment": [
+            0.9807959680222454
+          ],
+          "typical_auc_ci": [
+            0.9526828722818607,
+            0.9969623078969904
+          ]
+        },
+        "E1": {
+          "fpr_at_90": 0.0072992700729927,
+          "fpr_at_90_by_assignment": [
+            0.0072992700729927
+          ],
+          "fpr_at_90_ci": [
+            0.0,
+            0.07100591715976332
+          ],
+          "one_detection_random_auc": 0.9838568821689261,
+          "one_detection_strongest_auc": 0.9863573166492875,
+          "typical_auc": 0.9860531803962461,
+          "typical_auc_by_assignment": [
+            0.9860531803962461
+          ],
+          "typical_auc_ci": [
+            0.9640616114453324,
+            0.9983471933779985
+          ]
+        },
+        "E2": {
+          "fpr_at_90": 0.018248175182481754,
+          "fpr_at_90_by_assignment": [
+            0.018248175182481754
+          ],
+          "fpr_at_90_ci": [
+            0.0,
+            0.18092275626855273
+          ],
+          "one_detection_random_auc": 0.9685770768161279,
+          "one_detection_strongest_auc": 0.970107751129649,
+          "typical_auc": 0.9706725755995829,
+          "typical_auc_by_assignment": [
+            0.9706725755995829
+          ],
+          "typical_auc_ci": [
+            0.9242792900447757,
+            0.9971027872271883
+          ]
+        },
+        "E3": {
+          "fpr_at_90": 0.15145985401459858,
+          "fpr_at_90_by_assignment": [
+            0.15145985401459858
+          ],
+          "fpr_at_90_ci": [
+            0.018175990675990687,
+            0.3702141673263404
+          ],
+          "one_detection_random_auc": 0.9308320298922489,
+          "one_detection_strongest_auc": 0.934610705596107,
+          "typical_auc": 0.9423010079944386,
+          "typical_auc_by_assignment": [
+            0.9423010079944386
+          ],
+          "typical_auc_ci": [
+            0.8758403471306241,
+            0.9848105266152896
+          ]
+        },
+        "all_metadata": {
+          "fpr_at_90": 0.0,
+          "fpr_at_90_by_assignment": [
+            0.0
+          ],
+          "fpr_at_90_ci": [
+            0.0,
+            0.0101306193676095
+          ],
+          "one_detection_random_auc": 0.9791727493917273,
+          "one_detection_strongest_auc": 0.9789494264859229,
+          "typical_auc": 0.9792535627389642,
+          "typical_auc_by_assignment": [
+            0.9792535627389642
+          ],
+          "typical_auc_ci": [
+            0.9365940066569004,
+            1.0
+          ]
+        },
+        "duty_cnn_input": {
+          "fpr_at_90": 0.0008394160583941605,
+          "fpr_at_90_by_assignment": [
+            0.0008394160583941605
+          ],
+          "fpr_at_90_ci": [
+            0.0,
+            0.30715264892721195
+          ],
+          "one_detection_random_auc": 0.9520135992353146,
+          "one_detection_strongest_auc": 0.9484271810914147,
+          "typical_auc": 0.9688260340632603,
+          "typical_auc_by_assignment": [
+            0.9688260340632603
+          ],
+          "typical_auc_ci": [
+            0.9238122481647476,
+            0.9977878513740298
+          ]
+        },
+        "duty_dmc": {
+          "fpr_at_90": 0.0,
+          "fpr_at_90_by_assignment": [
+            0.0
+          ],
+          "fpr_at_90_ci": [
+            0.0,
+            0.23339723109691124
+          ],
+          "one_detection_random_auc": 0.9663905543969413,
+          "one_detection_strongest_auc": 0.9650026068821689,
+          "typical_auc": 0.9768204727146333,
+          "typical_auc_by_assignment": [
+            0.9768204727146333
+          ],
+          "typical_auc_ci": [
+            0.9444739228509023,
+            0.999635554251997
+          ]
+        },
+        "duty_forest": {
+          "fpr_at_90": 0.001824817518248175,
+          "fpr_at_90_by_assignment": [
+            0.001824817518248175
+          ],
+          "fpr_at_90_ci": [
+            0.0,
+            0.22162940096779538
+          ],
+          "one_detection_random_auc": 0.9528597497393119,
+          "one_detection_strongest_auc": 0.9534454292665971,
+          "typical_auc": 0.9775808133472367,
+          "typical_auc_by_assignment": [
+            0.9775808133472367
+          ],
+          "typical_auc_ci": [
+            0.9465590995307976,
+            0.9974310953215402
+          ]
+        },
+        "duty_native": {
+          "fpr_at_90": 0.0,
+          "fpr_at_90_by_assignment": [
+            0.0
+          ],
+          "fpr_at_90_ci": [
+            0.0,
+            0.5390922091300584
+          ],
+          "one_detection_random_auc": 0.9628319429961766,
+          "one_detection_strongest_auc": 0.9638077858880778,
+          "typical_auc": 0.9672836287799792,
+          "typical_auc_by_assignment": [
+            0.9672836287799792
+          ],
+          "typical_auc_ci": [
+            0.9217418426974449,
+            0.9997858299476157
+          ]
+        },
+        "geometry_acquisition": {
+          "fpr_at_90": 0.08211678832116787,
+          "fpr_at_90_by_assignment": [
+            0.08211678832116787
+          ],
+          "fpr_at_90_ci": [
+            0.023416845957002923,
+            0.3807736789606519
+          ],
+          "one_detection_random_auc": 0.9445261991657978,
+          "one_detection_strongest_auc": 0.933133472367049,
+          "typical_auc": 0.941301703163017,
+          "typical_auc_by_assignment": [
+            0.941301703163017
+          ],
+          "typical_auc_ci": [
+            0.8847977748629062,
+            0.9764832951935314
+          ]
+        },
+        "htru1": {
+          "fpr_at_90": 0.9653284671532846,
+          "fpr_at_90_by_assignment": [
+            0.9653284671532846
+          ],
+          "fpr_at_90_ci": [
+            0.6434827804814381,
+            0.9880357142857144
+          ],
+          "one_detection_random_auc": 0.535759037191519,
+          "one_detection_strongest_auc": 0.6290406673618353,
+          "typical_auc": 0.5397984011122697,
+          "typical_auc_by_assignment": [
+            0.5397984011122697
+          ],
+          "typical_auc_ci": [
+            0.4028402605146792,
+            0.6849098023561401
+          ]
+        },
+        "period_dm": {
+          "fpr_at_90": 0.0072992700729927,
+          "fpr_at_90_by_assignment": [
+            0.0072992700729927
+          ],
+          "fpr_at_90_ci": [
+            0.0,
+            0.12166108108108088
+          ],
+          "one_detection_random_auc": 0.9843995481404241,
+          "one_detection_strongest_auc": 0.9840545707334029,
+          "typical_auc": 0.984402155022593,
+          "typical_auc_by_assignment": [
+            0.984402155022593
+          ],
+          "typical_auc_ci": [
+            0.9562854644326867,
+            0.9990366346168109
+          ]
+        },
+        "sigma": {
+          "fpr_at_90": 0.9854014598540148,
+          "fpr_at_90_by_assignment": [
+            0.9854014598540148
+          ],
+          "fpr_at_90_ci": [
+            0.9606486682716191,
+            0.9980009803921568
+          ],
+          "one_detection_random_auc": 0.18165754257907538,
+          "one_detection_strongest_auc": 0.33035714285714285,
+          "typical_auc": 0.1723800834202294,
+          "typical_auc_by_assignment": [
+            0.1723800834202294
+          ],
+          "typical_auc_ci": [
+            0.10744110702966887,
+            0.24311050537796813
+          ]
+        },
+        "sigma_chi2": {
+          "fpr_at_90": 0.15328467153284672,
+          "fpr_at_90_by_assignment": [
+            0.15328467153284672
+          ],
+          "fpr_at_90_ci": [
+            0.04588297391042076,
+            0.30465380014722104
+          ],
+          "one_detection_random_auc": 0.8107101581508516,
+          "one_detection_strongest_auc": 0.7537365311087939,
+          "typical_auc": 0.8300095585679528,
+          "typical_auc_by_assignment": [
+            0.8300095585679528
+          ],
+          "typical_auc_ci": [
+            0.7617033517288938,
+            0.8881073836409921
+          ]
+        }
+      },
+      "negative_units": 86,
+      "sources": 42
+    },
+    "AO327 RFI, fundamental": {
+      "contrasts": {
+        "E1 - C1, FPR at 90": {
+          "difference": -0.012773722627737228,
+          "high": 0.0055147058823529415,
+          "level": 0.95,
+          "low": -0.03784016775396085
+        },
+        "E1 - C1, typical AUC": {
+          "difference": 0.0033368091762252527,
+          "high": 0.01083787479151307,
+          "level": 0.95,
+          "low": -0.0009875416442237217
+        },
+        "E1 - all_metadata, FPR at 90": {
+          "difference": 0.005474452554744527,
+          "high": 0.017302038122287332,
+          "level": 0.95,
+          "low": -0.0030976897754438184
+        },
+        "E1 - all_metadata, typical AUC": {
+          "difference": -0.0023983315954118067,
+          "high": -7.652306261367745e-05,
+          "level": 0.95,
+          "low": -0.007166762715843933
+        },
+        "E1 - duty_cnn_input, FPR at 90": {
+          "difference": 0.005474452554744527,
+          "high": 0.01749271137026239,
+          "level": 0.95,
+          "low": -0.015808698415558133
+        },
+        "E1 - duty_cnn_input, typical AUC": {
+          "difference": 0.010662148070907262,
+          "high": 0.03830733924266533,
+          "level": 0.95,
+          "low": -0.005342859151111153
+        },
+        "E1 - duty_dmc, FPR at 90": {
+          "difference": 0.005474452554744527,
+          "high": 0.01756642371203571,
+          "level": 0.95,
+          "low": 0.0
+        },
+        "E1 - duty_dmc, typical AUC": {
+          "difference": -0.0018248175182481452,
+          "high": 0.0011289353963150862,
+          "level": 0.95,
+          "low": -0.006972167597456702
+        },
+        "E1 - duty_native, FPR at 90": {
+          "difference": 0.005474452554744527,
+          "high": 0.01799601807436461,
+          "level": 0.95,
+          "low": 0.0
+        },
+        "E1 - duty_native, typical AUC": {
+          "difference": -0.0027111574556829554,
+          "high": -0.0003593827643843306,
+          "level": 0.95,
+          "low": -0.0076112796813640835
+        },
+        "E1 - period_dm, FPR at 90": {
+          "difference": -0.005474452554744527,
+          "high": 0.008233024691358011,
+          "level": 0.95,
+          "low": -0.03464285714285709
+        },
+        "E1 - period_dm, typical AUC": {
+          "difference": 0.012669447340980189,
+          "high": 0.04829907220695633,
+          "level": 0.95,
+          "low": -0.0033091661391671952
+        },
+        "E2 - C1, FPR at 90": {
+          "difference": -0.0072992700729927005,
+          "high": 0.01676134287056857,
+          "level": 0.95,
+          "low": -0.034143117178612035
+        },
+        "E2 - C1, typical AUC": {
+          "difference": 0.00026068821689251287,
+          "high": 0.008788250801199255,
+          "level": 0.95,
+          "low": -0.007443830399740688
+        },
+        "E2 - all_metadata, FPR at 90": {
+          "difference": 0.010948905109489053,
+          "high": 0.03988667159398866,
+          "level": 0.95,
+          "low": -0.00235335935321996
+        },
+        "E2 - all_metadata, typical AUC": {
+          "difference": -0.005474452554744547,
+          "high": -0.0006968217231703241,
+          "level": 0.95,
+          "low": -0.015381096800451674
+        },
+        "E2 - duty_cnn_input, FPR at 90": {
+          "difference": 0.010948905109489053,
+          "high": 0.039824584625469575,
+          "level": 0.95,
+          "low": -0.01108546065522735
+        },
+        "E2 - duty_cnn_input, typical AUC": {
+          "difference": 0.007586027111574523,
+          "high": 0.03423250626295119,
+          "level": 0.95,
+          "low": -0.011073571210675887
+        },
+        "E2 - duty_dmc, FPR at 90": {
+          "difference": 0.010948905109489053,
+          "high": 0.039918550624519454,
+          "level": 0.95,
+          "low": 0.0
+        },
+        "E2 - duty_dmc, typical AUC": {
+          "difference": -0.004900938477580885,
+          "high": -0.00011617418706614136,
+          "level": 0.95,
+          "low": -0.01475578492043114
+        },
+        "E2 - duty_native, FPR at 90": {
+          "difference": 0.010948905109489053,
+          "high": 0.04020217184996188,
+          "level": 0.95,
+          "low": 0.0
+        },
+        "E2 - duty_native, typical AUC": {
+          "difference": -0.005787278415015695,
+          "high": -0.0009557911002238254,
+          "level": 0.95,
+          "low": -0.015736669454537437
+        },
+        "E2 - period_dm, FPR at 90": {
+          "difference": 0.0,
+          "high": 0.02883337952697704,
+          "level": 0.95,
+          "low": -0.035740546218487344
+        },
+        "E2 - period_dm, typical AUC": {
+          "difference": 0.009593326381647449,
+          "high": 0.04588116723309501,
+          "level": 0.95,
+          "low": -0.010126731418131599
+        },
+        "E3 - C1, FPR at 90": {
+          "difference": 0.10948905109489052,
+          "high": 0.2847894257661659,
+          "level": 0.95,
+          "low": -0.003738059701492525
+        },
+        "E3 - C1, typical AUC": {
+          "difference": -0.03388946819603755,
+          "high": -0.0026092935349322144,
+          "level": 0.95,
+          "low": -0.08166803613604011
+        },
+        "E3 - all_metadata, FPR at 90": {
+          "difference": 0.12773722627737227,
+          "high": 0.3055159224337305,
+          "level": 0.95,
+          "low": 0.009058096944095404
+        },
+        "E3 - all_metadata, typical AUC": {
+          "difference": -0.03962460896767461,
+          "high": -0.008024382830055209,
+          "level": 0.95,
+          "low": -0.08825578284713263
+        },
+        "E3 - duty_cnn_input, FPR at 90": {
+          "difference": 0.12773722627737227,
+          "high": 0.3045856898755909,
+          "level": 0.95,
+          "low": 0.007184456516419535
+        },
+        "E3 - duty_cnn_input, typical AUC": {
+          "difference": -0.026564129301355544,
+          "high": 0.016185826005720744,
+          "level": 0.95,
+          "low": -0.07693031036759848
+        },
+        "E3 - duty_dmc, FPR at 90": {
+          "difference": 0.12773722627737227,
+          "high": 0.3063751277394156,
+          "level": 0.95,
+          "low": 0.010760869565217405
+        },
+        "E3 - duty_dmc, typical AUC": {
+          "difference": -0.03905109489051095,
+          "high": -0.00794136120633851,
+          "level": 0.95,
+          "low": -0.08698353432282001
+        },
+        "E3 - duty_native, FPR at 90": {
+          "difference": 0.12773722627737227,
+          "high": 0.3063751277394156,
+          "level": 0.95,
+          "low": 0.010781360149284679
+        },
+        "E3 - duty_native, typical AUC": {
+          "difference": -0.03993743482794576,
+          "high": -0.008373257223681544,
+          "level": 0.95,
+          "low": -0.0884936329903862
+        },
+        "E3 - period_dm, FPR at 90": {
+          "difference": 0.11678832116788322,
+          "high": 0.2989316847536024,
+          "level": 0.95,
+          "low": -0.02332607737242355
+        },
+        "E3 - period_dm, typical AUC": {
+          "difference": -0.024556830031282617,
+          "high": 0.03125431263269637,
+          "level": 0.95,
+          "low": -0.08012151310228231
+        }
+      },
+      "models": {
+        "C1": {
+          "fpr_at_90": 0.018248175182481754,
+          "fpr_at_90_by_assignment": [
+            0.018248175182481754
+          ],
+          "fpr_at_90_ci": [
+            0.0,
+            0.047750354274917306
+          ],
+          "one_detection_random_auc": 0.991568300312826,
+          "one_detection_strongest_auc": 0.9932221063607924,
+          "typical_auc": 0.9939520333680918,
+          "typical_auc_by_assignment": [
+            0.9939520333680918
+          ],
+          "typical_auc_ci": [
+            0.9846416560246347,
+            0.9986810888295821
+          ]
+        },
+        "E1": {
+          "fpr_at_90": 0.005474452554744527,
+          "fpr_at_90_by_assignment": [
+            0.005474452554744527
+          ],
+          "fpr_at_90_ci": [
+            0.0,
+            0.01799601807436461
+          ],
+          "one_detection_random_auc": 0.9969144942648593,
+          "one_detection_strongest_auc": 0.9975495307612096,
+          "typical_auc": 0.997288842544317,
+          "typical_auc_by_assignment": [
+            0.997288842544317
+          ],
+          "typical_auc_ci": [
+            0.9923887203186359,
+            0.9996406172356157
+          ]
+        },
+        "E2": {
+          "fpr_at_90": 0.010948905109489053,
+          "fpr_at_90_by_assignment": [
+            0.010948905109489053
+          ],
+          "fpr_at_90_ci": [
+            0.0,
+            0.04020217184996188
+          ],
+          "one_detection_random_auc": 0.9938498435870698,
+          "one_detection_strongest_auc": 0.9942648592283628,
+          "typical_auc": 0.9942127215849843,
+          "typical_auc_by_assignment": [
+            0.9942127215849843
+          ],
+          "typical_auc_ci": [
+            0.9842633305454626,
+            0.9990442088997762
+          ]
+        },
+        "E3": {
+          "fpr_at_90": 0.12773722627737227,
+          "fpr_at_90_by_assignment": [
+            0.12773722627737227
+          ],
+          "fpr_at_90_ci": [
+            0.010781360149284679,
+            0.3063751277394156
+          ],
+          "one_detection_random_auc": 0.9560928050052138,
+          "one_detection_strongest_auc": 0.9588112617309698,
+          "typical_auc": 0.9600625651720542,
+          "typical_auc_by_assignment": [
+            0.9600625651720542
+          ],
+          "typical_auc_ci": [
+            0.9115063670096138,
+            0.9916267427763185
+          ]
+        },
+        "all_metadata": {
+          "fpr_at_90": 0.0,
+          "fpr_at_90_by_assignment": [
+            0.0
+          ],
+          "fpr_at_90_ci": [
+            0.0,
+            0.008850738512896413
+          ],
+          "one_detection_random_auc": 0.9996100104275285,
+          "one_detection_strongest_auc": 0.9993222106360793,
+          "typical_auc": 0.9996871741397289,
+          "typical_auc_by_assignment": [
+            0.9996871741397289
+          ],
+          "typical_auc_ci": [
+            0.9987536467625939,
+            1.0
+          ]
+        },
+        "duty_cnn_input": {
+          "fpr_at_90": 0.0,
+          "fpr_at_90_by_assignment": [
+            0.0
+          ],
+          "fpr_at_90_ci": [
+            0.0,
+            0.021727454472571905
+          ],
+          "one_detection_random_auc": 0.9861449426485923,
+          "one_detection_strongest_auc": 0.9794577685088633,
+          "typical_auc": 0.9866266944734098,
+          "typical_auc_by_assignment": [
+            0.9866266944734098
+          ],
+          "typical_auc_ci": [
+            0.9584368170036893,
+            1.0
+          ]
+        },
+        "duty_dmc": {
+          "fpr_at_90": 0.0,
+          "fpr_at_90_by_assignment": [
+            0.0
+          ],
+          "fpr_at_90_ci": [
+            0.0,
+            0.0
+          ],
+          "one_detection_random_auc": 0.9984301355578729,
+          "one_detection_strongest_auc": 0.9991136600625652,
+          "typical_auc": 0.9991136600625652,
+          "typical_auc_by_assignment": [
+            0.9991136600625652
+          ],
+          "typical_auc_ci": [
+            0.9969125320204709,
+            1.0
+          ]
+        },
+        "duty_forest": {
+          "fpr_at_90": 0.001824817518248175,
+          "fpr_at_90_by_assignment": [
+            0.001824817518248175
+          ],
+          "fpr_at_90_ci": [
+            0.0,
+            0.022971215464853485
+          ],
+          "one_detection_random_auc": 0.984954118873827,
+          "one_detection_strongest_auc": 0.9808133472367049,
+          "typical_auc": 0.9825078206465068,
+          "typical_auc_by_assignment": [
+            0.9825078206465068
+          ],
+          "typical_auc_ci": [
+            0.9475422323817065,
+            1.0
+          ]
+        },
+        "duty_native": {
+          "fpr_at_90": 0.0,
+          "fpr_at_90_by_assignment": [
+            0.0
+          ],
+          "fpr_at_90_ci": [
+            0.0,
+            0.0
+          ],
+          "one_detection_random_auc": 1.0,
+          "one_detection_strongest_auc": 1.0,
+          "typical_auc": 1.0,
+          "typical_auc_by_assignment": [
+            1.0
+          ],
+          "typical_auc_ci": [
+            1.0,
+            1.0
+          ]
+        },
+        "geometry_acquisition": {
+          "fpr_at_90": 0.08941605839416057,
+          "fpr_at_90_by_assignment": [
+            0.08941605839416057
+          ],
+          "fpr_at_90_ci": [
+            0.04793108435305068,
+            0.5499238564814174
+          ],
+          "one_detection_random_auc": 0.9371053180396245,
+          "one_detection_strongest_auc": 0.9376694473409802,
+          "typical_auc": 0.9376694473409802,
+          "typical_auc_by_assignment": [
+            0.9376694473409802
+          ],
+          "typical_auc_ci": [
+            0.8736555036542846,
+            0.9760113911891163
+          ]
+        },
+        "htru1": {
+          "fpr_at_90": 0.9580291970802921,
+          "fpr_at_90_by_assignment": [
+            0.9580291970802921
+          ],
+          "fpr_at_90_ci": [
+            0.4847112780103423,
+            0.9868029799722643
+          ],
+          "one_detection_random_auc": 0.6200130344108447,
+          "one_detection_strongest_auc": 0.6766423357664234,
+          "typical_auc": 0.6371741397288843,
+          "typical_auc_by_assignment": [
+            0.6371741397288843
+          ],
+          "typical_auc_ci": [
+            0.499688682322244,
+            0.7883213165781018
+          ]
+        },
+        "period_dm": {
+          "fpr_at_90": 0.010948905109489053,
+          "fpr_at_90_by_assignment": [
+            0.010948905109489053
+          ],
+          "fpr_at_90_ci": [
+            0.001649827421367342,
+            0.04361463432725114
+          ],
+          "one_detection_random_auc": 0.984648592283629,
+          "one_detection_strongest_auc": 0.9846193952033369,
+          "typical_auc": 0.9846193952033369,
+          "typical_auc_by_assignment": [
+            0.9846193952033369
+          ],
+          "typical_auc_ci": [
+            0.9492607221628877,
+            0.9992686232129178
+          ]
+        },
+        "sigma": {
+          "fpr_at_90": 0.9835766423357666,
+          "fpr_at_90_by_assignment": [
+            0.9835766423357666
+          ],
+          "fpr_at_90_ci": [
+            0.9553394721916393,
+            0.9965641603040005
+          ],
+          "one_detection_random_auc": 0.24214807090719495,
+          "one_detection_strongest_auc": 0.35325860271115744,
+          "typical_auc": 0.27301876955161625,
+          "typical_auc_by_assignment": [
+            0.27301876955161625
+          ],
+          "typical_auc_ci": [
+            0.1790156545138506,
+            0.3752547674162257
+          ]
+        },
+        "sigma_chi2": {
+          "fpr_at_90": 0.2536496350364963,
+          "fpr_at_90_by_assignment": [
+            0.2536496350364963
+          ],
+          "fpr_at_90_ci": [
+            0.1454254173004173,
+            0.4407242717025326
+          ],
+          "one_detection_random_auc": 0.7593871220020856,
+          "one_detection_strongest_auc": 0.7394681960375391,
+          "typical_auc": 0.7739833159541188,
+          "typical_auc_by_assignment": [
+            0.7739833159541188
+          ],
+          "typical_auc_ci": [
+            0.6890686330119115,
+            0.8575525419405796
+          ]
+        }
+      },
+      "negative_units": 86,
+      "sources": 35
+    },
+    "AO327 RFI, uncertain excluded": {
+      "contrasts": {
+        "E1 - C1, FPR at 90": {
+          "difference": -0.012773722627737228,
+          "high": 0.003217420554410748,
+          "level": 0.95,
+          "low": -0.036654036924772655
+        },
+        "E1 - C1, typical AUC": {
+          "difference": 0.0033221036870672016,
+          "high": 0.011344758182993506,
+          "level": 0.95,
+          "low": -0.0012630636109203337
+        },
+        "E1 - all_metadata, FPR at 90": {
+          "difference": 0.005474452554744527,
+          "high": 0.017721518987341773,
+          "level": 0.95,
+          "low": -0.003571748591909881
+        },
+        "E1 - all_metadata, typical AUC": {
+          "difference": -0.002667040988208913,
+          "high": -0.00012769258182261818,
+          "level": 0.95,
+          "low": -0.007710006418518549
+        },
+        "E1 - duty_cnn_input, FPR at 90": {
+          "difference": 0.005474452554744527,
+          "high": 0.017725797116037927,
+          "level": 0.95,
+          "low": 0.0
+        },
+        "E1 - duty_cnn_input, typical AUC": {
+          "difference": -2.3395096387823777e-05,
+          "high": 0.004856656244159715,
+          "level": 0.95,
+          "low": -0.005578109833428934
+        },
+        "E1 - duty_dmc, FPR at 90": {
+          "difference": 0.005474452554744527,
+          "high": 0.01814162028447742,
+          "level": 0.95,
+          "low": 0.0
+        },
+        "E1 - duty_dmc, typical AUC": {
+          "difference": -0.0024330900243308973,
+          "high": 0.00042650797105136227,
+          "level": 0.95,
+          "low": -0.008017596352136377
+        },
+        "E1 - duty_native, FPR at 90": {
+          "difference": 0.005474452554744527,
+          "high": 0.01814162028447742,
+          "level": 0.95,
+          "low": 0.0
+        },
+        "E1 - duty_native, typical AUC": {
+          "difference": -0.0021991390604529926,
+          "high": 0.0004871834692110441,
+          "level": 0.95,
+          "low": -0.007341194740884303
+        },
+        "E1 - period_dm, FPR at 90": {
+          "difference": -0.001824817518248173,
+          "high": 0.01294603454797629,
+          "level": 0.95,
+          "low": -0.027920202799515022
+        },
+        "E1 - period_dm, typical AUC": {
+          "difference": 0.010481003181733062,
+          "high": 0.041304019023572065,
+          "level": 0.95,
+          "low": -0.004309086283293374
+        },
+        "E2 - C1, FPR at 90": {
+          "difference": -0.0072992700729927005,
+          "high": 0.02841754946798577,
+          "level": 0.95,
+          "low": -0.03211162899377721
+        },
+        "E2 - C1, typical AUC": {
+          "difference": 0.00046790192775603145,
+          "high": 0.008424185229782988,
+          "level": 0.95,
+          "low": -0.00649535412921005
+        },
+        "E2 - all_metadata, FPR at 90": {
+          "difference": 0.010948905109489053,
+          "high": 0.05747516072472237,
+          "level": 0.95,
+          "low": -0.002174510272336358
+        },
+        "E2 - all_metadata, typical AUC": {
+          "difference": -0.005521242747520083,
+          "high": -0.0008715750908846203,
+          "level": 0.95,
+          "low": -0.014465528952283918
+        },
+        "E2 - duty_cnn_input, FPR at 90": {
+          "difference": 0.010948905109489053,
+          "high": 0.05747516072472237,
+          "level": 0.95,
+          "low": 0.0
+        },
+        "E2 - duty_cnn_input, typical AUC": {
+          "difference": -0.002877596855698994,
+          "high": 0.0027142546225555363,
+          "level": 0.95,
+          "low": -0.012244007960359326
+        },
+        "E2 - duty_dmc, FPR at 90": {
+          "difference": 0.010948905109489053,
+          "high": 0.05747516072472237,
+          "level": 0.95,
+          "low": 0.0
+        },
+        "E2 - duty_dmc, typical AUC": {
+          "difference": -0.005287291783642067,
+          "high": -0.0006414806873952482,
+          "level": 0.95,
+          "low": -0.014542471380131929
+        },
+        "E2 - duty_native, FPR at 90": {
+          "difference": 0.010948905109489053,
+          "high": 0.05747516072472237,
+          "level": 0.95,
+          "low": 0.0
+        },
+        "E2 - duty_native, typical AUC": {
+          "difference": -0.005053340819764163,
+          "high": -0.00018345930139665863,
+          "level": 0.95,
+          "low": -0.014404352141908652
+        },
+        "E2 - period_dm, FPR at 90": {
+          "difference": 0.0036496350364963537,
+          "high": 0.049632307502162874,
+          "level": 0.95,
+          "low": -0.025260747004933037
+        },
+        "E2 - period_dm, typical AUC": {
+          "difference": 0.007626801422421892,
+          "high": 0.03863316164163382,
+          "level": 0.95,
+          "low": -0.010453424535157558
+        },
+        "E3 - C1, FPR at 90": {
+          "difference": 0.10948905109489052,
+          "high": 0.26263160303945804,
+          "level": 0.95,
+          "low": -0.005076357222748001
+        },
+        "E3 - C1, typical AUC": {
+          "difference": -0.03537338573834925,
+          "high": -0.0037009975839762395,
+          "level": 0.95,
+          "low": -0.08512885349721581
+        },
+        "E3 - all_metadata, FPR at 90": {
+          "difference": 0.12773722627737227,
+          "high": 0.2812204329933798,
+          "level": 0.95,
+          "low": 0.011298904039760421
+        },
+        "E3 - all_metadata, typical AUC": {
+          "difference": -0.041362530413625365,
+          "high": -0.008925849375615717,
+          "level": 0.95,
+          "low": -0.09131394450920284
+        },
+        "E3 - duty_cnn_input, FPR at 90": {
+          "difference": 0.12773722627737227,
+          "high": 0.28102120971660915,
+          "level": 0.95,
+          "low": 0.012025608904587839
+        },
+        "E3 - duty_cnn_input, typical AUC": {
+          "difference": -0.038718884521804275,
+          "high": -0.007915030901783323,
+          "level": 0.95,
+          "low": -0.08646028626846465
+        },
+        "E3 - duty_dmc, FPR at 90": {
+          "difference": 0.12773722627737227,
+          "high": 0.2812204329933798,
+          "level": 0.95,
+          "low": 0.012540426090999151
+        },
+        "E3 - duty_dmc, typical AUC": {
+          "difference": -0.04112857944974735,
+          "high": -0.009036072647093163,
+          "level": 0.95,
+          "low": -0.0897753658454578
+        },
+        "E3 - duty_native, FPR at 90": {
+          "difference": 0.12773722627737227,
+          "high": 0.2812204329933798,
+          "level": 0.95,
+          "low": 0.012540426090999151
+        },
+        "E3 - duty_native, typical AUC": {
+          "difference": -0.040894628485869444,
+          "high": -0.00874328373812983,
+          "level": 0.95,
+          "low": -0.09071067172005441
+        },
+        "E3 - period_dm, FPR at 90": {
+          "difference": 0.12043795620437957,
+          "high": 0.27591311621403425,
+          "level": 0.95,
+          "low": -0.007303355485346975
+        },
+        "E3 - period_dm, typical AUC": {
+          "difference": -0.02821448624368339,
+          "high": 0.026579306245468694,
+          "level": 0.95,
+          "low": -0.08643983295386014
+        }
+      },
+      "models": {
+        "C1": {
+          "fpr_at_90": 0.018248175182481754,
+          "fpr_at_90_by_assignment": [
+            0.018248175182481754
+          ],
+          "fpr_at_90_ci": [
+            0.002627692022658108,
+            0.04736842105263158
+          ],
+          "one_detection_random_auc": 0.9902433090024332,
+          "one_detection_strongest_auc": 0.9927943103125585,
+          "typical_auc": 0.9937301141680703,
+          "typical_auc_by_assignment": [
+            0.9937301141680703
+          ],
+          "typical_auc_ci": [
+            0.9832774831034002,
+            0.9984018900447759
+          ]
+        },
+        "E1": {
+          "fpr_at_90": 0.005474452554744527,
+          "fpr_at_90_by_assignment": [
+            0.005474452554744527
+          ],
+          "fpr_at_90_ci": [
+            0.0,
+            0.01814162028447742
+          ],
+          "one_detection_random_auc": 0.9941919333707654,
+          "one_detection_strongest_auc": 0.9973797492045667,
+          "typical_auc": 0.9970522178551375,
+          "typical_auc_by_assignment": [
+            0.9970522178551375
+          ],
+          "typical_auc_ci": [
+            0.9916044367111924,
+            0.9995874640555886
+          ]
+        },
+        "E2": {
+          "fpr_at_90": 0.010948905109489053,
+          "fpr_at_90_by_assignment": [
+            0.010948905109489053
+          ],
+          "fpr_at_90_ci": [
+            0.0,
+            0.05747516072472237
+          ],
+          "one_detection_random_auc": 0.9920269511510389,
+          "one_detection_strongest_auc": 0.9935897435897436,
+          "typical_auc": 0.9941980160958264,
+          "typical_auc_by_assignment": [
+            0.9941980160958264
+          ],
+          "typical_auc_ci": [
+            0.9850625126824442,
+            0.9988570400377952
+          ]
+        },
+        "E3": {
+          "fpr_at_90": 0.12773722627737227,
+          "fpr_at_90_by_assignment": [
+            0.12773722627737227
+          ],
+          "fpr_at_90_ci": [
+            0.012540426090999151,
+            0.2812204329933798
+          ],
+          "one_detection_random_auc": 0.9482430282612765,
+          "one_detection_strongest_auc": 0.9500748643084409,
+          "typical_auc": 0.9583567284297211,
+          "typical_auc_by_assignment": [
+            0.9583567284297211
+          ],
+          "typical_auc_ci": [
+            0.9084193057294323,
+            0.9907652650321648
+          ]
+        },
+        "all_metadata": {
+          "fpr_at_90": 0.0,
+          "fpr_at_90_by_assignment": [
+            0.0
+          ],
+          "fpr_at_90_ci": [
+            0.0,
+            0.009010028127675181
+          ],
+          "one_detection_random_auc": 0.9996172562230956,
+          "one_detection_strongest_auc": 0.9993917274939172,
+          "typical_auc": 0.9997192588433464,
+          "typical_auc_by_assignment": [
+            0.9997192588433464
+          ],
+          "typical_auc_ci": [
+            0.9988448681887596,
+            1.0
+          ]
+        },
+        "duty_cnn_input": {
+          "fpr_at_90": 0.0,
+          "fpr_at_90_by_assignment": [
+            0.0
+          ],
+          "fpr_at_90_ci": [
+            0.0,
+            0.0025171341884625033
+          ],
+          "one_detection_random_auc": 0.9816439734231706,
+          "one_detection_strongest_auc": 0.9751076174433838,
+          "typical_auc": 0.9970756129515254,
+          "typical_auc_by_assignment": [
+            0.9970756129515254
+          ],
+          "typical_auc_ci": [
+            0.9924370832774984,
+            0.9997346463737501
+          ]
+        },
+        "duty_dmc": {
+          "fpr_at_90": 0.0,
+          "fpr_at_90_by_assignment": [
+            0.0
+          ],
+          "fpr_at_90_ci": [
+            0.0,
+            0.0
+          ],
+          "one_detection_random_auc": 0.9867548661800487,
+          "one_detection_strongest_auc": 0.9867583754445068,
+          "typical_auc": 0.9994853078794684,
+          "typical_auc_by_assignment": [
+            0.9994853078794684
+          ],
+          "typical_auc_ci": [
+            0.998061550728749,
+            1.0
+          ]
+        },
+        "duty_forest": {
+          "fpr_at_90": 0.001824817518248175,
+          "fpr_at_90_by_assignment": [
+            0.001824817518248175
+          ],
+          "fpr_at_90_ci": [
+            0.0,
+            0.0049178884339365035
+          ],
+          "one_detection_random_auc": 0.9741229178364214,
+          "one_detection_strongest_auc": 0.9704519932622122,
+          "typical_auc": 0.9964439453490548,
+          "typical_auc_by_assignment": [
+            0.9964439453490548
+          ],
+          "typical_auc_ci": [
+            0.991653183205842,
+            0.999416243669928
+          ]
+        },
+        "duty_native": {
+          "fpr_at_90": 0.0,
+          "fpr_at_90_by_assignment": [
+            0.0
+          ],
+          "fpr_at_90_ci": [
+            0.0,
+            0.0
+          ],
+          "one_detection_random_auc": 0.9945587684821261,
+          "one_detection_strongest_auc": 0.9955081414935429,
+          "typical_auc": 0.9992513569155905,
+          "typical_auc_by_assignment": [
+            0.9992513569155905
+          ],
+          "typical_auc_ci": [
+            0.997504882625751,
+            1.0
+          ]
+        },
+        "geometry_acquisition": {
+          "fpr_at_90": 0.08211678832116787,
+          "fpr_at_90_by_assignment": [
+            0.08211678832116787
+          ],
+          "fpr_at_90_ci": [
+            0.011308740601503763,
+            0.17819791451579584
+          ],
+          "one_detection_random_auc": 0.9531471083660867,
+          "one_detection_strongest_auc": 0.9406232453677709,
+          "typical_auc": 0.9494198016095826,
+          "typical_auc_by_assignment": [
+            0.9494198016095826
+          ],
+          "typical_auc_ci": [
+            0.8924683978390582,
+            0.9827411352479565
+          ]
+        },
+        "htru1": {
+          "fpr_at_90": 0.9653284671532846,
+          "fpr_at_90_by_assignment": [
+            0.9653284671532846
+          ],
+          "fpr_at_90_ci": [
+            0.6343965193292311,
+            0.9876259486547732
+          ],
+          "one_detection_random_auc": 0.534378860190904,
+          "one_detection_strongest_auc": 0.6426632977727869,
+          "typical_auc": 0.5465562418117162,
+          "typical_auc_by_assignment": [
+            0.5465562418117162
+          ],
+          "typical_auc_ci": [
+            0.4076259205432358,
+            0.6921527336300063
+          ]
+        },
+        "period_dm": {
+          "fpr_at_90": 0.0072992700729927,
+          "fpr_at_90_by_assignment": [
+            0.0072992700729927
+          ],
+          "fpr_at_90_ci": [
+            0.0,
+            0.03537385541972022
+          ],
+          "one_detection_random_auc": 0.9865585813213552,
+          "one_detection_strongest_auc": 0.9861968931311997,
+          "typical_auc": 0.9865712146734045,
+          "typical_auc_by_assignment": [
+            0.9865712146734045
+          ],
+          "typical_auc_ci": [
+            0.9551992311293576,
+            0.9994316186950974
+          ]
+        },
+        "sigma": {
+          "fpr_at_90": 0.9835766423357666,
+          "fpr_at_90_by_assignment": [
+            0.9835766423357666
+          ],
+          "fpr_at_90_ci": [
+            0.9590894277975284,
+            0.9967159277504104
+          ],
+          "one_detection_random_auc": 0.17485050533408197,
+          "one_detection_strongest_auc": 0.3368425977915029,
+          "typical_auc": 0.16671345685944225,
+          "typical_auc_by_assignment": [
+            0.16671345685944225
+          ],
+          "typical_auc_ci": [
+            0.1036676867436361,
+            0.2351034226596363
+          ]
+        },
+        "sigma_chi2": {
+          "fpr_at_90": 0.15328467153284672,
+          "fpr_at_90_by_assignment": [
+            0.15328467153284672
+          ],
+          "fpr_at_90_ci": [
+            0.04615236875800256,
+            0.2788634726224783
+          ],
+          "one_detection_random_auc": 0.804248081602096,
+          "one_detection_strongest_auc": 0.7448530787946847,
+          "typical_auc": 0.8269932622122403,
+          "typical_auc_by_assignment": [
+            0.8269932622122403
+          ],
+          "typical_auc_ci": [
+            0.7555279787712599,
+            0.8886259095046937
+          ]
+        }
+      },
+      "negative_units": 86,
+      "sources": 39
+    },
+    "AO327 all negatives": {
+      "contrasts": {
+        "E1 - C1, FPR at 90": {
+          "difference": -0.020038167938931296,
+          "high": 0.10119406419526325,
+          "level": 0.95,
+          "low": -0.04375684537223646
+        },
+        "E1 - C1, typical AUC": {
+          "difference": -0.0015676117775355047,
+          "high": 0.009566310560033821,
+          "level": 0.95,
+          "low": -0.016752942844490224
+        },
+        "E1 - all_metadata, FPR at 90": {
+          "difference": 0.010496183206106872,
+          "high": 0.24715023382696769,
+          "level": 0.95,
+          "low": 0.0
+        },
+        "E1 - all_metadata, typical AUC": {
+          "difference": -0.009269356597600864,
+          "high": 0.012454391647634984,
+          "level": 0.95,
+          "low": -0.03382359305959105
+        },
+        "E1 - duty_cnn_input, FPR at 90": {
+          "difference": 0.00853053435114504,
+          "high": 0.11423476600510388,
+          "level": 0.95,
+          "low": -0.19078329178533232
+        },
+        "E1 - duty_cnn_input, typical AUC": {
+          "difference": 0.0012381861141402828,
+          "high": 0.047482156235561464,
+          "level": 0.95,
+          "low": -0.03973828840514753
+        },
+        "E1 - duty_dmc, FPR at 90": {
+          "difference": 0.005725190839694658,
+          "high": 0.07724065859401531,
+          "level": 0.95,
+          "low": -0.35307223117914827
+        },
+        "E1 - duty_dmc, typical AUC": {
+          "difference": 0.012427299163940364,
+          "high": 0.05169575820892543,
+          "level": 0.95,
+          "low": -0.01603746501952647
+        },
+        "E1 - duty_native, FPR at 90": {
+          "difference": 0.010496183206106872,
+          "high": 0.21038243180961066,
+          "level": 0.95,
+          "low": -0.37957991243154054
+        },
+        "E1 - duty_native, typical AUC": {
+          "difference": 0.00023854961832059374,
+          "high": 0.04456639587537357,
+          "level": 0.95,
+          "low": -0.03255375911625917
+        },
+        "E1 - period_dm, FPR at 90": {
+          "difference": -0.002862595419847328,
+          "high": 0.2381604696673186,
+          "level": 0.95,
+          "low": -0.061071655248161175
+        },
+        "E1 - period_dm, typical AUC": {
+          "difference": -0.014040348964013072,
+          "high": 0.020866901865383595,
+          "level": 0.95,
+          "low": -0.051940753159120466
+        },
+        "E2 - C1, FPR at 90": {
+          "difference": -0.011450381679389315,
+          "high": 0.28215129358830143,
+          "level": 0.95,
+          "low": -0.02991251246261216
+        },
+        "E2 - C1, typical AUC": {
+          "difference": -0.013858596873864037,
+          "high": 0.001676175643368168,
+          "level": 0.95,
+          "low": -0.03333052972429949
+        },
+        "E2 - all_metadata, FPR at 90": {
+          "difference": 0.019083969465648856,
+          "high": 0.43021334276284745,
+          "level": 0.95,
+          "low": 0.0005586733539390371
+        },
+        "E2 - all_metadata, typical AUC": {
+          "difference": -0.021560341693929397,
+          "high": -0.002146829696732221,
+          "level": 0.95,
+          "low": -0.054393999412987566
+        },
+        "E2 - duty_cnn_input, FPR at 90": {
+          "difference": 0.017118320610687025,
+          "high": 0.346810023713142,
+          "level": 0.95,
+          "low": -0.14975929728496185
+        },
+        "E2 - duty_cnn_input, typical AUC": {
+          "difference": -0.01105279898218825,
+          "high": 0.04322470022495847,
+          "level": 0.95,
+          "low": -0.06336606416467408
+        },
+        "E2 - duty_dmc, FPR at 90": {
+          "difference": 0.01431297709923664,
+          "high": 0.3023312061524616,
+          "level": 0.95,
+          "low": -0.3627975974114965
+        },
+        "E2 - duty_dmc, typical AUC": {
+          "difference": 0.0001363140676118313,
+          "high": 0.04621174055829235,
+          "level": 0.95,
+          "low": -0.039779491680851965
+        },
+        "E2 - duty_native, FPR at 90": {
+          "difference": 0.019083969465648856,
+          "high": 0.4063796001591406,
+          "level": 0.95,
+          "low": -0.3116712174384044
+        },
+        "E2 - duty_native, typical AUC": {
+          "difference": -0.012052435478007939,
+          "high": 0.03938730420679996,
+          "level": 0.95,
+          "low": -0.058066373865829427
+        },
+        "E2 - period_dm, FPR at 90": {
+          "difference": 0.005725190839694656,
+          "high": 0.406372880304409,
+          "level": 0.95,
+          "low": -0.048918078483728894
+        },
+        "E2 - period_dm, typical AUC": {
+          "difference": -0.026331334060341605,
+          "high": 0.017755595441791783,
+          "level": 0.95,
+          "low": -0.07686521312488657
+        },
+        "E3 - C1, FPR at 90": {
+          "difference": 0.10591603053435114,
+          "high": 0.4908839070284837,
+          "level": 0.95,
+          "low": -0.03042644874047894
+        },
+        "E3 - C1, typical AUC": {
+          "difference": -0.03598691384950925,
+          "high": -0.00018094783514217903,
+          "level": 0.95,
+          "low": -0.08356997385285055
+        },
+        "E3 - all_metadata, FPR at 90": {
+          "difference": 0.1364503816793893,
+          "high": 0.550858857336037,
+          "level": 0.95,
+          "low": 0.011264036630164181
+        },
+        "E3 - all_metadata, typical AUC": {
+          "difference": -0.04368865866957461,
+          "high": -0.0060561466055171495,
+          "level": 0.95,
+          "low": -0.09261363097286585
+        },
+        "E3 - duty_cnn_input, FPR at 90": {
+          "difference": 0.13448473282442747,
+          "high": 0.4072717871335065,
+          "level": 0.95,
+          "low": -0.10413205766811315
+        },
+        "E3 - duty_cnn_input, typical AUC": {
+          "difference": -0.03318111595783346,
+          "high": 0.006363185852779073,
+          "level": 0.95,
+          "low": -0.07870491578232712
+        },
+        "E3 - duty_dmc, FPR at 90": {
+          "difference": 0.1316793893129771,
+          "high": 0.26100033094366204,
+          "level": 0.95,
+          "low": -0.24573230001032464
+        },
+        "E3 - duty_dmc, typical AUC": {
+          "difference": -0.02199200290803338,
+          "high": 0.01212752996733571,
+          "level": 0.95,
+          "low": -0.06399861589514456
+        },
+        "E3 - duty_native, FPR at 90": {
+          "difference": 0.1364503816793893,
+          "high": 0.28048840503168815,
+          "level": 0.95,
+          "low": 0.009626708443628125
+        },
+        "E3 - duty_native, typical AUC": {
+          "difference": -0.03418075245365315,
+          "high": -0.0016183080424168907,
+          "level": 0.95,
+          "low": -0.07249403609715556
+        },
+        "E3 - period_dm, FPR at 90": {
+          "difference": 0.12309160305343511,
+          "high": 0.5187161405166698,
+          "level": 0.95,
+          "low": -0.0035174288844702305
+        },
+        "E3 - period_dm, typical AUC": {
+          "difference": -0.04845965103598682,
+          "high": 0.003466320126520182,
+          "level": 0.95,
+          "low": -0.10459924882410615
+        }
+      },
+      "models": {
+        "C1": {
+          "fpr_at_90": 0.03053435114503817,
+          "fpr_at_90_by_assignment": [
+            0.03053435114503817
+          ],
+          "fpr_at_90_ci": [
+            0.005562759264704102,
+            0.22995984884270154
+          ],
+          "one_detection_random_auc": 0.9654257542711743,
+          "one_detection_strongest_auc": 0.9699654671028717,
+          "typical_auc": 0.9718284260268993,
+          "typical_auc_by_assignment": [
+            0.9718284260268993
+          ],
+          "typical_auc_ci": [
+            0.9322286117836965,
+            0.9955608566685983
+          ]
+        },
+        "E1": {
+          "fpr_at_90": 0.010496183206106872,
+          "fpr_at_90_by_assignment": [
+            0.010496183206106872
+          ],
+          "fpr_at_90_ci": [
+            0.0009656584751102719,
+            0.2642776146988471
+          ],
+          "one_detection_random_auc": 0.9630243547800801,
+          "one_detection_strongest_auc": 0.9717602689930934,
+          "typical_auc": 0.9702608142493638,
+          "typical_auc_by_assignment": [
+            0.9702608142493638
+          ],
+          "typical_auc_ci": [
+            0.931342299722029,
+            0.9966917696543897
+          ]
+        },
+        "E2": {
+          "fpr_at_90": 0.019083969465648856,
+          "fpr_at_90_by_assignment": [
+            0.019083969465648856
+          ],
+          "fpr_at_90_ci": [
+            0.0011584824784181423,
+            0.4397640888724549
+          ],
+          "one_detection_random_auc": 0.9533640039985459,
+          "one_detection_strongest_auc": 0.957492729916394,
+          "typical_auc": 0.9579698291530353,
+          "typical_auc_by_assignment": [
+            0.9579698291530353
+          ],
+          "typical_auc_ci": [
+            0.9032616696079117,
+            0.9953892333481713
+          ]
+        },
+        "E3": {
+          "fpr_at_90": 0.1364503816793893,
+          "fpr_at_90_by_assignment": [
+            0.1364503816793893
+          ],
+          "fpr_at_90_ci": [
+            0.013562505963734935,
+            0.5684358168118948
+          ],
+          "one_detection_random_auc": 0.9241746183206108,
+          "one_detection_strongest_auc": 0.9273900399854599,
+          "typical_auc": 0.9358415121773901,
+          "typical_auc_by_assignment": [
+            0.9358415121773901
+          ],
+          "typical_auc_ci": [
+            0.8817584698263338,
+            0.9779683256950579
+          ]
+        },
+        "all_metadata": {
+          "fpr_at_90": 0.0,
+          "fpr_at_90_by_assignment": [
+            0.0
+          ],
+          "fpr_at_90_ci": [
+            0.0,
+            0.005212915020893345
+          ],
+          "one_detection_random_auc": 0.9794820065430754,
+          "one_detection_strongest_auc": 0.9793711377680844,
+          "typical_auc": 0.9795301708469647,
+          "typical_auc_by_assignment": [
+            0.9795301708469647
+          ],
+          "typical_auc_ci": [
+            0.9360714600470036,
+            1.0
+          ]
+        },
+        "duty_cnn_input": {
+          "fpr_at_90": 0.001965648854961832,
+          "fpr_at_90_by_assignment": [
+            0.001965648854961832
+          ],
+          "fpr_at_90_ci": [
+            0.0,
+            0.3072908578823171
+          ],
+          "one_detection_random_auc": 0.9527928480552526,
+          "one_detection_strongest_auc": 0.9504043984005816,
+          "typical_auc": 0.9690226281352236,
+          "typical_auc_by_assignment": [
+            0.9690226281352236
+          ],
+          "typical_auc_ci": [
+            0.9273650070469405,
+            0.9963829773318857
+          ]
+        },
+        "duty_dmc": {
+          "fpr_at_90": 0.004770992366412214,
+          "fpr_at_90_by_assignment": [
+            0.004770992366412214
+          ],
+          "fpr_at_90_ci": [
+            0.0,
+            0.45274055231972665
+          ],
+          "one_detection_random_auc": 0.9377051526717557,
+          "one_detection_strongest_auc": 0.9415212649945475,
+          "typical_auc": 0.9578335150854235,
+          "typical_auc_by_assignment": [
+            0.9578335150854235
+          ],
+          "typical_auc_ci": [
+            0.9063485453741359,
+            0.9939507432001379
+          ]
+        },
+        "duty_forest": {
+          "fpr_at_90": 0.002862595419847328,
+          "fpr_at_90_by_assignment": [
+            0.002862595419847328
+          ],
+          "fpr_at_90_ci": [
+            0.0,
+            0.22980777491408932
+          ],
+          "one_detection_random_auc": 0.9541484914576518,
+          "one_detection_strongest_auc": 0.9520174482006543,
+          "typical_auc": 0.9753044347509996,
+          "typical_auc_by_assignment": [
+            0.9753044347509996
+          ],
+          "typical_auc_ci": [
+            0.9467305630757391,
+            0.9952456146383392
+          ]
+        },
+        "duty_native": {
+          "fpr_at_90": 0.0,
+          "fpr_at_90_by_assignment": [
+            0.0
+          ],
+          "fpr_at_90_ci": [
+            0.0,
+            0.49179139451932513
+          ],
+          "one_detection_random_auc": 0.9650631588513267,
+          "one_detection_strongest_auc": 0.9665689749182116,
+          "typical_auc": 0.9700222646310432,
+          "typical_auc_by_assignment": [
+            0.9700222646310432
+          ],
+          "typical_auc_ci": [
+            0.9243538466823353,
+            0.9997369859546028
+          ]
+        },
+        "geometry_acquisition": {
+          "fpr_at_90": 0.04961832061068702,
+          "fpr_at_90_by_assignment": [
+            0.04961832061068702
+          ],
+          "fpr_at_90_ci": [
+            0.017049085124719664,
+            0.20179759743119083
+          ],
+          "one_detection_random_auc": 0.96669824609233,
+          "one_detection_strongest_auc": 0.9598441475826972,
+          "typical_auc": 0.964637858960378,
+          "typical_auc_by_assignment": [
+            0.964637858960378
+          ],
+          "typical_auc_ci": [
+            0.9304820948997451,
+            0.9847270034651012
+          ]
+        },
+        "htru1": {
+          "fpr_at_90": 0.8940839694656489,
+          "fpr_at_90_by_assignment": [
+            0.8940839694656489
+          ],
+          "fpr_at_90_ci": [
+            0.298274764833187,
+            0.961949436222692
+          ],
+          "one_detection_random_auc": 0.6635914213013449,
+          "one_detection_strongest_auc": 0.7122864412940749,
+          "typical_auc": 0.6820928753180662,
+          "typical_auc_by_assignment": [
+            0.6820928753180662
+          ],
+          "typical_auc_ci": [
+            0.5315396451448281,
+            0.8111175960005416
+          ]
+        },
+        "period_dm": {
+          "fpr_at_90": 0.0133587786259542,
+          "fpr_at_90_by_assignment": [
+            0.0133587786259542
+          ],
+          "fpr_at_90_ci": [
+            0.0,
+            0.12618520509897468
+          ],
+          "one_detection_random_auc": 0.9842434569247547,
+          "one_detection_strongest_auc": 0.9837559069429298,
+          "typical_auc": 0.9843011632133769,
+          "typical_auc_by_assignment": [
+            0.9843011632133769
+          ],
+          "typical_auc_ci": [
+            0.9563761055660729,
+            0.9983175453455334
+          ]
+        },
+        "sigma": {
+          "fpr_at_90": 0.515267175572519,
+          "fpr_at_90_by_assignment": [
+            0.515267175572519
+          ],
+          "fpr_at_90_ci": [
+            0.2856754394483831,
+            0.844969649915302
+          ],
+          "one_detection_random_auc": 0.570177776263177,
+          "one_detection_strongest_auc": 0.6497864412940749,
+          "typical_auc": 0.5671573973100691,
+          "typical_auc_by_assignment": [
+            0.5671573973100691
+          ],
+          "typical_auc_ci": [
+            0.2923338885737445,
+            0.7605993084864658
+          ]
+        },
+        "sigma_chi2": {
+          "fpr_at_90": 0.08110687022900763,
+          "fpr_at_90_by_assignment": [
+            0.08110687022900763
+          ],
+          "fpr_at_90_ci": [
+            0.019860726773626797,
+            0.17953845710498254
+          ],
+          "one_detection_random_auc": 0.896667121046892,
+          "one_detection_strongest_auc": 0.8666166848418757,
+          "typical_auc": 0.9099759178480552,
+          "typical_auc_by_assignment": [
+            0.9099759178480552
+          ],
+          "typical_auc_ci": [
+            0.8424094115760783,
+            0.9556840854320692
+          ]
+        }
+      },
+      "negative_units": 91,
+      "sources": 42
+    },
+    "AO327 noise (provisional)": {
+      "contrasts": {
+        "E1 - C1, FPR at 90": {
+          "difference": -0.024000000000000004,
+          "high": 0.2167381974248927,
+          "level": 0.95,
+          "low": -0.058706088432933935
+        },
+        "E1 - C1, typical AUC": {
+          "difference": -0.009047619047618971,
+          "high": 0.008757693896259607,
+          "level": 0.95,
+          "low": -0.038097351366582106
+        },
+        "E1 - all_metadata, FPR at 90": {
+          "difference": 0.014000000000000002,
+          "high": 0.5376146788990825,
+          "level": 0.95,
+          "low": 0.0
+        },
+        "E1 - all_metadata, typical AUC": {
+          "difference": -0.02688095238095234,
+          "high": -0.0037007243903052545,
+          "level": 0.95,
+          "low": -0.06536056533269044
+        },
+        "E1 - duty_cnn_input, FPR at 90": {
+          "difference": 0.011040000000000001,
+          "high": 0.3379083338870059,
+          "level": 0.95,
+          "low": -0.11409144411072328
+        },
+        "E1 - duty_cnn_input, typical AUC": {
+          "difference": -0.016285714285714237,
+          "high": 0.026342706622878975,
+          "level": 0.95,
+          "low": -0.0710917490056905
+        },
+        "E1 - duty_dmc, FPR at 90": {
+          "difference": 0.004000000000000002,
+          "high": 0.13814600620233006,
+          "level": 0.95,
+          "low": -0.4797705342159239
+        },
+        "E1 - duty_dmc, typical AUC": {
+          "difference": 0.015928571428571514,
+          "high": 0.06589002453055243,
+          "level": 0.95,
+          "low": -0.023907381295923943
+        },
+        "E1 - duty_native, FPR at 90": {
+          "difference": 0.014000000000000002,
+          "high": 0.476072573839662,
+          "level": 0.95,
+          "low": -0.18003913894324847
+        },
+        "E1 - duty_native, typical AUC": {
+          "difference": -0.020071428571428518,
+          "high": 0.025651021272657327,
+          "level": 0.95,
+          "low": -0.07025857691292073
+        },
+        "E1 - period_dm, FPR at 90": {
+          "difference": -0.005999999999999998,
+          "high": 0.4532589983012367,
+          "level": 0.95,
+          "low": -0.029798601578586117
+        },
+        "E1 - period_dm, typical AUC": {
+          "difference": -0.031238095238095176,
+          "high": 0.016673809523809428,
+          "level": 0.95,
+          "low": -0.09016028426821181
+        },
+        "E2 - C1, FPR at 90": {
+          "difference": -0.018000000000000006,
+          "high": 0.49470021413276205,
+          "level": 0.95,
+          "low": -0.04077977644092361
+        },
+        "E2 - C1, typical AUC": {
+          "difference": -0.017952380952380942,
+          "high": 0.0014028682884665263,
+          "level": 0.95,
+          "low": -0.05116370919436956
+        },
+        "E2 - all_metadata, FPR at 90": {
+          "difference": 0.02,
+          "high": 0.694,
+          "level": 0.95,
+          "low": 0.0
+        },
+        "E2 - all_metadata, typical AUC": {
+          "difference": -0.03578571428571431,
+          "high": -0.004203027364792048,
+          "level": 0.95,
+          "low": -0.08223137244381071
+        },
+        "E2 - duty_cnn_input, FPR at 90": {
+          "difference": 0.01704,
+          "high": 0.6167833733170777,
+          "level": 0.95,
+          "low": -0.1472416155419223
+        },
+        "E2 - duty_cnn_input, typical AUC": {
+          "difference": -0.025190476190476208,
+          "high": 0.027256451279934008,
+          "level": 0.95,
+          "low": -0.08790181691125079
+        },
+        "E2 - duty_dmc, FPR at 90": {
+          "difference": 0.01,
+          "high": 0.5120992328874902,
+          "level": 0.95,
+          "low": -0.5569378048780487
+        },
+        "E2 - duty_dmc, typical AUC": {
+          "difference": 0.007023809523809543,
+          "high": 0.06423797076243958,
+          "level": 0.95,
+          "low": -0.04345677855779165
+        },
+        "E2 - duty_native, FPR at 90": {
+          "difference": 0.02,
+          "high": 0.6614481409001957,
+          "level": 0.95,
+          "low": -0.006469430595643778
+        },
+        "E2 - duty_native, typical AUC": {
+          "difference": -0.02897619047619049,
+          "high": 0.028002012763868447,
+          "level": 0.95,
+          "low": -0.08786247355313609
+        },
+        "E2 - period_dm, FPR at 90": {
+          "difference": 0.0,
+          "high": 0.6751467710371821,
+          "level": 0.95,
+          "low": -0.028949903660886234
+        },
+        "E2 - period_dm, typical AUC": {
+          "difference": -0.04014285714285715,
+          "high": 0.011908333333333274,
+          "level": 0.95,
+          "low": -0.10563583737392038
+        },
+        "E3 - C1, FPR at 90": {
+          "difference": 0.08199999999999999,
+          "high": 0.704,
+          "level": 0.95,
+          "low": -0.15737286551893276
+        },
+        "E3 - C1, typical AUC": {
+          "difference": -0.03323809523809518,
+          "high": 0.006613499768839616,
+          "level": 0.95,
+          "low": -0.08300899273124566
+        },
+        "E3 - all_metadata, FPR at 90": {
+          "difference": 0.12,
+          "high": 0.7541099990024274,
+          "level": 0.95,
+          "low": 0.004357298474945534
+        },
+        "E3 - all_metadata, typical AUC": {
+          "difference": -0.051071428571428545,
+          "high": -0.015716224475122234,
+          "level": 0.95,
+          "low": -0.09847513439032567
+        },
+        "E3 - duty_cnn_input, FPR at 90": {
+          "difference": 0.11703999999999999,
+          "high": 0.595001428939866,
+          "level": 0.95,
+          "low": -0.11015479651371735
+        },
+        "E3 - duty_cnn_input, typical AUC": {
+          "difference": -0.04047619047619044,
+          "high": -0.0006186943476577741,
+          "level": 0.95,
+          "low": -0.08978745664408783
+        },
+        "E3 - duty_dmc, FPR at 90": {
+          "difference": 0.11,
+          "high": 0.25660995036241635,
+          "level": 0.95,
+          "low": -0.4550522611531786
+        },
+        "E3 - duty_dmc, typical AUC": {
+          "difference": -0.008261904761904693,
+          "high": 0.031031870872156725,
+          "level": 0.95,
+          "low": -0.04323947060039975
+        },
+        "E3 - duty_native, FPR at 90": {
+          "difference": 0.12,
+          "high": 0.34240696497188955,
+          "level": 0.95,
+          "low": 0.004357298474945534
+        },
+        "E3 - duty_native, typical AUC": {
+          "difference": -0.044261904761904725,
+          "high": -0.014770232698593525,
+          "level": 0.95,
+          "low": -0.079444828851957
+        },
+        "E3 - period_dm, FPR at 90": {
+          "difference": 0.09999999999999999,
+          "high": 0.7317678264939929,
+          "level": 0.95,
+          "low": -0.015325670498084292
+        },
+        "E3 - period_dm, typical AUC": {
+          "difference": -0.05542857142857138,
+          "high": -0.001927955372431505,
+          "level": 0.95,
+          "low": -0.1180265389422111
+        }
+      },
+      "models": {
+        "C1": {
+          "fpr_at_90": 0.038000000000000006,
+          "fpr_at_90_by_assignment": [
+            0.038000000000000006
+          ],
+          "fpr_at_90_ci": [
+            0.0,
+            0.41218541725891367
+          ],
+          "one_detection_random_auc": 0.953225238095238,
+          "one_detection_strongest_auc": 0.959047619047619,
+          "typical_auc": 0.962,
+          "typical_auc_by_assignment": [
+            0.962
+          ],
+          "typical_auc_ci": [
+            0.9048003761895934,
+            0.9964035685561787
+          ]
+        },
+        "E1": {
+          "fpr_at_90": 0.014000000000000002,
+          "fpr_at_90_by_assignment": [
+            0.014000000000000002
+          ],
+          "fpr_at_90_ci": [
+            0.0,
+            0.5424299688750555
+          ],
+          "one_detection_random_auc": 0.9405557142857143,
+          "one_detection_strongest_auc": 0.9557619047619048,
+          "typical_auc": 0.952952380952381,
+          "typical_auc_by_assignment": [
+            0.952952380952381
+          ],
+          "typical_auc_ci": [
+            0.890887992110586,
+            0.9948885039895173
+          ]
+        },
+        "E2": {
+          "fpr_at_90": 0.02,
+          "fpr_at_90_by_assignment": [
+            0.02
+          ],
+          "fpr_at_90_ci": [
+            0.0,
+            0.7280163599182005
+          ],
+          "one_detection_random_auc": 0.9371757142857143,
+          "one_detection_strongest_auc": 0.9436666666666667,
+          "typical_auc": 0.944047619047619,
+          "typical_auc_by_assignment": [
+            0.944047619047619
+          ],
+          "typical_auc_ci": [
+            0.8733122919866871,
+            0.994707221745464
+          ]
+        },
+        "E3": {
+          "fpr_at_90": 0.12,
+          "fpr_at_90_by_assignment": [
+            0.12
+          ],
+          "fpr_at_90_ci": [
+            0.004357298474945534,
+            0.7547492414466571
+          ],
+          "one_detection_random_auc": 0.9150404761904761,
+          "one_detection_strongest_auc": 0.9194761904761904,
+          "typical_auc": 0.9287619047619048,
+          "typical_auc_by_assignment": [
+            0.9287619047619048
+          ],
+          "typical_auc_ci": [
+            0.8638799482558981,
+            0.9790757553840524
+          ]
+        },
+        "all_metadata": {
+          "fpr_at_90": 0.0,
+          "fpr_at_90_by_assignment": [
+            0.0
+          ],
+          "fpr_at_90_ci": [
+            0.0,
+            0.0
+          ],
+          "one_detection_random_auc": 0.9798333333333333,
+          "one_detection_strongest_auc": 0.9798333333333333,
+          "typical_auc": 0.9798333333333333,
+          "typical_auc_by_assignment": [
+            0.9798333333333333
+          ],
+          "typical_auc_ci": [
+            0.9331443337125404,
+            1.0
+          ]
+        },
+        "duty_cnn_input": {
+          "fpr_at_90": 0.0029600000000000004,
+          "fpr_at_90_by_assignment": [
+            0.0029600000000000004
+          ],
+          "fpr_at_90_ci": [
+            0.0,
+            0.3081389392465952
+          ],
+          "one_detection_random_auc": 0.9530430952380954,
+          "one_detection_strongest_auc": 0.9525714285714286,
+          "typical_auc": 0.9692380952380952,
+          "typical_auc_by_assignment": [
+            0.9692380952380952
+          ],
+          "typical_auc_ci": [
+            0.9328473868359958,
+            0.9949366617451683
+          ]
+        },
+        "duty_dmc": {
+          "fpr_at_90": 0.01,
+          "fpr_at_90_by_assignment": [
+            0.01
+          ],
+          "fpr_at_90_ci": [
+            0.0,
+            0.65
+          ],
+          "one_detection_random_auc": 0.9059714285714285,
+          "one_detection_strongest_auc": 0.9157857142857143,
+          "typical_auc": 0.9370238095238095,
+          "typical_auc_by_assignment": [
+            0.9370238095238095
+          ],
+          "typical_auc_ci": [
+            0.8733236627687505,
+            0.9856352813677054
+          ]
+        },
+        "duty_forest": {
+          "fpr_at_90": 0.004,
+          "fpr_at_90_by_assignment": [
+            0.004
+          ],
+          "fpr_at_90_ci": [
+            0.0,
+            0.23868429783402043
+          ],
+          "one_detection_random_auc": 0.9507561904761905,
+          "one_detection_strongest_auc": 0.9504523809523809,
+          "typical_auc": 0.9728095238095238,
+          "typical_auc_by_assignment": [
+            0.9728095238095238
+          ],
+          "typical_auc_ci": [
+            0.9441635447023378,
+            0.9927535634093425
+          ]
+        },
+        "duty_native": {
+          "fpr_at_90": 0.0,
+          "fpr_at_90_by_assignment": [
+            0.0
+          ],
+          "fpr_at_90_ci": [
+            0.0,
+            0.4206505436820397
+          ],
+          "one_detection_random_auc": 0.9688021428571427,
+          "one_detection_strongest_auc": 0.9695952380952381,
+          "typical_auc": 0.9730238095238095,
+          "typical_auc_by_assignment": [
+            0.9730238095238095
+          ],
+          "typical_auc_ci": [
+            0.9323340655706728,
+            0.9996788696210661
+          ]
+        },
+        "geometry_acquisition": {
+          "fpr_at_90": 0.014000000000000002,
+          "fpr_at_90_by_assignment": [
+            0.014000000000000002
+          ],
+          "fpr_at_90_ci": [
+            0.001968503937007874,
+            0.034637135405578
+          ],
+          "one_detection_random_auc": 0.99117,
+          "one_detection_strongest_auc": 0.9891190476190476,
+          "typical_auc": 0.9902142857142857,
+          "typical_auc_by_assignment": [
+            0.9902142857142857
+          ],
+          "typical_auc_ci": [
+            0.9750418039333133,
+            0.9986396627616564
+          ]
+        },
+        "htru1": {
+          "fpr_at_90": 0.8160000000000001,
+          "fpr_at_90_by_assignment": [
+            0.8160000000000001
+          ],
+          "fpr_at_90_ci": [
+            0.009708737864077669,
+            0.9406952965235172
+          ],
+          "one_detection_random_auc": 0.7952647619047616,
+          "one_detection_strongest_auc": 0.8035238095238095,
+          "typical_auc": 0.838047619047619,
+          "typical_auc_by_assignment": [
+            0.838047619047619
+          ],
+          "typical_auc_ci": [
+            0.7378316397178093,
+            0.928575
+          ]
+        },
+        "period_dm": {
+          "fpr_at_90": 0.02,
+          "fpr_at_90_by_assignment": [
+            0.02
+          ],
+          "fpr_at_90_ci": [
+            0.0,
+            0.12453979543705458
+          ],
+          "one_detection_random_auc": 0.9840704761904762,
+          "one_detection_strongest_auc": 0.9834285714285714,
+          "typical_auc": 0.9841904761904762,
+          "typical_auc_by_assignment": [
+            0.9841904761904762
+          ],
+          "typical_auc_ci": [
+            0.9578831715440786,
+            0.9976380495563921
+          ]
+        },
+        "sigma": {
+          "fpr_at_90": 0.0,
+          "fpr_at_90_by_assignment": [
+            0.0
+          ],
+          "fpr_at_90_ci": [
+            0.0,
+            0.002096767773266458
+          ],
+          "one_detection_random_auc": 0.9997516666666667,
+          "one_detection_strongest_auc": 0.9998809523809524,
+          "typical_auc": 0.9998333333333334,
+          "typical_auc_by_assignment": [
+            0.9998333333333334
+          ],
+          "typical_auc_ci": [
+            0.9994036150105514,
+            1.0
+          ]
+        },
+        "sigma_chi2": {
+          "fpr_at_90": 0.002,
+          "fpr_at_90_by_assignment": [
+            0.002
+          ],
+          "fpr_at_90_ci": [
+            0.0,
+            0.005825242718446602
+          ],
+          "one_detection_random_auc": 0.9930357142857141,
+          "one_detection_strongest_auc": 0.9903333333333333,
+          "typical_auc": 0.9976190476190476,
+          "typical_auc_by_assignment": [
+            0.9976190476190476
+          ],
+          "typical_auc_ci": [
+            0.9940099087648558,
+            1.0
+          ]
+        }
+      },
+      "negative_units": 5,
+      "sources": 42
+    },
+    "GBNCC RFI": {
+      "component_resampling": {
+        "E1 - C1, typical AUC": {
+          "difference": -0.054101150915869645,
+          "high": -0.010020699315210647,
+          "level": 0.95,
+          "low": -0.10399067313206614
+        },
+        "E2 - C1, typical AUC": {
+          "difference": -0.040079429405089906,
+          "high": -0.0112379938736307,
+          "level": 0.95,
+          "low": -0.07013570515191005
+        },
+        "E3 - C1, typical AUC": {
+          "difference": -0.10662181877127563,
+          "high": -0.056161248520508585,
+          "level": 0.95,
+          "low": -0.15764563584563585
+        }
+      },
+      "contrasts": {
+        "E1 - C1, FPR at 90": {
+          "difference": 0.1256281407035176,
+          "high": 0.28192797622206894,
+          "level": 0.95,
+          "low": -0.009499468004255801
+        },
+        "E1 - C1, typical AUC": {
+          "difference": -0.054101150915869645,
+          "high": -0.010616366043322892,
+          "level": 0.95,
+          "low": -0.10970584912068998
+        },
+        "E1 - all_metadata, FPR at 90": {
+          "difference": 0.27386934673366836,
+          "high": 0.4490899722999033,
+          "level": 0.95,
+          "low": 0.13142947032689337
+        },
+        "E1 - all_metadata, typical AUC": {
+          "difference": -0.11829307829469937,
+          "high": -0.057939868786413405,
+          "level": 0.95,
+          "low": -0.19264233750120843
+        },
+        "E1 - duty_cnn_input, FPR at 90": {
+          "difference": -0.18623115577889437,
+          "high": 0.10782060231352196,
+          "level": 0.95,
+          "low": -0.41328080909137543
+        },
+        "E1 - duty_cnn_input, typical AUC": {
+          "difference": 0.0777881342194845,
+          "high": 0.16202314123148356,
+          "level": 0.95,
+          "low": -0.009422615382186212
+        },
+        "E1 - duty_dmc, FPR at 90": {
+          "difference": 0.07547738693467335,
+          "high": 0.26653078880652403,
+          "level": 0.95,
+          "low": -0.22308676643590777
+        },
+        "E1 - duty_dmc, typical AUC": {
+          "difference": -0.05209515318528124,
+          "high": 0.024922721970239863,
+          "level": 0.95,
+          "low": -0.13806357148073892
+        },
+        "E1 - duty_native, FPR at 90": {
+          "difference": -0.05321608040201009,
+          "high": 0.16741798669041136,
+          "level": 0.95,
+          "low": -0.3907582423861493
+        },
+        "E1 - duty_native, typical AUC": {
+          "difference": 0.011103906629923777,
+          "high": 0.08999317524335841,
+          "level": 0.95,
+          "low": -0.06917632393544948
+        },
+        "E1 - period_dm, FPR at 90": {
+          "difference": 0.27386934673366836,
+          "high": 0.44783927989573136,
+          "level": 0.95,
+          "low": 0.13174236147315113
+        },
+        "E1 - period_dm, typical AUC": {
+          "difference": -0.11813097746798507,
+          "high": -0.05831363716241376,
+          "level": 0.95,
+          "low": -0.19464926811153474
+        },
+        "E2 - C1, FPR at 90": {
+          "difference": 0.100502512562814,
+          "high": 0.2817379558406776,
+          "level": 0.95,
+          "low": -0.010875603864734308
+        },
+        "E2 - C1, typical AUC": {
+          "difference": -0.040079429405089906,
+          "high": -0.010602634491072956,
+          "level": 0.95,
+          "low": -0.07750972451021654
+        },
+        "E2 - all_metadata, FPR at 90": {
+          "difference": 0.24874371859296476,
+          "high": 0.4878622313450854,
+          "level": 0.95,
+          "low": 0.10494649315230925
+        },
+        "E2 - all_metadata, typical AUC": {
+          "difference": -0.10427135678391963,
+          "high": -0.05065361250048873,
+          "level": 0.95,
+          "low": -0.16888835293914312
+        },
+        "E2 - duty_cnn_input, FPR at 90": {
+          "difference": -0.21135678391959797,
+          "high": 0.11985519158859562,
+          "level": 0.95,
+          "low": -0.4277915007050153
+        },
+        "E2 - duty_cnn_input, typical AUC": {
+          "difference": 0.09180985573026423,
+          "high": 0.17537643366771485,
+          "level": 0.95,
+          "low": 0.0018104140483172564
+        },
+        "E2 - duty_dmc, FPR at 90": {
+          "difference": 0.05035175879396975,
+          "high": 0.2866782178217821,
+          "level": 0.95,
+          "low": -0.23763599118639392
+        },
+        "E2 - duty_dmc, typical AUC": {
+          "difference": -0.0380734316745015,
+          "high": 0.034836918633902286,
+          "level": 0.95,
+          "low": -0.11396468665127507
+        },
+        "E2 - duty_native, FPR at 90": {
+          "difference": -0.07834170854271369,
+          "high": 0.18199191737763798,
+          "level": 0.95,
+          "low": -0.4092134905910414
+        },
+        "E2 - duty_native, typical AUC": {
+          "difference": 0.025125628140703515,
+          "high": 0.10140556268328438,
+          "level": 0.95,
+          "low": -0.047738059020383285
+        },
+        "E2 - period_dm, FPR at 90": {
+          "difference": 0.24874371859296476,
+          "high": 0.4878622313450854,
+          "level": 0.95,
+          "low": 0.10591833601964852
+        },
+        "E2 - period_dm, typical AUC": {
+          "difference": -0.10410925595720533,
+          "high": -0.05457171910709967,
+          "level": 0.95,
+          "low": -0.16704440161065232
+        },
+        "E3 - C1, FPR at 90": {
+          "difference": 0.1557788944723618,
+          "high": 0.35365951690063524,
+          "level": 0.95,
+          "low": 0.015355871886121048
+        },
+        "E3 - C1, typical AUC": {
+          "difference": -0.10662181877127563,
+          "high": -0.05901570700613309,
+          "level": 0.95,
+          "low": -0.1652514691172793
+        },
+        "E3 - all_metadata, FPR at 90": {
+          "difference": 0.30402010050251255,
+          "high": 0.5177242182155231,
+          "level": 0.95,
+          "low": 0.1733660903746478
+        },
+        "E3 - all_metadata, typical AUC": {
+          "difference": -0.17081374615010536,
+          "high": -0.10389757618869844,
+          "level": 0.95,
+          "low": -0.24683955837703123
+        },
+        "E3 - duty_cnn_input, FPR at 90": {
+          "difference": -0.1560804020100502,
+          "high": 0.1444733924611972,
+          "level": 0.95,
+          "low": -0.3757667895167896
+        },
+        "E3 - duty_cnn_input, typical AUC": {
+          "difference": 0.025267466364078506,
+          "high": 0.11140884405248211,
+          "level": 0.95,
+          "low": -0.06715572196620592
+        },
+        "E3 - duty_dmc, FPR at 90": {
+          "difference": 0.10562814070351753,
+          "high": 0.35325335681267883,
+          "level": 0.95,
+          "low": -0.22273075332897874
+        },
+        "E3 - duty_dmc, typical AUC": {
+          "difference": -0.10461582104068723,
+          "high": -0.018136954433037356,
+          "level": 0.95,
+          "low": -0.19937675102115635
+        },
+        "E3 - duty_native, FPR at 90": {
+          "difference": -0.023065326633165906,
+          "high": 0.25192904473494826,
+          "level": 0.95,
+          "low": -0.32941343058150147
+        },
+        "E3 - duty_native, typical AUC": {
+          "difference": -0.04141676122548221,
+          "high": 0.04107398761119233,
+          "level": 0.95,
+          "low": -0.1240162119274312
+        },
+        "E3 - period_dm, FPR at 90": {
+          "difference": 0.30402010050251255,
+          "high": 0.5165139064475347,
+          "level": 0.95,
+          "low": 0.17134792704267066
+        },
+        "E3 - period_dm, typical AUC": {
+          "difference": -0.17065164532339105,
+          "high": -0.10246006688971013,
+          "level": 0.95,
+          "low": -0.24954482420208218
+        }
+      },
+      "models": {
+        "C1": {
+          "fpr_at_90": 0.14824120603015076,
+          "fpr_at_90_by_assignment": [
+            0.14824120603015076
+          ],
+          "fpr_at_90_ci": [
+            0.042491904069085304,
+            0.2708505794701986
+          ],
+          "one_detection_random_auc": 0.9140375263413841,
+          "one_detection_strongest_auc": 0.9296482412060302,
+          "typical_auc": 0.9233263089641757,
+          "typical_auc_by_assignment": [
+            0.9233263089641757
+          ],
+          "typical_auc_ci": [
+            0.8788354838709678,
+            0.9595483369605831
+          ]
+        },
+        "E1": {
+          "fpr_at_90": 0.27386934673366836,
+          "fpr_at_90_by_assignment": [
+            0.27386934673366836
+          ],
+          "fpr_at_90_ci": [
+            0.13174236147315113,
+            0.4490899722999033
+          ],
+          "one_detection_random_auc": 0.8577147835953964,
+          "one_detection_strongest_auc": 0.8768033716971957,
+          "typical_auc": 0.869225158048306,
+          "typical_auc_by_assignment": [
+            0.869225158048306
+          ],
+          "typical_auc_ci": [
+            0.7923006651147323,
+            0.9286595704308679
+          ]
+        },
+        "E2": {
+          "fpr_at_90": 0.24874371859296476,
+          "fpr_at_90_by_assignment": [
+            0.24874371859296476
+          ],
+          "fpr_at_90_ci": [
+            0.10637198306668867,
+            0.4878622313450854
+          ],
+          "one_detection_random_auc": 0.8712911330847787,
+          "one_detection_strongest_auc": 0.8839358080726212,
+          "typical_auc": 0.8832468795590858,
+          "typical_auc_by_assignment": [
+            0.8832468795590858
+          ],
+          "typical_auc_ci": [
+            0.8174617904269363,
+            0.9345881179471148
+          ]
+        },
+        "E3": {
+          "fpr_at_90": 0.30402010050251255,
+          "fpr_at_90_by_assignment": [
+            0.30402010050251255
+          ],
+          "fpr_at_90_ci": [
+            0.17409071649216806,
+            0.5177242182155231
+          ],
+          "one_detection_random_auc": 0.8071616145242342,
+          "one_detection_strongest_auc": 0.8374128708056411,
+          "typical_auc": 0.8167044901929,
+          "typical_auc_by_assignment": [
+            0.8167044901929
+          ],
+          "typical_auc_ci": [
+            0.7408300337385545,
+            0.8786450212252461
+          ]
+        },
+        "all_metadata": {
+          "fpr_at_90": 0.0,
+          "fpr_at_90_by_assignment": [
+            0.0
+          ],
+          "fpr_at_90_ci": [
+            0.0,
+            0.0
+          ],
+          "one_detection_random_auc": 0.9875182363430055,
+          "one_detection_strongest_auc": 0.9875182363430054,
+          "typical_auc": 0.9875182363430054,
+          "typical_auc_by_assignment": [
+            0.9875182363430054
+          ],
+          "typical_auc_ci": [
+            0.9601554201941125,
+            1.0
+          ]
+        },
+        "duty_cnn_input": {
+          "fpr_at_90": 0.46010050251256274,
+          "fpr_at_90_by_assignment": [
+            0.46010050251256274
+          ],
+          "fpr_at_90_ci": [
+            0.2504440005825687,
+            0.6579266853499891
+          ],
+          "one_detection_random_auc": 0.7616412708704813,
+          "one_detection_strongest_auc": 0.8125709191116874,
+          "typical_auc": 0.7914370238288215,
+          "typical_auc_by_assignment": [
+            0.7914370238288215
+          ],
+          "typical_auc_ci": [
+            0.7204526580080554,
+            0.8535672838691255
+          ]
+        },
+        "duty_dmc": {
+          "fpr_at_90": 0.19839195979899502,
+          "fpr_at_90_by_assignment": [
+            0.19839195979899502
+          ],
+          "fpr_at_90_ci": [
+            0.10028068541171282,
+            0.5041507955016583
+          ],
+          "one_detection_random_auc": 0.9036969119792512,
+          "one_detection_strongest_auc": 0.9199424542065164,
+          "typical_auc": 0.9213203112335873,
+          "typical_auc_by_assignment": [
+            0.9213203112335873
+          ],
+          "typical_auc_ci": [
+            0.8741573529958716,
+            0.9598169789865527
+          ]
+        },
+        "duty_forest": {
+          "fpr_at_90": 0.7260804020100502,
+          "fpr_at_90_by_assignment": [
+            0.7260804020100502
+          ],
+          "fpr_at_90_ci": [
+            0.2622745014548294,
+            0.8446063656962081
+          ],
+          "one_detection_random_auc": 0.7398964580969363,
+          "one_detection_strongest_auc": 0.8009199221916031,
+          "typical_auc": 0.7712352082995624,
+          "typical_auc_by_assignment": [
+            0.7712352082995624
+          ],
+          "typical_auc_ci": [
+            0.6976236717466531,
+            0.8389812408098999
+          ]
+        },
+        "duty_native": {
+          "fpr_at_90": 0.32708542713567845,
+          "fpr_at_90_by_assignment": [
+            0.32708542713567845
+          ],
+          "fpr_at_90_ci": [
+            0.1499747474747475,
+            0.7117010867139733
+          ],
+          "one_detection_random_auc": 0.8417466364078459,
+          "one_detection_strongest_auc": 0.8835102934024963,
+          "typical_auc": 0.8581212514183822,
+          "typical_auc_by_assignment": [
+            0.8581212514183822
+          ],
+          "typical_auc_ci": [
+            0.7954491515072322,
+            0.9136011149541157
+          ]
+        },
+        "geometry_acquisition": {
+          "fpr_at_90": 0.0,
+          "fpr_at_90_by_assignment": [
+            0.0
+          ],
+          "fpr_at_90_ci": [
+            0.0,
+            0.0
+          ],
+          "one_detection_random_auc": 0.9849538012643868,
+          "one_detection_strongest_auc": 0.9854717134057384,
+          "typical_auc": 0.9999189495866428,
+          "typical_auc_by_assignment": [
+            0.9999189495866428
+          ],
+          "typical_auc_ci": [
+            0.9995161290322581,
+            1.0
+          ]
+        },
+        "htru1": {
+          "fpr_at_90": 0.949748743718593,
+          "fpr_at_90_by_assignment": [
+            0.949748743718593
+          ],
+          "fpr_at_90_ci": [
+            0.8442349650904474,
+            0.9783584694875017
+          ],
+          "one_detection_random_auc": 0.3838093694277841,
+          "one_detection_strongest_auc": 0.4741449181390825,
+          "typical_auc": 0.3752634138434106,
+          "typical_auc_by_assignment": [
+            0.3752634138434106
+          ],
+          "typical_auc_ci": [
+            0.28481471878501774,
+            0.4670530649984712
+          ]
+        },
+        "period_dm": {
+          "fpr_at_90": 0.0,
+          "fpr_at_90_by_assignment": [
+            0.0
+          ],
+          "fpr_at_90_ci": [
+            0.0,
+            0.0
+          ],
+          "one_detection_random_auc": 0.9804283514345926,
+          "one_detection_strongest_auc": 0.9766980061598314,
+          "typical_auc": 0.9873561355162911,
+          "typical_auc_by_assignment": [
+            0.9873561355162911
+          ],
+          "typical_auc_ci": [
+            0.9615160006845213,
+            1.0
+          ]
+        },
+        "sigma": {
+          "fpr_at_90": 0.994974874371859,
+          "fpr_at_90_by_assignment": [
+            0.994974874371859
+          ],
+          "fpr_at_90_ci": [
+            0.9219501613671235,
+            1.0
+          ],
+          "one_detection_random_auc": 0.27905799157075706,
+          "one_detection_strongest_auc": 0.36128221753930945,
+          "typical_auc": 0.280940995299076,
+          "typical_auc_by_assignment": [
+            0.280940995299076
+          ],
+          "typical_auc_ci": [
+            0.20264735963881075,
+            0.36650032609810784
+          ]
+        },
+        "sigma_chi2": {
+          "fpr_at_90": 0.1984924623115578,
+          "fpr_at_90_by_assignment": [
+            0.1984924623115578
+          ],
+          "fpr_at_90_ci": [
+            0.02399808612440192,
+            0.9449287365177196
+          ],
+          "one_detection_random_auc": 0.8621753930945049,
+          "one_detection_strongest_auc": 0.8076673691035824,
+          "typical_auc": 0.8829226779056574,
+          "typical_auc_by_assignment": [
+            0.8829226779056574
+          ],
+          "typical_auc_ci": [
+            0.8099137567137298,
+            0.9435300915391792
+          ]
+        }
+      },
+      "negative_units": 69,
+      "sources": 62
+    },
+    "GBNCC RFI, fundamental": {
+      "contrasts": {
+        "E1 - C1, FPR at 90": {
+          "difference": 0.11557788944723615,
+          "high": 0.2581649436090224,
+          "level": 0.95,
+          "low": -0.08191288275823505
+        },
+        "E1 - C1, typical AUC": {
+          "difference": -0.038980617372577075,
+          "high": 0.0039032247925571894,
+          "level": 0.95,
+          "low": -0.09041835006207516
+        },
+        "E1 - all_metadata, FPR at 90": {
+          "difference": 0.21105527638190952,
+          "high": 0.3678582154053499,
+          "level": 0.95,
+          "low": 0.05938630932058726
+        },
+        "E1 - all_metadata, typical AUC": {
+          "difference": -0.08772433596554197,
+          "high": -0.03610136466794074,
+          "level": 0.95,
+          "low": -0.14913475304223334
+        },
+        "E1 - duty_cnn_input, FPR at 90": {
+          "difference": -0.04266331658291456,
+          "high": 0.14133610286844706,
+          "level": 0.95,
+          "low": -0.5246510180492573
+        },
+        "E1 - duty_cnn_input, typical AUC": {
+          "difference": 0.043000717875089745,
+          "high": 0.13599006670353053,
+          "level": 0.95,
+          "low": -0.041147214927283605
+        },
+        "E1 - duty_dmc, FPR at 90": {
+          "difference": 0.14321608040201,
+          "high": 0.3333979328165371,
+          "level": 0.95,
+          "low": -0.14075144180876806
+        },
+        "E1 - duty_dmc, typical AUC": {
+          "difference": -0.04781048097631002,
+          "high": 0.035808714508117685,
+          "level": 0.95,
+          "low": -0.12544518965645718
+        },
+        "E1 - duty_native, FPR at 90": {
+          "difference": 0.17336683417085424,
+          "high": 0.3145261539832472,
+          "level": 0.95,
+          "low": -0.05275924381428969
+        },
+        "E1 - duty_native, typical AUC": {
+          "difference": -0.06859296482412058,
+          "high": -0.012526231308608573,
+          "level": 0.95,
+          "low": -0.1325146183814723
+        },
+        "E1 - period_dm, FPR at 90": {
+          "difference": 0.21105527638190952,
+          "high": 0.3424146280061603,
+          "level": 0.95,
+          "low": 0.05377877237851675
+        },
+        "E1 - period_dm, typical AUC": {
+          "difference": -0.07236180904522604,
+          "high": -0.01831927865485816,
+          "level": 0.95,
+          "low": -0.13484564969604856
+        },
+        "E2 - C1, FPR at 90": {
+          "difference": 0.0804020100502513,
+          "high": 0.3366670053940039,
+          "level": 0.95,
+          "low": -0.06593465045592707
+        },
+        "E2 - C1, typical AUC": {
+          "difference": -0.03697056712132085,
+          "high": -0.0027229932850347314,
+          "level": 0.95,
+          "low": -0.07995238095238101
+        },
+        "E2 - all_metadata, FPR at 90": {
+          "difference": 0.17587939698492466,
+          "high": 0.44276483965939734,
+          "level": 0.95,
+          "low": 0.07913043115391678
+        },
+        "E2 - all_metadata, typical AUC": {
+          "difference": -0.08571428571428574,
+          "high": -0.03973438719588875,
+          "level": 0.95,
+          "low": -0.14548753413520657
+        },
+        "E2 - duty_cnn_input, FPR at 90": {
+          "difference": -0.07783919597989941,
+          "high": 0.21516700978637052,
+          "level": 0.95,
+          "low": -0.5045368849005729
+        },
+        "E2 - duty_cnn_input, typical AUC": {
+          "difference": 0.04501076812634597,
+          "high": 0.13990676689873097,
+          "level": 0.95,
+          "low": -0.03587127988238526
+        },
+        "E2 - duty_dmc, FPR at 90": {
+          "difference": 0.10804020100502515,
+          "high": 0.4084191176470584,
+          "level": 0.95,
+          "low": -0.12530729623952733
+        },
+        "E2 - duty_dmc, typical AUC": {
+          "difference": -0.0458004307250538,
+          "high": 0.035517033941236044,
+          "level": 0.95,
+          "low": -0.12149308126023381
+        },
+        "E2 - duty_native, FPR at 90": {
+          "difference": 0.1381909547738694,
+          "high": 0.3737860962566843,
+          "level": 0.95,
+          "low": -0.012679337624027794
+        },
+        "E2 - duty_native, typical AUC": {
+          "difference": -0.06658291457286436,
+          "high": -0.02191386597636596,
+          "level": 0.95,
+          "low": -0.12289743549182072
+        },
+        "E2 - period_dm, FPR at 90": {
+          "difference": 0.17587939698492466,
+          "high": 0.4375148809523809,
+          "level": 0.95,
+          "low": 0.06841104349382499
+        },
+        "E2 - period_dm, typical AUC": {
+          "difference": -0.07035175879396982,
+          "high": -0.019485953540739853,
+          "level": 0.95,
+          "low": -0.12995819530858463
+        },
+        "E3 - C1, FPR at 90": {
+          "difference": 0.2839195979899497,
+          "high": 0.4567758415135544,
+          "level": 0.95,
+          "low": 0.08782978307602116
+        },
+        "E3 - C1, typical AUC": {
+          "difference": -0.10847092605886566,
+          "high": -0.05504072056887346,
+          "level": 0.95,
+          "low": -0.17221904695377954
+        },
+        "E3 - all_metadata, FPR at 90": {
+          "difference": 0.37939698492462304,
+          "high": 0.5623449427480915,
+          "level": 0.95,
+          "low": 0.18131706265568126
+        },
+        "E3 - all_metadata, typical AUC": {
+          "difference": -0.15721464465183055,
+          "high": -0.09293071285620869,
+          "level": 0.95,
+          "low": -0.2347492063492063
+        },
+        "E3 - duty_cnn_input, FPR at 90": {
+          "difference": 0.12567839195979896,
+          "high": 0.3399022787757813,
+          "level": 0.95,
+          "low": -0.3698666666666665
+        },
+        "E3 - duty_cnn_input, typical AUC": {
+          "difference": -0.026489590811198838,
+          "high": 0.07172965644081003,
+          "level": 0.95,
+          "low": -0.11922777355623095
+        },
+        "E3 - duty_dmc, FPR at 90": {
+          "difference": 0.3115577889447235,
+          "high": 0.5228087375300997,
+          "level": 0.95,
+          "low": 0.007539065241292321
+        },
+        "E3 - duty_dmc, typical AUC": {
+          "difference": -0.1173007896625986,
+          "high": -0.023070449404912464,
+          "level": 0.95,
+          "low": -0.21213440553880478
+        },
+        "E3 - duty_native, FPR at 90": {
+          "difference": 0.34170854271356776,
+          "high": 0.5159836907101581,
+          "level": 0.95,
+          "low": 0.09860312575917098
+        },
+        "E3 - duty_native, typical AUC": {
+          "difference": -0.13808327351040917,
+          "high": -0.07450255215168108,
+          "level": 0.95,
+          "low": -0.21384605326876516
+        },
+        "E3 - period_dm, FPR at 90": {
+          "difference": 0.37939698492462304,
+          "high": 0.5611994816198363,
+          "level": 0.95,
+          "low": 0.1578576248313091
+        },
+        "E3 - period_dm, typical AUC": {
+          "difference": -0.14185211773151463,
+          "high": -0.06948507402454451,
+          "level": 0.95,
+          "low": -0.22423129768524505
+        }
+      },
+      "models": {
+        "C1": {
+          "fpr_at_90": 0.09547738693467336,
+          "fpr_at_90_by_assignment": [
+            0.09547738693467336
+          ],
+          "fpr_at_90_ci": [
+            0.03766578164280951,
+            0.26976089918256124
+          ],
+          "one_detection_random_auc": 0.9439533381191673,
+          "one_detection_strongest_auc": 0.9533381191672649,
+          "typical_auc": 0.9477386934673366,
+          "typical_auc_by_assignment": [
+            0.9477386934673366
+          ],
+          "typical_auc_ci": [
+            0.914845360492682,
+            0.9739940854665565
+          ]
+        },
+        "E1": {
+          "fpr_at_90": 0.21105527638190952,
+          "fpr_at_90_by_assignment": [
+            0.21105527638190952
+          ],
+          "fpr_at_90_ci": [
+            0.06647186450167976,
+            0.3678582154053499
+          ],
+          "one_detection_random_auc": 0.9053582196697775,
+          "one_detection_strongest_auc": 0.9188801148600143,
+          "typical_auc": 0.9087580760947596,
+          "typical_auc_by_assignment": [
+            0.9087580760947596
+          ],
+          "typical_auc_ci": [
+            0.8476149706457926,
+            0.9609191798941799
+          ]
+        },
+        "E2": {
+          "fpr_at_90": 0.17587939698492466,
+          "fpr_at_90_by_assignment": [
+            0.17587939698492466
+          ],
+          "fpr_at_90_ci": [
+            0.09144955654102,
+            0.44276483965939734
+          ],
+          "one_detection_random_auc": 0.9041328068916009,
+          "one_detection_strongest_auc": 0.9147164393395549,
+          "typical_auc": 0.9107681263460158,
+          "typical_auc_by_assignment": [
+            0.9107681263460158
+          ],
+          "typical_auc_ci": [
+            0.8497490891053391,
+            0.9574680244567462
+          ]
+        },
+        "E3": {
+          "fpr_at_90": 0.37939698492462304,
+          "fpr_at_90_by_assignment": [
+            0.37939698492462304
+          ],
+          "fpr_at_90_ci": [
+            0.18990308544303797,
+            0.5623449427480915
+          ],
+          "one_detection_random_auc": 0.8321284996410624,
+          "one_detection_strongest_auc": 0.8519741564967696,
+          "typical_auc": 0.839267767408471,
+          "typical_auc_by_assignment": [
+            0.839267767408471
+          ],
+          "typical_auc_ci": [
+            0.7578900297619048,
+            0.9037650872527675
+          ]
+        },
+        "all_metadata": {
+          "fpr_at_90": 0.0,
+          "fpr_at_90_by_assignment": [
+            0.0
+          ],
+          "fpr_at_90_ci": [
+            0.0,
+            0.0
+          ],
+          "one_detection_random_auc": 0.9964824120603015,
+          "one_detection_strongest_auc": 0.9964824120603015,
+          "typical_auc": 0.9964824120603015,
+          "typical_auc_by_assignment": [
+            0.9964824120603015
+          ],
+          "typical_auc_ci": [
+            0.9868030900812041,
+            1.0
+          ]
+        },
+        "duty_cnn_input": {
+          "fpr_at_90": 0.2537185929648241,
+          "fpr_at_90_by_assignment": [
+            0.2537185929648241
+          ],
+          "fpr_at_90_ci": [
+            0.15137413505658104,
+            0.6534665537714313
+          ],
+          "one_detection_random_auc": 0.8476439339554916,
+          "one_detection_strongest_auc": 0.8678750897343862,
+          "typical_auc": 0.8657573582196698,
+          "typical_auc_by_assignment": [
+            0.8657573582196698
+          ],
+          "typical_auc_ci": [
+            0.7787822622779519,
+            0.9370526467626847
+          ]
+        },
+        "duty_dmc": {
+          "fpr_at_90": 0.06783919597989951,
+          "fpr_at_90_by_assignment": [
+            0.06783919597989951
+          ],
+          "fpr_at_90_ci": [
+            0.0,
+            0.2467285066837575
+          ],
+          "one_detection_random_auc": 0.9439978463747307,
+          "one_detection_strongest_auc": 0.9521177315147165,
+          "typical_auc": 0.9565685570710696,
+          "typical_auc_by_assignment": [
+            0.9565685570710696
+          ],
+          "typical_auc_ci": [
+            0.8922547436252828,
+            0.9947231389715466
+          ]
+        },
+        "duty_forest": {
+          "fpr_at_90": 0.2859296482412061,
+          "fpr_at_90_by_assignment": [
+            0.2859296482412061
+          ],
+          "fpr_at_90_ci": [
+            0.11723018867924546,
+            0.7795044676909665
+          ],
+          "one_detection_random_auc": 0.8463262742282842,
+          "one_detection_strongest_auc": 0.8688801148600144,
+          "typical_auc": 0.8751615218951903,
+          "typical_auc_by_assignment": [
+            0.8751615218951903
+          ],
+          "typical_auc_ci": [
+            0.7901656062463571,
+            0.9420049116699063
+          ]
+        },
+        "duty_native": {
+          "fpr_at_90": 0.03768844221105527,
+          "fpr_at_90_by_assignment": [
+            0.03768844221105527
+          ],
+          "fpr_at_90_ci": [
+            0.003798465210513176,
+            0.20000000000000004
+          ],
+          "one_detection_random_auc": 0.9766697774587222,
+          "one_detection_strongest_auc": 0.9780689160086145,
+          "typical_auc": 0.9773510409188801,
+          "typical_auc_by_assignment": [
+            0.9773510409188801
+          ],
+          "typical_auc_ci": [
+            0.947719484167518,
+            0.9966692775466449
+          ]
+        },
+        "geometry_acquisition": {
+          "fpr_at_90": 0.0,
+          "fpr_at_90_by_assignment": [
+            0.0
+          ],
+          "fpr_at_90_ci": [
+            0.0,
+            0.0
+          ],
+          "one_detection_random_auc": 0.974407753050969,
+          "one_detection_strongest_auc": 0.9744077530509692,
+          "typical_auc": 0.9744077530509692,
+          "typical_auc_by_assignment": [
+            0.9744077530509692
+          ],
+          "typical_auc_ci": [
+            0.9198533789998548,
+            1.0
+          ]
+        },
+        "htru1": {
+          "fpr_at_90": 0.9447236180904521,
+          "fpr_at_90_by_assignment": [
+            0.9447236180904521
+          ],
+          "fpr_at_90_ci": [
+            0.8186163101604279,
+            0.983092195456326
+          ],
+          "one_detection_random_auc": 0.5169023689877962,
+          "one_detection_strongest_auc": 0.5798277099784638,
+          "typical_auc": 0.4946159368269921,
+          "typical_auc_by_assignment": [
+            0.4946159368269921
+          ],
+          "typical_auc_ci": [
+            0.36699998916846294,
+            0.6201904564906779
+          ]
+        },
+        "period_dm": {
+          "fpr_at_90": 0.0,
+          "fpr_at_90_by_assignment": [
+            0.0
+          ],
+          "fpr_at_90_ci": [
+            0.0,
+            0.0
+          ],
+          "one_detection_random_auc": 0.9811198851399858,
+          "one_detection_strongest_auc": 0.9811198851399856,
+          "typical_auc": 0.9811198851399856,
+          "typical_auc_by_assignment": [
+            0.9811198851399856
+          ],
+          "typical_auc_ci": [
+            0.9398604804825156,
+            1.0
+          ]
+        },
+        "sigma": {
+          "fpr_at_90": 0.9899497487437187,
+          "fpr_at_90_by_assignment": [
+            0.9899497487437187
+          ],
+          "fpr_at_90_ci": [
+            0.7937195121951222,
+            1.0
+          ],
+          "one_detection_random_auc": 0.43489806173725776,
+          "one_detection_strongest_auc": 0.48183776022972,
+          "typical_auc": 0.44860014357501793,
+          "typical_auc_by_assignment": [
+            0.44860014357501793
+          ],
+          "typical_auc_ci": [
+            0.3313924958122712,
+            0.562286328442017
+          ]
+        },
+        "sigma_chi2": {
+          "fpr_at_90": 0.6356783919597991,
+          "fpr_at_90_by_assignment": [
+            0.6356783919597991
+          ],
+          "fpr_at_90_ci": [
+            0.20619020137897523,
+            0.9145603365528826
+          ],
+          "one_detection_random_auc": 0.7864874371859297,
+          "one_detection_strongest_auc": 0.7484565685570711,
+          "typical_auc": 0.7966977745872218,
+          "typical_auc_by_assignment": [
+            0.7966977745872218
+          ],
+          "typical_auc_ci": [
+            0.6771737430604425,
+            0.8920566893424037
+          ]
+        }
+      },
+      "negative_units": 69,
+      "sources": 35
+    },
+    "GBNCC RFI, uncertain excluded": {
+      "contrasts": {
+        "E1 - C1, FPR at 90": {
+          "difference": 0.1633165829145728,
+          "high": 0.2584194659776054,
+          "level": 0.95,
+          "low": -0.018437853284763193
+        },
+        "E1 - C1, typical AUC": {
+          "difference": -0.045988872936109204,
+          "high": -0.004244363632632168,
+          "level": 0.95,
+          "low": -0.09837968346253224
+        },
+        "E1 - all_metadata, FPR at 90": {
+          "difference": 0.2311557788944723,
+          "high": 0.3648480530056261,
+          "level": 0.95,
+          "low": 0.10311049033113934
+        },
+        "E1 - all_metadata, typical AUC": {
+          "difference": -0.1136934673366835,
+          "high": -0.05747369972691165,
+          "level": 0.95,
+          "low": -0.18197485500610497
+        },
+        "E1 - duty_cnn_input, FPR at 90": {
+          "difference": -0.16994974874371865,
+          "high": 0.06629825843380827,
+          "level": 0.95,
+          "low": -0.43690925087983906
+        },
+        "E1 - duty_cnn_input, typical AUC": {
+          "difference": 0.08129935391241916,
+          "high": 0.17076822832154204,
+          "level": 0.95,
+          "low": -0.005034333904687051
+        },
+        "E1 - duty_dmc, FPR at 90": {
+          "difference": 0.04271356783919589,
+          "high": 0.24409602208814812,
+          "level": 0.95,
+          "low": -0.12029071126230231
+        },
+        "E1 - duty_dmc, typical AUC": {
+          "difference": -0.05431173725771721,
+          "high": 0.021199426992233476,
+          "level": 0.95,
+          "low": -0.13538829462822538
+        },
+        "E1 - duty_native, FPR at 90": {
+          "difference": -0.005025125628140725,
+          "high": 0.12470405610649488,
+          "level": 0.95,
+          "low": -0.3056644493313846
+        },
+        "E1 - duty_native, typical AUC": {
+          "difference": 0.011149497487437099,
+          "high": 0.08519494073616522,
+          "level": 0.95,
+          "low": -0.06508982162894571
+        },
+        "E1 - period_dm, FPR at 90": {
+          "difference": 0.2311557788944723,
+          "high": 0.3648480530056261,
+          "level": 0.95,
+          "low": 0.10390588222262842
+        },
+        "E1 - period_dm, typical AUC": {
+          "difference": -0.11589195979899503,
+          "high": -0.0583806252764264,
+          "level": 0.95,
+          "low": -0.18446385823488284
+        },
+        "E2 - C1, FPR at 90": {
+          "difference": 0.10050251256281409,
+          "high": 0.15852928826369922,
+          "level": 0.95,
+          "low": -0.058474358974359
+        },
+        "E2 - C1, typical AUC": {
+          "difference": -0.027593323761665456,
+          "high": -0.0009581603321621966,
+          "level": 0.95,
+          "low": -0.06046085016921339
+        },
+        "E2 - all_metadata, FPR at 90": {
+          "difference": 0.1683417085427136,
+          "high": 0.2897602759331344,
+          "level": 0.95,
+          "low": 0.07649648201721491
+        },
+        "E2 - all_metadata, typical AUC": {
+          "difference": -0.09529791816223976,
+          "high": -0.04904297860448531,
+          "level": 0.95,
+          "low": -0.15148548897944833
+        },
+        "E2 - duty_cnn_input, FPR at 90": {
+          "difference": -0.23276381909547736,
+          "high": -0.013973540295379488,
+          "level": 0.95,
+          "low": -0.4726297437213879
+        },
+        "E2 - duty_cnn_input, typical AUC": {
+          "difference": 0.09969490308686291,
+          "high": 0.18047705082032806,
+          "level": 0.95,
+          "low": 0.013743121281045123
+        },
+        "E2 - duty_dmc, FPR at 90": {
+          "difference": -0.020100502512562818,
+          "high": 0.16950681460772313,
+          "level": 0.95,
+          "low": -0.15286426605297587
+        },
+        "E2 - duty_dmc, typical AUC": {
+          "difference": -0.03591618808327346,
+          "high": 0.033279619437680846,
+          "level": 0.95,
+          "low": -0.10906673790898484
+        },
+        "E2 - duty_native, FPR at 90": {
+          "difference": -0.06783919597989943,
+          "high": 0.05263994201605707,
+          "level": 0.95,
+          "low": -0.3535272901533495
+        },
+        "E2 - duty_native, typical AUC": {
+          "difference": 0.029545046661880847,
+          "high": 0.09733192407757799,
+          "level": 0.95,
+          "low": -0.04244739744867826
+        },
+        "E2 - period_dm, FPR at 90": {
+          "difference": 0.1683417085427136,
+          "high": 0.2897602759331344,
+          "level": 0.95,
+          "low": 0.07649648201721491
+        },
+        "E2 - period_dm, typical AUC": {
+          "difference": -0.09749641062455128,
+          "high": -0.05090943670683573,
+          "level": 0.95,
+          "low": -0.1542756711383146
+        },
+        "E3 - C1, FPR at 90": {
+          "difference": 0.3115577889447235,
+          "high": 0.42893120393120376,
+          "level": 0.95,
+          "low": 0.10197732184456484
+        },
+        "E3 - C1, typical AUC": {
+          "difference": -0.12266690595836327,
+          "high": -0.07536650806853706,
+          "level": 0.95,
+          "low": -0.18216810708532566
+        },
+        "E3 - all_metadata, FPR at 90": {
+          "difference": 0.37939698492462304,
+          "high": 0.5623413996641914,
+          "level": 0.95,
+          "low": 0.182293443821594
+        },
+        "E3 - all_metadata, typical AUC": {
+          "difference": -0.19037150035893757,
+          "high": -0.12629472065926411,
+          "level": 0.95,
+          "low": -0.2689898055573458
+        },
+        "E3 - duty_cnn_input, FPR at 90": {
+          "difference": -0.021708542713567924,
+          "high": 0.2313655506800305,
+          "level": 0.95,
+          "low": -0.33333333333333326
+        },
+        "E3 - duty_cnn_input, typical AUC": {
+          "difference": 0.004621320890165093,
+          "high": 0.09506397208601679,
+          "level": 0.95,
+          "low": -0.09288301956898687
+        },
+        "E3 - duty_dmc, FPR at 90": {
+          "difference": 0.19095477386934662,
+          "high": 0.43561711650617113,
+          "level": 0.95,
+          "low": -0.03395759757312324
+        },
+        "E3 - duty_dmc, typical AUC": {
+          "difference": -0.13098977027997127,
+          "high": -0.045436562206939736,
+          "level": 0.95,
+          "low": -0.22448816455918252
+        },
+        "E3 - duty_native, FPR at 90": {
+          "difference": 0.14321608040201,
+          "high": 0.30012069756976695,
+          "level": 0.95,
+          "low": -0.2119833229426434
+        },
+        "E3 - duty_native, typical AUC": {
+          "difference": -0.06552853553481697,
+          "high": 0.011666074996432069,
+          "level": 0.95,
+          "low": -0.15368118666405728
+        },
+        "E3 - period_dm, FPR at 90": {
+          "difference": 0.37939698492462304,
+          "high": 0.5623413996641914,
+          "level": 0.95,
+          "low": 0.182293443821594
+        },
+        "E3 - period_dm, typical AUC": {
+          "difference": -0.1925699928212491,
+          "high": -0.12793468045112805,
+          "level": 0.95,
+          "low": -0.2718364921790758
+        }
+      },
+      "models": {
+        "C1": {
+          "fpr_at_90": 0.06783919597989951,
+          "fpr_at_90_by_assignment": [
+            0.06783919597989951
+          ],
+          "fpr_at_90_ci": [
+            0.032092176446109046,
+            0.25513060303127993
+          ],
+          "one_detection_random_auc": 0.920582376166547,
+          "one_detection_strongest_auc": 0.9370961952620244,
+          "typical_auc": 0.9300969131371142,
+          "typical_auc_by_assignment": [
+            0.9300969131371142
+          ],
+          "typical_auc_ci": [
+            0.8843808920668402,
+            0.9655658989325873
+          ]
+        },
+        "E1": {
+          "fpr_at_90": 0.2311557788944723,
+          "fpr_at_90_by_assignment": [
+            0.2311557788944723
+          ],
+          "fpr_at_90_ci": [
+            0.10390588222262842,
+            0.3648480530056261
+          ],
+          "one_detection_random_auc": 0.8747518844221105,
+          "one_detection_strongest_auc": 0.8924982053122756,
+          "typical_auc": 0.884108040201005,
+          "typical_auc_by_assignment": [
+            0.884108040201005
+          ],
+          "typical_auc_ci": [
+            0.8155361417651171,
+            0.9416193747235736
+          ]
+        },
+        "E2": {
+          "fpr_at_90": 0.1683417085427136,
+          "fpr_at_90_by_assignment": [
+            0.1683417085427136
+          ],
+          "fpr_at_90_ci": [
+            0.07649648201721491,
+            0.2897602759331344
+          ],
+          "one_detection_random_auc": 0.8888841529073942,
+          "one_detection_strongest_auc": 0.9032663316582915,
+          "typical_auc": 0.9025035893754487,
+          "typical_auc_by_assignment": [
+            0.9025035893754487
+          ],
+          "typical_auc_ci": [
+            0.8457243288616854,
+            0.9490905632931642
+          ]
+        },
+        "E3": {
+          "fpr_at_90": 0.37939698492462304,
+          "fpr_at_90_by_assignment": [
+            0.37939698492462304
+          ],
+          "fpr_at_90_ci": [
+            0.182293443821594,
+            0.5623413996641914
+          ],
+          "one_detection_random_auc": 0.7961171931083993,
+          "one_detection_strongest_auc": 0.8303571428571429,
+          "typical_auc": 0.8074300071787509,
+          "typical_auc_by_assignment": [
+            0.8074300071787509
+          ],
+          "typical_auc_ci": [
+            0.7281635078209242,
+            0.872065319548872
+          ]
+        },
+        "all_metadata": {
+          "fpr_at_90": 0.0,
+          "fpr_at_90_by_assignment": [
+            0.0
+          ],
+          "fpr_at_90_ci": [
+            0.0,
+            0.0
+          ],
+          "one_detection_random_auc": 0.9978015075376885,
+          "one_detection_strongest_auc": 0.9978015075376885,
+          "typical_auc": 0.9978015075376885,
+          "typical_auc_by_assignment": [
+            0.9978015075376885
+          ],
+          "typical_auc_ci": [
+            0.9916594723316833,
+            1.0
+          ]
+        },
+        "duty_cnn_input": {
+          "fpr_at_90": 0.40110552763819096,
+          "fpr_at_90_by_assignment": [
+            0.40110552763819096
+          ],
+          "fpr_at_90_ci": [
+            0.21487529481726372,
+            0.6155387989073979
+          ],
+          "one_detection_random_auc": 0.7701476130653266,
+          "one_detection_strongest_auc": 0.8262069274946159,
+          "typical_auc": 0.8028086862885858,
+          "typical_auc_by_assignment": [
+            0.8028086862885858
+          ],
+          "typical_auc_ci": [
+            0.7298908675681982,
+            0.8702801240585631
+          ]
+        },
+        "duty_dmc": {
+          "fpr_at_90": 0.18844221105527642,
+          "fpr_at_90_by_assignment": [
+            0.18844221105527642
+          ],
+          "fpr_at_90_ci": [
+            0.05039454479109652,
+            0.24693670615860805
+          ],
+          "one_detection_random_auc": 0.9196210965541995,
+          "one_detection_strongest_auc": 0.9368942928930366,
+          "typical_auc": 0.9384197774587222,
+          "typical_auc_by_assignment": [
+            0.9384197774587222
+          ],
+          "typical_auc_ci": [
+            0.8873874167013744,
+            0.9762634009485135
+          ]
+        },
+        "duty_forest": {
+          "fpr_at_90": 0.692713567839196,
+          "fpr_at_90_by_assignment": [
+            0.692713567839196
+          ],
+          "fpr_at_90_ci": [
+            0.21237878854027206,
+            0.8429214177771671
+          ],
+          "one_detection_random_auc": 0.7518263190954774,
+          "one_detection_strongest_auc": 0.8223932160804021,
+          "typical_auc": 0.7895279971284996,
+          "typical_auc_by_assignment": [
+            0.7895279971284996
+          ],
+          "typical_auc_ci": [
+            0.7112979361826698,
+            0.8604372312593261
+          ]
+        },
+        "duty_native": {
+          "fpr_at_90": 0.23618090452261303,
+          "fpr_at_90_by_assignment": [
+            0.23618090452261303
+          ],
+          "fpr_at_90_ci": [
+            0.13880391006842618,
+            0.4903770074422246
+          ],
+          "one_detection_random_auc": 0.8519824569274949,
+          "one_detection_strongest_auc": 0.9010678391959799,
+          "typical_auc": 0.8729585427135679,
+          "typical_auc_by_assignment": [
+            0.8729585427135679
+          ],
+          "typical_auc_ci": [
+            0.8140486379892069,
+            0.9262837222043521
+          ]
+        },
+        "geometry_acquisition": {
+          "fpr_at_90": 0.0,
+          "fpr_at_90_by_assignment": [
+            0.0
+          ],
+          "fpr_at_90_ci": [
+            0.0,
+            0.0
+          ],
+          "one_detection_random_auc": 0.9838076543431442,
+          "one_detection_strongest_auc": 0.9840048456568558,
+          "typical_auc": 1.0,
+          "typical_auc_by_assignment": [
+            1.0
+          ],
+          "typical_auc_ci": [
+            1.0,
+            1.0
+          ]
+        },
+        "htru1": {
+          "fpr_at_90": 0.949748743718593,
+          "fpr_at_90_by_assignment": [
+            0.949748743718593
+          ],
+          "fpr_at_90_ci": [
+            0.8374808673469388,
+            0.976045751633987
+          ],
+          "one_detection_random_auc": 0.37511306532663313,
+          "one_detection_strongest_auc": 0.47752153625269206,
+          "typical_auc": 0.3680455850681981,
+          "typical_auc_by_assignment": [
+            0.3680455850681981
+          ],
+          "typical_auc_ci": [
+            0.26800138126273115,
+            0.4622612090078055
+          ]
+        },
+        "period_dm": {
+          "fpr_at_90": 0.0,
+          "fpr_at_90_by_assignment": [
+            0.0
+          ],
+          "fpr_at_90_ci": [
+            0.0,
+            0.0
+          ],
+          "one_detection_random_auc": 0.9916219490308688,
+          "one_detection_strongest_auc": 0.988199928212491,
+          "typical_auc": 1.0,
+          "typical_auc_by_assignment": [
+            1.0
+          ],
+          "typical_auc_ci": [
+            1.0,
+            1.0
+          ]
+        },
+        "sigma": {
+          "fpr_at_90": 0.9899497487437187,
+          "fpr_at_90_by_assignment": [
+            0.9899497487437187
+          ],
+          "fpr_at_90_ci": [
+            0.9139119402554713,
+            1.0
+          ],
+          "one_detection_random_auc": 0.27858129935391246,
+          "one_detection_strongest_auc": 0.36701363962670497,
+          "typical_auc": 0.27806442928930364,
+          "typical_auc_by_assignment": [
+            0.27806442928930364
+          ],
+          "typical_auc_ci": [
+            0.19401141376753955,
+            0.36544190128593357
+          ]
+        },
+        "sigma_chi2": {
+          "fpr_at_90": 0.05527638190954774,
+          "fpr_at_90_by_assignment": [
+            0.05527638190954774
+          ],
+          "fpr_at_90_ci": [
+            0.016593370736173618,
+            0.673427198267109
+          ],
+          "one_detection_random_auc": 0.8894862706389088,
+          "one_detection_strongest_auc": 0.8284278535534817,
+          "typical_auc": 0.9117462311557789,
+          "typical_auc_by_assignment": [
+            0.9117462311557789
+          ],
+          "typical_auc_ci": [
+            0.8456906858671143,
+            0.9651365407274021
+          ]
+        }
+      },
+      "negative_units": 69,
+      "sources": 56
+    },
+    "GBNCC all negatives": {
+      "contrasts": {
+        "E1 - C1, FPR at 90": {
+          "difference": -0.014476614699331869,
+          "high": 0.19571475797752017,
+          "level": 0.95,
+          "low": -0.21514707292713095
+        },
+        "E1 - C1, typical AUC": {
+          "difference": 0.0050111358574609355,
+          "high": 0.044924283512752704,
+          "level": 0.95,
+          "low": -0.036659877381210446
+        },
+        "E1 - all_metadata, FPR at 90": {
+          "difference": 0.2706013363028953,
+          "high": 0.4389050430640901,
+          "level": 0.95,
+          "low": 0.12686697910735406
+        },
+        "E1 - all_metadata, typical AUC": {
+          "difference": -0.09982757381995844,
+          "high": -0.05469105620984539,
+          "level": 0.95,
+          "low": -0.1515762362586615
+        },
+        "E1 - duty_cnn_input, FPR at 90": {
+          "difference": -0.1109576837416481,
+          "high": 0.17713965574528315,
+          "level": 0.95,
+          "low": -0.3068627151107324
+        },
+        "E1 - duty_cnn_input, typical AUC": {
+          "difference": 0.05118004166966017,
+          "high": 0.11797252857000169,
+          "level": 0.95,
+          "low": -0.017050828614883662
+        },
+        "E1 - duty_dmc, FPR at 90": {
+          "difference": -0.0823608017817371,
+          "high": 0.09783801885441311,
+          "level": 0.95,
+          "low": -0.4064634493769074
+        },
+        "E1 - duty_dmc, typical AUC": {
+          "difference": 0.019532653207845363,
+          "high": 0.08751983438185927,
+          "level": 0.95,
+          "low": -0.04678987189951216
+        },
+        "E1 - duty_native, FPR at 90": {
+          "difference": 0.03527839643652564,
+          "high": 0.24429520977559227,
+          "level": 0.95,
+          "low": -0.21895085058857178
+        },
+        "E1 - duty_native, typical AUC": {
+          "difference": -0.009267907177239798,
+          "high": 0.051145010081245536,
+          "level": 0.95,
+          "low": -0.06619989302326516
+        },
+        "E1 - period_dm, FPR at 90": {
+          "difference": 0.19153674832962136,
+          "high": 0.33955966191426024,
+          "level": 0.95,
+          "low": 0.02728053914960095
+        },
+        "E1 - period_dm, typical AUC": {
+          "difference": -0.05491594223722973,
+          "high": -0.005721446813061843,
+          "level": 0.95,
+          "low": -0.11009418370217558
+        },
+        "E2 - C1, FPR at 90": {
+          "difference": -0.02338530066815142,
+          "high": 0.210802753916932,
+          "level": 0.95,
+          "low": -0.21608192541264387
+        },
+        "E2 - C1, typical AUC": {
+          "difference": 0.006124721603563477,
+          "high": 0.038457553940246955,
+          "level": 0.95,
+          "low": -0.029091733540303463
+        },
+        "E2 - all_metadata, FPR at 90": {
+          "difference": 0.26169265033407574,
+          "high": 0.5218835855695996,
+          "level": 0.95,
+          "low": 0.09985009047063258
+        },
+        "E2 - all_metadata, typical AUC": {
+          "difference": -0.0987139880738559,
+          "high": -0.05481275987178481,
+          "level": 0.95,
+          "low": -0.14845772091610082
+        },
+        "E2 - duty_cnn_input, FPR at 90": {
+          "difference": -0.11986636971046766,
+          "high": 0.253151027202668,
+          "level": 0.95,
+          "low": -0.32809442342868894
+        },
+        "E2 - duty_cnn_input, typical AUC": {
+          "difference": 0.05229362741576271,
+          "high": 0.11980461202002592,
+          "level": 0.95,
+          "low": -0.016260338534914605
+        },
+        "E2 - duty_dmc, FPR at 90": {
+          "difference": -0.09126948775055665,
+          "high": 0.1773862158144144,
+          "level": 0.95,
+          "low": -0.4559468951959073
+        },
+        "E2 - duty_dmc, typical AUC": {
+          "difference": 0.020646238953947904,
+          "high": 0.0881212079506334,
+          "level": 0.95,
+          "low": -0.04663402265133138
+        },
+        "E2 - duty_native, FPR at 90": {
+          "difference": 0.026369710467706087,
+          "high": 0.3225818122606098,
+          "level": 0.95,
+          "low": -0.24914340168097923
+        },
+        "E2 - duty_native, typical AUC": {
+          "difference": -0.008154321431137257,
+          "high": 0.05411783787265584,
+          "level": 0.95,
+          "low": -0.06454505463952806
+        },
+        "E2 - period_dm, FPR at 90": {
+          "difference": 0.1826280623608018,
+          "high": 0.4224828647803813,
+          "level": 0.95,
+          "low": 0.0024140200035094343
+        },
+        "E2 - period_dm, typical AUC": {
+          "difference": -0.05380235649112719,
+          "high": -0.008625444206246858,
+          "level": 0.95,
+          "low": -0.10518970456017875
+        },
+        "E3 - C1, FPR at 90": {
+          "difference": -0.06347438752783968,
+          "high": 0.25233564764845545,
+          "level": 0.95,
+          "low": -0.2579466528269005
+        },
+        "E3 - C1, typical AUC": {
+          "difference": -0.028306631223507517,
+          "high": 0.01718297552086985,
+          "level": 0.95,
+          "low": -0.07800839659738855
+        },
+        "E3 - all_metadata, FPR at 90": {
+          "difference": 0.2216035634743875,
+          "high": 0.5321657344997371,
+          "level": 0.95,
+          "low": 0.10802575162799337
+        },
+        "E3 - all_metadata, typical AUC": {
+          "difference": -0.1331453409009269,
+          "high": -0.07866693638791294,
+          "level": 0.95,
+          "low": -0.1923032954307093
+        },
+        "E3 - duty_cnn_input, FPR at 90": {
+          "difference": -0.15995545657015592,
+          "high": 0.2390673937360176,
+          "level": 0.95,
+          "low": -0.3238386073120586
+        },
+        "E3 - duty_cnn_input, typical AUC": {
+          "difference": 0.017862274588691718,
+          "high": 0.08906775210084031,
+          "level": 0.95,
+          "low": -0.05363187607142806
+        },
+        "E3 - duty_dmc, FPR at 90": {
+          "difference": -0.13135857461024492,
+          "high": 0.2118192458044783,
+          "level": 0.95,
+          "low": -0.4830318291700242
+        },
+        "E3 - duty_dmc, typical AUC": {
+          "difference": -0.01378511387312309,
+          "high": 0.06672704643067465,
+          "level": 0.95,
+          "low": -0.09740390994278125
+        },
+        "E3 - duty_native, FPR at 90": {
+          "difference": -0.013719376391982174,
+          "high": 0.33738927738927726,
+          "level": 0.95,
+          "low": -0.25169989180779334
+        },
+        "E3 - duty_native, typical AUC": {
+          "difference": -0.04258567425820825,
+          "high": 0.020213420423687137,
+          "level": 0.95,
+          "low": -0.1046753214881712
+        },
+        "E3 - period_dm, FPR at 90": {
+          "difference": 0.14253897550111355,
+          "high": 0.4605611302837798,
+          "level": 0.95,
+          "low": -0.02162736165081057
+        },
+        "E3 - period_dm, typical AUC": {
+          "difference": -0.08823370931819818,
+          "high": -0.025471166453919353,
+          "level": 0.95,
+          "low": -0.15680451128208325
+        }
+      },
+      "models": {
+        "C1": {
+          "fpr_at_90": 0.2962138084632517,
+          "fpr_at_90_by_assignment": [
+            0.2962138084632517
+          ],
+          "fpr_at_90_ci": [
+            0.09044618029642161,
+            0.45794512218477096
+          ],
+          "one_detection_random_auc": 0.8678319203965802,
+          "one_detection_strongest_auc": 0.8931496515554278,
+          "typical_auc": 0.8809540915295639,
+          "typical_auc_by_assignment": [
+            0.8809540915295639
+          ],
+          "typical_auc_ci": [
+            0.8309608672553344,
+            0.9253627080453115
+          ]
+        },
+        "E1": {
+          "fpr_at_90": 0.2817371937639198,
+          "fpr_at_90_by_assignment": [
+            0.2817371937639198
+          ],
+          "fpr_at_90_ci": [
+            0.13524553701651013,
+            0.45332267572998003
+          ],
+          "one_detection_random_auc": 0.8721989726273442,
+          "one_detection_strongest_auc": 0.8886593864501761,
+          "typical_auc": 0.8859652273870249,
+          "typical_auc_by_assignment": [
+            0.8859652273870249
+          ],
+          "typical_auc_ci": [
+            0.8332648105786423,
+            0.9305421766340725
+          ]
+        },
+        "E2": {
+          "fpr_at_90": 0.27282850779510026,
+          "fpr_at_90_by_assignment": [
+            0.27282850779510026
+          ],
+          "fpr_at_90_ci": [
+            0.11034842167957121,
+            0.5368456940954995
+          ],
+          "one_detection_random_auc": 0.8719002801925426,
+          "one_detection_strongest_auc": 0.883773978015662,
+          "typical_auc": 0.8870788131331274,
+          "typical_auc_by_assignment": [
+            0.8870788131331274
+          ],
+          "typical_auc_ci": [
+            0.837855977166991,
+            0.9290189888583984
+          ]
+        },
+        "E3": {
+          "fpr_at_90": 0.232739420935412,
+          "fpr_at_90_by_assignment": [
+            0.232739420935412
+          ],
+          "fpr_at_90_ci": [
+            0.12319535491490027,
+            0.5418839798850574
+          ],
+          "one_detection_random_auc": 0.8382126948775057,
+          "one_detection_strongest_auc": 0.8664595157698111,
+          "typical_auc": 0.8526474603060564,
+          "typical_auc_by_assignment": [
+            0.8526474603060564
+          ],
+          "typical_auc_ci": [
+            0.7961923908279609,
+            0.90094377440843
+          ]
+        },
+        "all_metadata": {
+          "fpr_at_90": 0.011135857461024499,
+          "fpr_at_90_by_assignment": [
+            0.011135857461024499
+          ],
+          "fpr_at_90_ci": [
+            0.0,
+            0.025878281983044767
+          ],
+          "one_detection_random_auc": 0.9853796968173002,
+          "one_detection_strongest_auc": 0.9855952295423522,
+          "typical_auc": 0.9857928012069833,
+          "typical_auc_by_assignment": [
+            0.9857928012069833
+          ],
+          "typical_auc_ci": [
+            0.9612010737392741,
+            0.9990369611713474
+          ]
+        },
+        "duty_cnn_input": {
+          "fpr_at_90": 0.3926948775055679,
+          "fpr_at_90_by_assignment": [
+            0.3926948775055679
+          ],
+          "fpr_at_90_ci": [
+            0.1887063524111109,
+            0.5516131097986782
+          ],
+          "one_detection_random_auc": 0.8068830375745384,
+          "one_detection_strongest_auc": 0.8503664056325886,
+          "typical_auc": 0.8347851857173647,
+          "typical_auc_by_assignment": [
+            0.8347851857173647
+          ],
+          "typical_auc_ci": [
+            0.7762268135728999,
+            0.8873234531258857
+          ]
+        },
+        "duty_dmc": {
+          "fpr_at_90": 0.3640979955456569,
+          "fpr_at_90_by_assignment": [
+            0.3640979955456569
+          ],
+          "fpr_at_90_ci": [
+            0.1872634300415192,
+            0.69932197077185
+          ],
+          "one_detection_random_auc": 0.8423526294992457,
+          "one_detection_strongest_auc": 0.8704019685322222,
+          "typical_auc": 0.8664325741791795,
+          "typical_auc_by_assignment": [
+            0.8664325741791795
+          ],
+          "typical_auc_ci": [
+            0.8068957907796859,
+            0.9181530406393007
+          ]
+        },
+        "duty_forest": {
+          "fpr_at_90": 0.6366592427616926,
+          "fpr_at_90_by_assignment": [
+            0.6366592427616926
+          ],
+          "fpr_at_90_ci": [
+            0.19962270428702417,
+            0.8240100715681273
+          ],
+          "one_detection_random_auc": 0.7699186363962925,
+          "one_detection_strongest_auc": 0.8244485954450751,
+          "typical_auc": 0.8034251742222861,
+          "typical_auc_by_assignment": [
+            0.8034251742222861
+          ],
+          "typical_auc_ci": [
+            0.7342884831227138,
+            0.8689344451402528
+          ]
+        },
+        "duty_native": {
+          "fpr_at_90": 0.24645879732739417,
+          "fpr_at_90_by_assignment": [
+            0.24645879732739417
+          ],
+          "fpr_at_90_ci": [
+            0.09018106807668853,
+            0.5692021041373135
+          ],
+          "one_detection_random_auc": 0.8801740426754795,
+          "one_detection_strongest_auc": 0.9118650765141174,
+          "typical_auc": 0.8952331345642647,
+          "typical_auc_by_assignment": [
+            0.8952331345642647
+          ],
+          "typical_auc_ci": [
+            0.8433574286335068,
+            0.9406178077265985
+          ]
+        },
+        "geometry_acquisition": {
+          "fpr_at_90": 0.013363028953229399,
+          "fpr_at_90_by_assignment": [
+            0.013363028953229399
+          ],
+          "fpr_at_90_ci": [
+            0.0024656384746455946,
+            0.09557632980046768
+          ],
+          "one_detection_random_auc": 0.9709650477764207,
+          "one_detection_strongest_auc": 0.9767763488756376,
+          "typical_auc": 0.9861610029456139,
+          "typical_auc_by_assignment": [
+            0.9861610029456139
+          ],
+          "typical_auc_ci": [
+            0.9751805152033299,
+            0.9942511312060041
+          ]
+        },
+        "htru1": {
+          "fpr_at_90": 0.7483296213808464,
+          "fpr_at_90_by_assignment": [
+            0.7483296213808464
+          ],
+          "fpr_at_90_ci": [
+            0.5580882455213085,
+            0.857340364058822
+          ],
+          "one_detection_random_auc": 0.5819146490408794,
+          "one_detection_strongest_auc": 0.6561354982398161,
+          "typical_auc": 0.5856742582082046,
+          "typical_auc_by_assignment": [
+            0.5856742582082046
+          ],
+          "typical_auc_ci": [
+            0.49093673763946377,
+            0.6754885467269135
+          ]
+        },
+        "period_dm": {
+          "fpr_at_90": 0.09020044543429843,
+          "fpr_at_90_by_assignment": [
+            0.09020044543429843
+          ],
+          "fpr_at_90_ci": [
+            0.05334981104062626,
+            0.2575127563740316
+          ],
+          "one_detection_random_auc": 0.9358985918528631,
+          "one_detection_strongest_auc": 0.9311642359364897,
+          "typical_auc": 0.9408811696242546,
+          "typical_auc_by_assignment": [
+            0.9408811696242546
+          ],
+          "typical_auc_ci": [
+            0.9029694516990342,
+            0.9693767650580044
+          ]
+        },
+        "sigma": {
+          "fpr_at_90": 0.46102449888641417,
+          "fpr_at_90_by_assignment": [
+            0.46102449888641417
+          ],
+          "fpr_at_90_ci": [
+            0.32699683462532303,
+            0.729620935449541
+          ],
+          "one_detection_random_auc": 0.649580878655076,
+          "one_detection_strongest_auc": 0.688034341547525,
+          "typical_auc": 0.6506394137509879,
+          "typical_auc_by_assignment": [
+            0.6506394137509879
+          ],
+          "typical_auc_ci": [
+            0.5343288382798714,
+            0.7530293609347823
+          ]
+        },
+        "sigma_chi2": {
+          "fpr_at_90": 0.10913140311804011,
+          "fpr_at_90_by_assignment": [
+            0.10913140311804011
+          ],
+          "fpr_at_90_ci": [
+            0.023951243299278443,
+            0.5505038597080046
+          ],
+          "one_detection_random_auc": 0.9110879912350025,
+          "one_detection_strongest_auc": 0.8775235289891515,
+          "typical_auc": 0.9212317695236727,
+          "typical_auc_by_assignment": [
+            0.9212317695236727
+          ],
+          "typical_auc_ci": [
+            0.8683048688089011,
+            0.9624715361374405
+          ]
+        }
+      },
+      "negative_units": 88,
+      "sources": 62
+    },
+    "GBNCC noise (provisional)": {
+      "contrasts": {
+        "E1 - C1, FPR at 90": {
+          "difference": -0.126,
+          "high": 0.16114837398373963,
+          "level": 0.95,
+          "low": -0.3859880939134305
+        },
+        "E1 - C1, typical AUC": {
+          "difference": 0.05206451612903218,
+          "high": 0.09741704387971384,
+          "level": 0.95,
+          "low": 0.008688536281163332
+        },
+        "E1 - all_metadata, FPR at 90": {
+          "difference": 0.268,
+          "high": 0.46258209851822174,
+          "level": 0.95,
+          "low": 0.09164603383783929
+        },
+        "E1 - all_metadata, typical AUC": {
+          "difference": -0.08512903225806456,
+          "high": -0.042998387226994166,
+          "level": 0.95,
+          "low": -0.13135351447832977
+        },
+        "E1 - duty_cnn_input, FPR at 90": {
+          "difference": -0.04856000000000005,
+          "high": 0.23982004092573317,
+          "level": 0.95,
+          "low": -0.2595045784748035
+        },
+        "E1 - duty_cnn_input, typical AUC": {
+          "difference": 0.029999999999999916,
+          "high": 0.09312372336905418,
+          "level": 0.95,
+          "low": -0.03294608294240313
+        },
+        "E1 - duty_dmc, FPR at 90": {
+          "difference": -0.2079999999999999,
+          "high": 0.010757393943671851,
+          "level": 0.95,
+          "low": -0.5888337074936479
+        },
+        "E1 - duty_dmc, typical AUC": {
+          "difference": 0.07654838709677414,
+          "high": 0.14846502988575555,
+          "level": 0.95,
+          "low": 0.009877655968670204
+        },
+        "E1 - duty_native, FPR at 90": {
+          "difference": 0.10660000000000006,
+          "high": 0.3314116878768508,
+          "level": 0.95,
+          "low": -0.16631726065688324
+        },
+        "E1 - duty_native, typical AUC": {
+          "difference": -0.02548387096774196,
+          "high": 0.02682992485996778,
+          "level": 0.95,
+          "low": -0.07903181882071822
+        },
+        "E1 - period_dm, FPR at 90": {
+          "difference": 0.126,
+          "high": 0.2882120406189554,
+          "level": 0.95,
+          "low": -0.0994753701620284
+        },
+        "E1 - period_dm, typical AUC": {
+          "difference": -0.004596774193548425,
+          "high": 0.0419932537780239,
+          "level": 0.95,
+          "low": -0.05319186448956686
+        },
+        "E2 - C1, FPR at 90": {
+          "difference": -0.12200000000000005,
+          "high": 0.1591372574760297,
+          "level": 0.95,
+          "low": -0.33477061330512814
+        },
+        "E2 - C1, typical AUC": {
+          "difference": 0.04290322580645156,
+          "high": 0.08527551886275214,
+          "level": 0.95,
+          "low": 0.000481486894565733
+        },
+        "E2 - all_metadata, FPR at 90": {
+          "difference": 0.27199999999999996,
+          "high": 0.5772220606124715,
+          "level": 0.95,
+          "low": 0.07142010832769129
+        },
+        "E2 - all_metadata, typical AUC": {
+          "difference": -0.09429032258064518,
+          "high": -0.05052450223890861,
+          "level": 0.95,
+          "low": -0.14264834780506125
+        },
+        "E2 - duty_cnn_input, FPR at 90": {
+          "difference": -0.0445600000000001,
+          "high": 0.34752365464222346,
+          "level": 0.95,
+          "low": -0.26829336429688216
+        },
+        "E2 - duty_cnn_input, typical AUC": {
+          "difference": 0.020838709677419298,
+          "high": 0.0829582166326128,
+          "level": 0.95,
+          "low": -0.04029224273198078
+        },
+        "E2 - duty_dmc, FPR at 90": {
+          "difference": -0.20399999999999996,
+          "high": 0.10721251266464,
+          "level": 0.95,
+          "low": -0.6160228378041623
+        },
+        "E2 - duty_dmc, typical AUC": {
+          "difference": 0.06738709677419352,
+          "high": 0.14257999565064652,
+          "level": 0.95,
+          "low": -0.004071010773938483
+        },
+        "E2 - duty_native, FPR at 90": {
+          "difference": 0.1106,
+          "high": 0.4456530172995439,
+          "level": 0.95,
+          "low": -0.18018361283971449
+        },
+        "E2 - duty_native, typical AUC": {
+          "difference": -0.03464516129032258,
+          "high": 0.02187507320227099,
+          "level": 0.95,
+          "low": -0.09042568619128467
+        },
+        "E2 - period_dm, FPR at 90": {
+          "difference": 0.12999999999999995,
+          "high": 0.4043800681012391,
+          "level": 0.95,
+          "low": -0.10414562229319942
+        },
+        "E2 - period_dm, typical AUC": {
+          "difference": -0.013758064516129043,
+          "high": 0.03633797733737115,
+          "level": 0.95,
+          "low": -0.06347387724532491
+        },
+        "E3 - C1, FPR at 90": {
+          "difference": -0.23800000000000004,
+          "high": 0.19315819684090066,
+          "level": 0.95,
+          "low": -0.45263304364808127
+        },
+        "E3 - C1, typical AUC": {
+          "difference": 0.03403225806451604,
+          "high": 0.08899703611712045,
+          "level": 0.95,
+          "low": -0.01878303740851178
+        },
+        "E3 - all_metadata, FPR at 90": {
+          "difference": 0.156,
+          "high": 0.567022815259472,
+          "level": 0.95,
+          "low": 0.04402014583176728
+        },
+        "E3 - all_metadata, typical AUC": {
+          "difference": -0.1031612903225807,
+          "high": -0.04788605489162505,
+          "level": 0.95,
+          "low": -0.1602290244688868
+        },
+        "E3 - duty_cnn_input, FPR at 90": {
+          "difference": -0.1605600000000001,
+          "high": 0.30626079652609384,
+          "level": 0.95,
+          "low": -0.30750248254212315
+        },
+        "E3 - duty_cnn_input, typical AUC": {
+          "difference": 0.011967741935483778,
+          "high": 0.07737484783931832,
+          "level": 0.95,
+          "low": -0.05517835536810872
+        },
+        "E3 - duty_dmc, FPR at 90": {
+          "difference": -0.31999999999999995,
+          "high": 0.12230162320151691,
+          "level": 0.95,
+          "low": -0.6870822875141492
+        },
+        "E3 - duty_dmc, typical AUC": {
+          "difference": 0.058516129032258,
+          "high": 0.14540516930093775,
+          "level": 0.95,
+          "low": -0.025782943081330202
+        },
+        "E3 - duty_native, FPR at 90": {
+          "difference": -0.005399999999999988,
+          "high": 0.41412104539661093,
+          "level": 0.95,
+          "low": -0.2291677585604473
+        },
+        "E3 - duty_native, typical AUC": {
+          "difference": -0.0435161290322581,
+          "high": 0.01256494344503055,
+          "level": 0.95,
+          "low": -0.10238645828589098
+        },
+        "E3 - period_dm, FPR at 90": {
+          "difference": 0.013999999999999957,
+          "high": 0.42883275675438465,
+          "level": 0.95,
+          "low": -0.18538157894736823
+        },
+        "E3 - period_dm, typical AUC": {
+          "difference": -0.022629032258064563,
+          "high": 0.04571177292818543,
+          "level": 0.95,
+          "low": -0.09124962778129156
+        }
+      },
+      "models": {
+        "C1": {
+          "fpr_at_90": 0.41400000000000003,
+          "fpr_at_90_by_assignment": [
+            0.41400000000000003
+          ],
+          "fpr_at_90_ci": [
+            0.0967606964502632,
+            0.6089018404907975
+          ],
+          "one_detection_random_auc": 0.8289770967741937,
+          "one_detection_strongest_auc": 0.8640967741935484,
+          "typical_auc": 0.8472258064516129,
+          "typical_auc_by_assignment": [
+            0.8472258064516129
+          ],
+          "typical_auc_ci": [
+            0.7934946055171013,
+            0.8993978609254696
+          ]
+        },
+        "E1": {
+          "fpr_at_90": 0.28800000000000003,
+          "fpr_at_90_by_assignment": [
+            0.28800000000000003
+          ],
+          "fpr_at_90_ci": [
+            0.1078964800187822,
+            0.4933633546347257
+          ],
+          "one_detection_random_auc": 0.8836141935483872,
+          "one_detection_strongest_auc": 0.8980967741935484,
+          "typical_auc": 0.8992903225806451,
+          "typical_auc_by_assignment": [
+            0.8992903225806451
+          ],
+          "typical_auc_ci": [
+            0.8519874284379804,
+            0.942199149815171
+          ]
+        },
+        "E2": {
+          "fpr_at_90": 0.292,
+          "fpr_at_90_by_assignment": [
+            0.292
+          ],
+          "fpr_at_90_ci": [
+            0.0905308629025337,
+            0.5950190988630876
+          ],
+          "one_detection_random_auc": 0.8695870967741937,
+          "one_detection_strongest_auc": 0.8836451612903226,
+          "typical_auc": 0.8901290322580645,
+          "typical_auc_by_assignment": [
+            0.8901290322580645
+          ],
+          "typical_auc_ci": [
+            0.8416865524088983,
+            0.9369587164653188
+          ]
+        },
+        "E3": {
+          "fpr_at_90": 0.176,
+          "fpr_at_90_by_assignment": [
+            0.176
+          ],
+          "fpr_at_90_ci": [
+            0.0669668976135489,
+            0.5810540365286934
+          ],
+          "one_detection_random_auc": 0.8629390322580645,
+          "one_detection_strongest_auc": 0.8895806451612903,
+          "typical_auc": 0.881258064516129,
+          "typical_auc_by_assignment": [
+            0.881258064516129
+          ],
+          "typical_auc_ci": [
+            0.8277118206833295,
+            0.9325040967483496
+          ]
+        },
+        "all_metadata": {
+          "fpr_at_90": 0.02,
+          "fpr_at_90_by_assignment": [
+            0.02
+          ],
+          "fpr_at_90_ci": [
+            0.0,
+            0.04727887772360948
+          ],
+          "one_detection_random_auc": 0.983731935483871,
+          "one_detection_strongest_auc": 0.9840645161290322,
+          "typical_auc": 0.9844193548387097,
+          "typical_auc_by_assignment": [
+            0.9844193548387097
+          ],
+          "typical_auc_ci": [
+            0.9592026124966115,
+            0.9984297361789023
+          ]
+        },
+        "duty_cnn_input": {
+          "fpr_at_90": 0.3365600000000001,
+          "fpr_at_90_by_assignment": [
+            0.3365600000000001
+          ],
+          "fpr_at_90_ci": [
+            0.13979397675596766,
+            0.4568817063551425
+          ],
+          "one_detection_random_auc": 0.842972258064516,
+          "one_detection_strongest_auc": 0.8804516129032258,
+          "typical_auc": 0.8692903225806452,
+          "typical_auc_by_assignment": [
+            0.8692903225806452
+          ],
+          "typical_auc_ci": [
+            0.8223381045398763,
+            0.9115034530542622
+          ]
+        },
+        "duty_dmc": {
+          "fpr_at_90": 0.49599999999999994,
+          "fpr_at_90_by_assignment": [
+            0.49599999999999994
+          ],
+          "fpr_at_90_ci": [
+            0.28733277492633796,
+            0.8602057694966811
+          ],
+          "one_detection_random_auc": 0.7934382258064516,
+          "one_detection_strongest_auc": 0.8309677419354838,
+          "typical_auc": 0.822741935483871,
+          "typical_auc_by_assignment": [
+            0.822741935483871
+          ],
+          "typical_auc_ci": [
+            0.7555169896340992,
+            0.8832174006753358
+          ]
+        },
+        "duty_forest": {
+          "fpr_at_90": 0.5661599999999999,
+          "fpr_at_90_by_assignment": [
+            0.5661599999999999
+          ],
+          "fpr_at_90_ci": [
+            0.15441357781023438,
+            0.8303355372056027
+          ],
+          "one_detection_random_auc": 0.791256612903226,
+          "one_detection_strongest_auc": 0.8431774193548387,
+          "typical_auc": 0.8290483870967742,
+          "typical_auc_by_assignment": [
+            0.8290483870967742
+          ],
+          "typical_auc_ci": [
+            0.7626684090500303,
+            0.8881079949810429
+          ]
+        },
+        "duty_native": {
+          "fpr_at_90": 0.18139999999999998,
+          "fpr_at_90_by_assignment": [
+            0.18139999999999998
+          ],
+          "fpr_at_90_ci": [
+            0.04357296137339059,
+            0.49545974140019367
+          ],
+          "one_detection_random_auc": 0.9081148387096774,
+          "one_detection_strongest_auc": 0.9344354838709678,
+          "typical_auc": 0.9247741935483871,
+          "typical_auc_by_assignment": [
+            0.9247741935483871
+          ],
+          "typical_auc_ci": [
+            0.8779611620601907,
+            0.9626102572819007
+          ]
+        },
+        "geometry_acquisition": {
+          "fpr_at_90": 0.024,
+          "fpr_at_90_by_assignment": [
+            0.024
+          ],
+          "fpr_at_90_ci": [
+            0.004563661937377695,
+            0.16512523191094616
+          ],
+          "one_detection_random_auc": 0.9608870967741936,
+          "one_detection_strongest_auc": 0.9698548387096774,
+          "typical_auc": 0.9752096774193548,
+          "typical_auc_by_assignment": [
+            0.9752096774193548
+          ],
+          "typical_auc_ci": [
+            0.9576428151979827,
+            0.9890702861144359
+          ]
+        },
+        "htru1": {
+          "fpr_at_90": 0.5880000000000001,
+          "fpr_at_90_by_assignment": [
+            0.5880000000000001
+          ],
+          "fpr_at_90_ci": [
+            0.33116400660429296,
+            0.7832119748913565
+          ],
+          "one_detection_random_auc": 0.735625806451613,
+          "one_detection_strongest_auc": 0.801,
+          "typical_auc": 0.7531612903225806,
+          "typical_auc_by_assignment": [
+            0.7531612903225806
+          ],
+          "typical_auc_ci": [
+            0.6807591387309815,
+            0.821130889924214
+          ]
+        },
+        "period_dm": {
+          "fpr_at_90": 0.16200000000000003,
+          "fpr_at_90_by_assignment": [
+            0.16200000000000003
+          ],
+          "fpr_at_90_ci": [
+            0.108035820812421,
+            0.47884903983912774
+          ],
+          "one_detection_random_auc": 0.8955138709677419,
+          "one_detection_strongest_auc": 0.8949193548387097,
+          "typical_auc": 0.9038870967741935,
+          "typical_auc_by_assignment": [
+            0.9038870967741935
+          ],
+          "typical_auc_ci": [
+            0.8572380935388715,
+            0.9440785720715146
+          ]
+        },
+        "sigma": {
+          "fpr_at_90": 0.036000000000000004,
+          "fpr_at_90_by_assignment": [
+            0.036000000000000004
+          ],
+          "fpr_at_90_ci": [
+            0.011032739078593909,
+            0.495016143500828
+          ],
+          "one_detection_random_auc": 0.944408870967742,
+          "one_detection_strongest_auc": 0.9481290322580646,
+          "typical_auc": 0.9449193548387097,
+          "typical_auc_by_assignment": [
+            0.9449193548387097
+          ],
+          "typical_auc_ci": [
+            0.8990223254414553,
+            0.9820083307380878
+          ]
+        },
+        "sigma_chi2": {
+          "fpr_at_90": 0.038000000000000006,
+          "fpr_at_90_by_assignment": [
+            0.038000000000000006
+          ],
+          "fpr_at_90_ci": [
+            0.014550852841992087,
+            0.22099099313762838
+          ],
+          "one_detection_random_auc": 0.9503590322580645,
+          "one_detection_strongest_auc": 0.9331290322580645,
+          "typical_auc": 0.9517258064516129,
+          "typical_auc_by_assignment": [
+            0.9517258064516129
+          ],
+          "typical_auc_ci": [
+            0.9083028004225769,
+            0.9813027088742365
+          ]
+        }
+      },
+      "negative_units": 19,
+      "sources": 62
+    }
+  },
+  "score": "CNN rows ranked by pulsar log-odds, logit_pulsar - logaddexp(logit_rfi, logit_noise)",
+  "stage": "pilot"
+}

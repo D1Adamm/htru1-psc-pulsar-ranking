@@ -1,0 +1,45 @@
+{
+  "allow_dirty": false,
+  "arm": "E2",
+  "assignment": 0,
+  "best_epoch": 31,
+  "best_val_accuracy": 0.9109848737716675,
+  "checkpoint_sha256": "34c2ba9b8bad507c028e6d290589317487cc9517e7e928293d15ce3078fe205c",
+  "device": "cpu",
+  "fold": 2,
+  "folds_sha256": "ef4681d2ae99c51cf3b17bfab4a7d794d9bc248fe41753f00b789ed1ee045890",
+  "git": {
+    "commit": "f0618d7880bcc86120f3de053e2469e0ed2bf2bc",
+    "dirty": false,
+    "dirty_entries": []
+  },
+  "identity_sha256": "e225cc6459762c9dd18460b95a2be05c8dbadc5a4389cab565b28efe4363bc1d",
+  "load_info": {
+    "loaded": [],
+    "skipped": []
+  },
+  "manifest_sha256": "273379bd6d3cc02bd4feb7cb8256dab965201eae0c30b6ca5be4d7b4fc0ad93f",
+  "model_seed": 44,
+  "numpy": "2.5.1",
+  "pretrained_sha256": "7f852a3e7fc46ade884c32a4a5599cc4c2734d0fd262a2c17620a4f6e4695d5c",
+  "python": "3.13.14",
+  "recipe": {
+    "batch_size": 32,
+    "epochs": 40,
+    "learning_rate": 0.001,
+    "optimizer": "Adam",
+    "selection": "validation accuracy"
+  },
+  "run_id": "E2_a0_f2_s44",
+  "seconds": 42.24069666699506,
+  "source_survey": null,
+  "split_sizes": {
+    "test": 551,
+    "train": 1661,
+    "val": 528,
+    "val_scored": 528
+  },
+  "target_survey": null,
+  "threads": 4,
+  "torch": "2.13.0"
+}

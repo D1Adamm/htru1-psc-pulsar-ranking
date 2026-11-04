@@ -293,6 +293,36 @@ class EvaluationTests(unittest.TestCase):
             with mock.patch.object(evaluate, "RUN_ROOT", Path(out)), self.assertRaises(ValueError):
                 evaluate.read_run_scores(["E1_a0_f0_s42"], self.records, self.fixture.folds_data)
 
+    def test_saturated_probabilities_are_ranked_from_logits(self) -> None:
+        identity = self.fixture.folds_data["identity_sha256"]
+        with tempfile.TemporaryDirectory() as out:
+            run_dir = Path(out) / "E1_a0_f0_s42"
+            run_dir.mkdir()
+            (run_dir / "metadata.json").write_text(json.dumps({"identity_sha256": identity}))
+            (run_dir / "scores.csv").write_text(
+                "plot_id,split,logit_known_pulsar,logit_rfi,logit_noise,p_pulsar\n"
+                "a,test,-12.0,9.0,1.0,0.00000000\n"
+                "b,test,-15.0,9.0,1.0,0.00000000\n"
+                "c,val,2.0,1.0,0.0,0.66524096\n"
+            )
+            with mock.patch.object(evaluate, "RUN_ROOT", Path(out)):
+                runs, _ = evaluate.read_run_scores(["E1_a0_f0_s42"], self.records, self.fixture.folds_data)
+        scores = runs["E1_a0_f0_s42"]
+        self.assertGreater(scores["test"]["a"], scores["test"]["b"])
+        logits = np.array([2.0, 1.0, 0.0])
+        p = np.exp(logits[0]) / np.exp(logits).sum()
+        self.assertAlmostEqual(scores["val"]["c"], np.log(p / (1 - p)), places=12)
+
+    def test_output_name_cannot_leave_evaluation_directory(self) -> None:
+        args = ["--stage", "pilot", "--name", "../escaped", "--manifest", str(self.fixture.manifest),
+                "--cache-dir", str(self.fixture.cache), "--identity", str(self.fixture.identity), "--folds", str(self.fixture.folds)]
+        with tempfile.TemporaryDirectory() as out, \
+                mock.patch.object(evaluate, "OUTPUT_ROOT", Path(out) / "evaluation"), \
+                mock.patch.object(evaluate, "load_folds", side_effect=AssertionError("loaded data")):
+            with self.assertRaisesRegex(ValueError, "refusing to write outside"):
+                evaluate.main(args)
+            self.assertFalse((Path(out) / "escaped").exists())
+
     def test_interventions_rescore_without_changing_the_checkpoint(self) -> None:
         torch.manual_seed(0)
         ids = [r["plot_id"] for r in self.records]

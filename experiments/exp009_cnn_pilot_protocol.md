@@ -230,6 +230,27 @@ downloaded, so whether it holds an identical `psrcat.db` is unknown. Consequence
 - If the exact `psrcat.db` is lost, identities can only be re-derived from a different
   catalogue file, and any differences must be reviewed before using them.
 
+## Amendments
+
+**2026-11-03, after the pilot evaluation and the fixed extension's training, before any
+assignment 1–2 test metric was computed.**
+
+1. **CNN score precision.** Training stores `p_pulsar` rounded to 8 decimals, so
+   saturated scores tie. CNN rows are now ranked by pulsar log-odds,
+   `logit_pulsar - logaddexp(logit_rfi, logit_noise)`, computed from the stored
+   logits. This ranks rows exactly as unrounded softmax does. It is a measurement fix,
+   not a change of metric. On the pilot it moves within-survey AUCs by at most 0.001
+   and cross-survey AUCs by up to 0.008; the pilot decision is unchanged. The original
+   pilot report stays in `outputs/exp009/evaluation/pilot/`; the rescored one is in
+   `pilot_logodds/`. Claim C stacking now uses unclipped log-odds (it previously
+   clipped probabilities at 1e-6), and intervention effects use log-odds too.
+2. **E3 on assignments 1–2.** The fixed extension omits E3, but the Experiments table
+   lists 15 E3 runs and the three-assignment evaluation requires them. The 10
+   pre-coded `e3-completion` runs are run with the unchanged recipe. Because they were
+   added after the pilot result was seen, the pre-specified claim verdicts are the
+   ones using E1 and E2. If including E3 changes any verdict, both are reported and
+   the E3-inclusive one is exploratory.
+
 ## Limitations
 
 - Label decisions rest on non-expert plot inspection, and the 9 uncertain rows need an

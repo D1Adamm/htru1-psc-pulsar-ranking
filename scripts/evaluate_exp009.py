@@ -32,6 +32,7 @@ if str(REPO_ROOT) not in sys.path:
 
 from src.datasets.psc_controls import INTERVENTIONS
 from src.datasets.psc_folds import (
+    assert_under,
     attach_identity,
     linked_components,
     load_candidate_records,
@@ -148,6 +149,18 @@ def populations(records: list[dict]) -> dict[str, tuple[np.ndarray, np.ndarray]]
     return out
 
 
+SCORE_DEFINITION = "CNN rows ranked by pulsar log-odds, logit_pulsar - logaddexp(logit_rfi, logit_noise)"
+
+
+def pulsar_log_odds(logits: np.ndarray) -> np.ndarray:
+    """log P(pulsar) - log P(not pulsar) from three-class logits.
+
+    Ranks rows exactly as softmax ``p_pulsar`` does, without the ties that
+    probabilities rounded to 8 decimals create once they saturate.
+    """
+    return logits[..., 0] - np.logaddexp(logits[..., 1], logits[..., 2])
+
+
 def read_run_scores(run_ids: list[str], records: list[dict], folds: dict) -> tuple[dict, list[str]]:
     """``{run_id: {"test": {...}, "val": {...}}}``; second value lists missing runs."""
     identity_hash = folds["identity_sha256"]
@@ -164,7 +177,8 @@ def read_run_scores(run_ids: list[str], records: list[dict], folds: dict) -> tup
         scores: dict[str, dict[str, float]] = {"test": {}, "val": {}}
         with open(path / "scores.csv", newline="") as f:
             for row in csv.DictReader(f):
-                scores[row["split"]][row["plot_id"]] = float(row["p_pulsar"])
+                logits = np.array([float(row["logit_known_pulsar"]), float(row["logit_rfi"]), float(row["logit_noise"])])
+                scores[row["split"]][row["plot_id"]] = float(pulsar_log_odds(logits))
         loaded[run_id] = {"metadata": metadata, **scores}
     return loaded, missing
 
@@ -277,19 +291,15 @@ def stacked_scores(arm: str, runs: dict, records: list[dict], baseline: np.ndarr
     uncertain = np.array([r["label_uncertain"] for r in records])
     with_cnn, without_cnn = np.full(len(records), np.nan), np.full(len(records), np.nan)
 
-    def to_logit(values: np.ndarray) -> np.ndarray:
-        clipped = np.clip(values, 1e-6, 1 - 1e-6)
-        return np.log(clipped / (1 - clipped))
-
     for run in runs.values():
         meta = run["metadata"]
         if meta["arm"] != arm or meta["assignment"] != assignment:
             continue
         val_rows = np.array([plot_index[p] for p in run["val"]])
-        val_cnn = to_logit(np.array(list(run["val"].values())))
+        val_cnn = np.array(list(run["val"].values()))
         keep = ~uncertain[val_rows]
         test_rows = np.array([plot_index[p] for p in run["test"]])
-        test_cnn = to_logit(np.array(list(run["test"].values())))
+        test_cnn = np.array(list(run["test"].values()))
         base = baseline[assignment_position] if baseline.ndim == 2 else baseline
         fit_base = np.c_[base[val_rows], gbncc[val_rows]][keep]
         fit_both = np.c_[fit_base, val_cnn[keep]]
@@ -324,11 +334,11 @@ def intervention_changes(run_ids: list[str], runs: dict, records: list[dict], ca
         rows = np.array([index[p] for p in plot_ids])
         original = model(torch.stack([arrays_to_tensor(*arrays[p]) for p in plot_ids]))
         original_class = original.argmax(1).numpy()
-        original_score = torch.softmax(original, 1)[:, 0].numpy()
+        original_score = pulsar_log_odds(original.double().numpy())
         results[run_id] = {}
         for name, transform in INTERVENTIONS.items():
             changed = model(torch.stack([transform(*arrays[p], p) for p in plot_ids]))
-            score = torch.softmax(changed, 1)[:, 0].numpy()
+            score = pulsar_log_odds(changed.double().numpy())
             effect = {"class_changed": float((changed.argmax(1).numpy() != original_class).mean())}
             for survey in sorted(set(surveys[rows])):
                 pulsar = (surveys[rows] == survey) & (categories[rows] == "known_pulsar")
@@ -372,7 +382,7 @@ def evaluate(stage: str, records: list[dict], static: dict, runs: dict, n_boot: 
     within.update(baseline_scores(plot_ids, assignments))
     arms = [a for a in WITHIN_ARMS if not np.isnan(within[a]).all()]
 
-    report: dict = {"stage": stage, "assignments": assignments, "interval_level": level, "populations": {}, "cross_survey": {}}
+    report: dict = {"stage": stage, "assignments": assignments, "interval_level": level, "score": SCORE_DEFINITION, "populations": {}, "cross_survey": {}}
     if not BASELINE_SCORES.is_file():
         report["warning"] = "Forest baselines are missing; only no-fit bars are included."
 
@@ -530,6 +540,7 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--stage", choices=("baseline-check", "pilot", "full"), required=True)
     parser.add_argument("--dry-run", action="store_true", help="Report run availability; write nothing")
+    parser.add_argument("--name", help="Output directory under evaluation/ (default: the stage name)")
     parser.add_argument("--n-boot", type=int, default=2000)
     parser.add_argument("--no-interventions", action="store_true", help="Skip re-scoring on altered images")
     parser.add_argument("--manifest", type=Path, default=DEFAULT_MANIFEST)
@@ -541,6 +552,8 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
 
 def main(argv: list[str] | None = None) -> int:
     args = parse_args(argv)
+    output_dir = OUTPUT_ROOT / (args.name or args.stage)
+    assert_under(output_dir / "report.json", OUTPUT_ROOT)
     folds = load_folds(args.folds)
     if folds["identity_sha256"] != sha256_file(args.identity):
         raise ValueError("folds were built from a different identity table")
@@ -562,7 +575,6 @@ def main(argv: list[str] | None = None) -> int:
         print(f"Cannot evaluate; missing runs: {missing}")
         return 1
 
-    output_dir = OUTPUT_ROOT / args.stage
     if output_dir.exists():
         print(f"Refusing to overwrite {output_dir}. Inspect or move it before rerunning.")
         return 1

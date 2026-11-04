@@ -10,7 +10,7 @@ statistic and a phase-scrambled control do not, under source-independent splits.
 | `experiment_id` | `EXP-009` |
 | `date` | 2026-11-03 |
 | `branch` | `exp009-cnn-pilot` |
-| `code` | `f0618d7` (62 runs), `f3ab381` (10 E3 completion runs and all evaluation); training code is identical in both |
+| `code` | `f0618d7`: 62 runs, forest baselines, original pilot report. `f3ab381`: 10 E3 completion runs, rescored pilot report, full report. Training and baseline code are identical in both; only evaluation scoring changed |
 | `manifest` | `data/psc/psc_eval_multisurvey.csv`, 2,746 rows, sha256 `273379bd…` |
 | `identity` | `data/psc/identity/source_identity_v1.csv`, sha256 `e225cc64…` |
 | `folds` | `data/psc/folds/folds_v1.json`, sha256 `ef4681d2…`, assignment seeds 5 / 44 / 52 |
@@ -24,7 +24,7 @@ statistic and a phase-scrambled control do not, under source-independent splits.
 | `pilot report` | `outputs/exp009/evaluation/pilot/report.json`, sha256 `01989bb8…` (original scoring) |
 | `pilot report, rescored` | `outputs/exp009/evaluation/pilot_logodds/report.json`, sha256 `86981ec7…` |
 | `full report` | `outputs/exp009/evaluation/full/report.json`, sha256 `1ac917cf…` |
-| `intervals` | Paired bootstrap over sources, RFI nights and noise observations, 2,000 draws, plus between-assignment variance; 95% for the pilot, 98.3% (Bonferroni over 3 claims) for the final stage |
+| `intervals` | Paired bootstrap over sources, RFI nights and noise observations, 2,000 draws, plus between-assignment variance; 95% for the pilot, 98.3% (Bonferroni across the three within-survey arms) for the final stage |
 
 Protected files (`experiments/exp009_protected_hashes.sha256`, 100 entries) were
 verified unchanged after every stage.

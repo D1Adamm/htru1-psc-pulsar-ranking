@@ -2,8 +2,9 @@
 """Build the frozen EXP-009 fold assignments and fail on any leakage.
 
 Seeds 5, 44, and 52 were chosen for row balance, without reference to any model
-result; ``--verify-selection`` re-runs that search over seeds 0-199. Writes refuse
-to overwrite. ``--check`` compares against the existing file byte for byte.
+result; ``--verify-selection`` re-runs that search over seeds 0-199 and writes
+nothing. Writes refuse to overwrite. ``--check`` compares against the existing file
+byte for byte.
 """
 
 from __future__ import annotations
@@ -61,7 +62,7 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser.add_argument("--identity", type=Path, default=DEFAULT_IDENTITY)
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
     parser.add_argument("--check", action="store_true", help="Compare against the existing output; write nothing")
-    parser.add_argument("--verify-selection", action="store_true", help="Re-run the seed search over 0-199")
+    parser.add_argument("--verify-selection", action="store_true", help="Re-run the seed search over 0-199; write nothing")
     return parser.parse_args(argv)
 
 
@@ -88,6 +89,9 @@ def main(argv: list[str] | None = None) -> int:
         if tuple(selected) != SEEDS:
             print(f"FAILED: expected {SEEDS}")
             return 1
+        if not args.check:
+            print("OK: seed selection reproduces")
+            return 0
 
     payload = {
         "version": "folds_v1",

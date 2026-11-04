@@ -34,6 +34,7 @@ from src.datasets.psc_controls import INTERVENTIONS
 from src.datasets.psc_folds import (
     assert_under,
     attach_identity,
+    git_state,
     linked_components,
     load_candidate_records,
     load_folds,
@@ -579,6 +580,7 @@ def main(argv: list[str] | None = None) -> int:
         print(f"Refusing to overwrite {output_dir}. Inspect or move it before rerunning.")
         return 1
     report = evaluate(args.stage, records, static, runs, args.n_boot, args.cache_dir, not args.no_interventions)
+    report["code"] = git_state(REPO_ROOT)
     write_exclusive(output_dir / "report.json", json.dumps(report, indent=2, sort_keys=True) + "\n")
     write_exclusive(output_dir / "report.md", render_report(report))
     print(f"Wrote {output_dir}")

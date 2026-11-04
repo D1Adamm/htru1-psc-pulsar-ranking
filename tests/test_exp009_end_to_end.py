@@ -31,6 +31,7 @@ from tests.test_exp009_identity import load_script
 train = load_script("train_exp009")
 baselines = load_script("run_exp009_baselines")
 evaluate = load_script("evaluate_exp009")
+build_folds = load_script("build_source_folds")
 
 
 def payload(plot_id, category, obs, rng):
@@ -167,11 +168,25 @@ class ScriptEntryPointTests(unittest.TestCase):
             with self.clean_git(), self.assertRaises(ValueError):
                 train.main(["--arm", "E2", "--assignment", "0", "--fold", "0", "--dry-run", *arguments])
 
+    def test_seed_verification_alone_writes_nothing(self) -> None:
+        with tempfile.TemporaryDirectory() as out:
+            output = Path(out) / "folds.json"
+            arguments = ["--manifest", str(self.fixture.manifest), "--cache-dir", str(self.fixture.cache),
+                         "--identity", str(self.fixture.identity), "--output", str(output), "--verify-selection"]
+            with mock.patch.object(build_folds, "select_seeds", return_value=list(build_folds.SEEDS)):
+                self.assertEqual(build_folds.main(arguments), 0)
+            with mock.patch.object(build_folds, "select_seeds", return_value=[1, 2, 3]):
+                self.assertEqual(build_folds.main(arguments), 1)
+            self.assertFalse(output.exists())
+
     def test_baselines_write_every_row_and_refuse_to_repeat(self) -> None:
         small_forest = lambda n, **kw: RandomForestClassifier(5, **kw)  # noqa: E731
+        clean = {"commit": "abc", "dirty": False, "dirty_entries": []}
         with tempfile.TemporaryDirectory() as out, mock.patch.object(baselines, "OUTPUT_ROOT", Path(out) / "baselines"):
-            with mock.patch.object(baselines, "RandomForestClassifier", small_forest), mock.patch.object(baselines, "LEAF_GRID", (2,)):
+            with mock.patch.object(baselines, "RandomForestClassifier", small_forest), mock.patch.object(baselines, "LEAF_GRID", (2,)), \
+                    mock.patch.object(baselines, "git_state", return_value=clean):
                 self.assertEqual(baselines.main(self.fixture.arguments()), 0)
+            self.assertEqual(json.loads((Path(out) / "baselines" / "metadata.json").read_text())["code"], clean)
             with open(Path(out) / "baselines" / "scores.csv", newline="") as f:
                 rows = list(csv.DictReader(f))
             within = [r for r in rows if r["evaluation"] == "within" and r["model"] == "period_dm" and r["assignment"] == "0"]

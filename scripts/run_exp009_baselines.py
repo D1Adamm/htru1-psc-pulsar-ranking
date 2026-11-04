@@ -34,6 +34,7 @@ from src.datasets.psc_folds import (
     assert_under,
     attach_identity,
     fold_vector,
+    git_state,
     load_candidate_records,
     load_folds,
     read_identity,
@@ -211,6 +212,7 @@ def main(argv: list[str] | None = None) -> int:
         OUTPUT_ROOT / "metadata.json",
         json.dumps(
             {
+                "code": git_state(REPO_ROOT),
                 "leaf_grid": list(LEAF_GRID),
                 "chosen_leaf": chosen,
                 "identity_sha256": sha256_file(args.identity),

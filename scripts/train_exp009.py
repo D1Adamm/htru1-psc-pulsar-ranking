@@ -25,7 +25,6 @@ import csv
 import io
 import json
 import platform
-import subprocess
 import sys
 import time
 from dataclasses import asdict, dataclass
@@ -46,6 +45,7 @@ from src.datasets.psc_folds import (
     assert_under,
     attach_identity,
     fold_vector,
+    git_state,
     load_candidate_records,
     load_folds,
     read_identity,
@@ -274,14 +274,6 @@ def render_scores(records: list[dict], splits: dict[str, np.ndarray], result: di
     return buffer.getvalue()
 
 
-def git_state(root: Path = REPO_ROOT) -> dict:
-    """Commit and whether tracked code differs. Run outputs do not count as dirty."""
-    commit = subprocess.run(["git", "rev-parse", "HEAD"], cwd=root, capture_output=True, text=True, check=True).stdout.strip()
-    status = subprocess.run(["git", "status", "--porcelain"], cwd=root, capture_output=True, text=True, check=True).stdout
-    dirty = [line for line in status.splitlines() if "outputs/exp009/" not in line]
-    return {"commit": commit, "dirty": bool(dirty), "dirty_entries": dirty}
-
-
 def write_run(
     run_dir: Path,
     root: Path,
@@ -373,7 +365,7 @@ def main(argv: list[str] | None = None) -> int:
     device = torch.device("cpu")
     torch.set_num_threads(args.threads)
 
-    state = git_state()
+    state = git_state(REPO_ROOT)
     print(f"commit {state['commit'][:10]}, uncommitted code: {state['dirty']}")
     if state["dirty"] and not args.dry_run and not args.allow_dirty:
         print("Refusing to train from uncommitted code. Commit first, or pass --allow-dirty.")

@@ -13,6 +13,7 @@ import hashlib
 import json
 import random
 import re
+import subprocess
 from pathlib import Path
 
 N_FOLDS = 5
@@ -26,6 +27,14 @@ def sha256_file(path: Path) -> str:
         for chunk in iter(lambda: f.read(1 << 20), b""):
             digest.update(chunk)
     return digest.hexdigest()
+
+
+def git_state(root: Path) -> dict:
+    """Commit and whether tracked code differs. EXP-009 outputs do not count as dirty."""
+    commit = subprocess.run(["git", "rev-parse", "HEAD"], cwd=root, capture_output=True, text=True, check=True).stdout.strip()
+    status = subprocess.run(["git", "status", "--porcelain"], cwd=root, capture_output=True, text=True, check=True).stdout
+    dirty = [line for line in status.splitlines() if "outputs/exp009/" not in line]
+    return {"commit": commit, "dirty": bool(dirty), "dirty_entries": dirty}
 
 
 def write_exclusive(path: Path, text: str) -> None:

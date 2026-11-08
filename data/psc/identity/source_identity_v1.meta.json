@@ -1,0 +1,37 @@
+{
+  "catalogue_citation": "Manchester et al. 2005, AJ 129, 1993; ATNF Pulsar Catalogue",
+  "catalogue_sha256": "bac32471fef3e60cfd734f1db85503a9bd0a565018cb98edff54475f87eb642f",
+  "catalogue_version": "2.9.0",
+  "decisions_sha256": "8e2fcd329fd7160c1a536bc2a178c48e0ba1298c80e9fbd77007334c8c1ef11d",
+  "manifest": "data/psc/psc_eval_multisurvey.csv",
+  "manifest_sha256": "273379bd6d3cc02bd4feb7cb8256dab965201eae0c30b6ca5be4d7b4fc0ad93f",
+  "summary": {
+    "by_survey": {
+      "ao327": {
+        "fundamental_sources": 35,
+        "rows": 500,
+        "source_groups": 42
+      },
+      "gbncc": {
+        "fundamental_sources": 35,
+        "rows": 300,
+        "source_groups": 62
+      }
+    },
+    "fundamental_rows": 242,
+    "label_uncertain_rows": 9,
+    "match_classes": {
+      "A": 479,
+      "B1": 153,
+      "B2": 62,
+      "B3": 7,
+      "C1": 21,
+      "C2": 45,
+      "D": 33
+    },
+    "named_pulsars": 83,
+    "rows": 800,
+    "shared_sources": 2,
+    "source_groups": 102
+  }
+}

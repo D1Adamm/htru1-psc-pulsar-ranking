@@ -1,0 +1,55 @@
+{
+  "allow_dirty": false,
+  "arm": "E1",
+  "assignment": 2,
+  "best_epoch": 30,
+  "best_val_accuracy": 0.9169811606407166,
+  "checkpoint_sha256": "d0b63f619a8ea3dce55b3db5b5e70fa2608b8de36544f0678ddb91c6bc6046aa",
+  "device": "cpu",
+  "fold": 1,
+  "folds_sha256": "ef4681d2ae99c51cf3b17bfab4a7d794d9bc248fe41753f00b789ed1ee045890",
+  "git": {
+    "commit": "f0618d7880bcc86120f3de053e2469e0ed2bf2bc",
+    "dirty": false,
+    "dirty_entries": []
+  },
+  "identity_sha256": "e225cc6459762c9dd18460b95a2be05c8dbadc5a4389cab565b28efe4363bc1d",
+  "load_info": {
+    "loaded": [
+      "features.0.weight",
+      "features.0.bias",
+      "features.3.weight",
+      "features.3.bias",
+      "classifier.1.weight",
+      "classifier.1.bias"
+    ],
+    "skipped": [
+      "classifier.4.weight",
+      "classifier.4.bias"
+    ]
+  },
+  "manifest_sha256": "273379bd6d3cc02bd4feb7cb8256dab965201eae0c30b6ca5be4d7b4fc0ad93f",
+  "model_seed": 243,
+  "numpy": "2.5.1",
+  "pretrained_sha256": "7f852a3e7fc46ade884c32a4a5599cc4c2734d0fd262a2c17620a4f6e4695d5c",
+  "python": "3.13.14",
+  "recipe": {
+    "batch_size": 32,
+    "epochs": 40,
+    "learning_rate": 0.001,
+    "optimizer": "Adam",
+    "selection": "validation accuracy"
+  },
+  "run_id": "E1_a2_f1_s243",
+  "seconds": 22.673900042078458,
+  "source_survey": null,
+  "split_sizes": {
+    "test": 588,
+    "train": 1623,
+    "val": 530,
+    "val_scored": 530
+  },
+  "target_survey": null,
+  "threads": 4,
+  "torch": "2.13.0"
+}

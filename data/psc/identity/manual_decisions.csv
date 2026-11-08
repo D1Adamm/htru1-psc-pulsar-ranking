@@ -1,0 +1,22 @@
+key,action,target,note
+3013353,split_source,J1926+1648,"split from J1935+1616 group: exact 1/3 harmonic, DM match, 2.1 deg from J1935"
+8880312,merge_into,J1136+1551,"merged: exact 3/10, same observation, wrong-DM slanted pulses visible"
+6454363,merge_into,J2317+2149,"merged: approx 1/3, same observation, wrong-DM slanted pulse visible"
+J1645-0317,accept_name,,accepted on sky+DM evidence
+J1022+1001,accept_name,,accepted on sky+DM evidence
+J1921+1948,accept_name,,accepted on sky+DM evidence
+J1651-1709,accept_name,,accepted on sky+DM evidence
+J1746+2245,withhold_name,,"own group, identity not claimed"
+J1915+1714_P,withhold_name,,"own group, identity not claimed"
+J0109+11,withhold_name,,"own group, identity not claimed"
+J1848-1414,withhold_name,,"own group, identity not claimed"
+J1848-1952,withhold_name,,"own group, identity not claimed"
+2798868,label_uncertain,,no clear coherent pulse in inspection; not an expert review
+2302283,label_uncertain,,no clear coherent pulse in inspection; not an expert review
+2317487,label_uncertain,,no clear coherent pulse in inspection; not an expert review
+7241578,label_uncertain,,no clear coherent pulse in inspection; not an expert review
+2302282,label_uncertain,,no clear coherent pulse in inspection; not an expert review
+2920296,label_uncertain,,no clear coherent pulse in inspection; not an expert review
+9063165,label_uncertain,,no clear coherent pulse in inspection; not an expert review
+7095671,label_uncertain,,no clear coherent pulse in inspection; not an expert review
+2302215,label_uncertain,,no clear coherent pulse in inspection; not an expert review

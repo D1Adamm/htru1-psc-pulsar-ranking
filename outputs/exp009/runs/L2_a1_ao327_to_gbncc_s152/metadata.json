@@ -1,0 +1,45 @@
+{
+  "allow_dirty": false,
+  "arm": "L2",
+  "assignment": 1,
+  "best_epoch": 19,
+  "best_val_accuracy": 0.9964538812637329,
+  "checkpoint_sha256": "1c8017accdc10456b29db0b8d786020729dce765d91a0f808fd9500b91631eea",
+  "device": "cpu",
+  "fold": null,
+  "folds_sha256": "ef4681d2ae99c51cf3b17bfab4a7d794d9bc248fe41753f00b789ed1ee045890",
+  "git": {
+    "commit": "f0618d7880bcc86120f3de053e2469e0ed2bf2bc",
+    "dirty": false,
+    "dirty_entries": []
+  },
+  "identity_sha256": "e225cc6459762c9dd18460b95a2be05c8dbadc5a4389cab565b28efe4363bc1d",
+  "load_info": {
+    "loaded": [],
+    "skipped": []
+  },
+  "manifest_sha256": "273379bd6d3cc02bd4feb7cb8256dab965201eae0c30b6ca5be4d7b4fc0ad93f",
+  "model_seed": 152,
+  "numpy": "2.5.1",
+  "pretrained_sha256": "7f852a3e7fc46ade884c32a4a5599cc4c2734d0fd262a2c17620a4f6e4695d5c",
+  "python": "3.13.14",
+  "recipe": {
+    "batch_size": 32,
+    "epochs": 40,
+    "learning_rate": 0.001,
+    "optimizer": "Adam",
+    "selection": "validation accuracy"
+  },
+  "run_id": "L2_a1_ao327_to_gbncc_s152",
+  "seconds": 29.32195745804347,
+  "source_survey": "ao327",
+  "split_sizes": {
+    "test": 1176,
+    "train": 1190,
+    "val": 282,
+    "val_scored": 283
+  },
+  "target_survey": "gbncc",
+  "threads": 4,
+  "torch": "2.13.0"
+}
